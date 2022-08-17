@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ManVsMonsters",
+			"Path": "D:\\Unreal Engine Projects\\ManVsMonsters\\ManVsMonsters\\Source\\ManVsMonsters.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ManVsMonstersEditor",
+			"Path": "D:\\Unreal Engine Projects\\ManVsMonsters\\ManVsMonsters\\Source\\ManVsMonstersEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

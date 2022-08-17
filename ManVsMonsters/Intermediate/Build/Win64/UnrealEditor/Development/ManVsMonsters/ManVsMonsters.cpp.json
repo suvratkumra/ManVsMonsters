@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\source\\manvsmonsters\\manvsmonsters.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\manvsmonsterseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\development\\manvsmonsters\\definitions.manvsmonsters.h",
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\source\\manvsmonsters\\manvsmonsters.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
