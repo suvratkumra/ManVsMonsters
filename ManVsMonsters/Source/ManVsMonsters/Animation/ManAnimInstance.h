@@ -21,6 +21,28 @@ public:
 	virtual void NativeUpdateAnimation(float DeltaTime) override;
 
 private:
-	UPROPERTY()
+	// it should be blueprint readable so that we can add the animation to it
+	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	class AManCharacter* Character;
+
+	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
+		float Speed;
+
+	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
+		float bIsInAir;
+
+	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
+		float bIsAccelerating;
+
+	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
+		float Lean;
+
+	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
+		float YawOffset;
+
+	// for leaning
+	FRotator CharacterRotationLastFrame;
+	FRotator CharacterRotation;
+	// for strafing
+	FRotator DeltaRotation;
 };
