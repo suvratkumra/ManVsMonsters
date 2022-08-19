@@ -1,0 +1,20 @@
+﻿  Using bundled DotNet SDK
+  Log file: C:\Users\suvra\AppData\Local\UnrealBuildTool\Log.txt
+  Using 'git status' to determine working set for adaptive non-unity build (D:\Unreal Engine Projects\ManVsMonsters).
+  Parsing headers for ManVsMonstersEditor
+    Running UnrealHeaderTool "D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\ManVsMonsters.uproject" "D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\ManVsMonstersEditor\Development\ManVsMonstersEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\suvra\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for ManVsMonstersEditor in 1.0726386 seconds
+  Building ManVsMonstersEditor...
+  Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
+    Executing up to 16 processes, one per physical core
+  Building 5 actions with 5 processes...
+  [1/5] Compile ManCharacter.gen.cpp
+  [2/5] Compile ManCharacter.cpp
+  [3/5] Link UnrealEditor-ManVsMonsters-0011.lib
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0011.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0011.exp
+  [4/5] Link UnrealEditor-ManVsMonsters-0011.dll
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0011.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0011.suppressed.exp
+  [5/5] WriteMetadata ManVsMonstersEditor.target
+  Total time in Parallel executor: 11.67 seconds
+  Total execution time: 13.36 seconds

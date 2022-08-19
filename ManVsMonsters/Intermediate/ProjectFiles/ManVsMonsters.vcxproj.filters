@@ -23,6 +23,15 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
     <Filter Include="Source\ManVsMonsters">
       <UniqueIdentifier>{8B56DA4D-8D93-350B-902A-CC8F4C28F15B}</UniqueIdentifier>
     </Filter>
@@ -40,6 +49,24 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\ManVsMonsters\ManVsMonstersGameModeBase.h">
       <Filter>Source\ManVsMonsters</Filter>
+    </ClInclude>
+    <Filter Include="Source\ManVsMonsters\Animation">
+      <UniqueIdentifier>{95A154CB-47F3-31D4-93A0-9682062859E6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ManVsMonsters\Animation\ManAnimInstance.cpp">
+      <Filter>Source\ManVsMonsters\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManVsMonsters\Animation\ManAnimInstance.h">
+      <Filter>Source\ManVsMonsters\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\ManVsMonsters\Characters">
+      <UniqueIdentifier>{B52F2530-738C-3529-9CAC-F016902C322B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ManVsMonsters\Characters\ManCharacter.cpp">
+      <Filter>Source\ManVsMonsters\Characters</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManVsMonsters\Characters\ManCharacter.h">
+      <Filter>Source\ManVsMonsters\Characters</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
