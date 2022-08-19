@@ -41,11 +41,13 @@ void EmptyLinkFunctionForGeneratedCodeManAnimInstance() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_bIsInAir_MetaData[];
 #endif
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_bIsInAir;
+		static void NewProp_bIsInAir_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsInAir;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_bIsAccelerating_MetaData[];
 #endif
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_bIsAccelerating;
+		static void NewProp_bIsAccelerating_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsAccelerating;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Lean_MetaData[];
 #endif
@@ -54,6 +56,11 @@ void EmptyLinkFunctionForGeneratedCodeManAnimInstance() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_YawOffset_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_YawOffset;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bIsRunning_MetaData[];
+#endif
+		static void NewProp_bIsRunning_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsRunning;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -95,7 +102,11 @@ void EmptyLinkFunctionForGeneratedCodeManAnimInstance() {}
 		{ "ModuleRelativePath", "Animation/ManAnimInstance.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsInAir = { "bIsInAir", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UManAnimInstance, bIsInAir), METADATA_PARAMS(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsInAir_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsInAir_MetaData)) };
+	void Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsInAir_SetBit(void* Obj)
+	{
+		((UManAnimInstance*)Obj)->bIsInAir = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsInAir = { "bIsInAir", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UManAnimInstance), &Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsInAir_SetBit, METADATA_PARAMS(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsInAir_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsInAir_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -103,7 +114,11 @@ void EmptyLinkFunctionForGeneratedCodeManAnimInstance() {}
 		{ "ModuleRelativePath", "Animation/ManAnimInstance.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating = { "bIsAccelerating", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UManAnimInstance, bIsAccelerating), METADATA_PARAMS(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating_MetaData)) };
+	void Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating_SetBit(void* Obj)
+	{
+		((UManAnimInstance*)Obj)->bIsAccelerating = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating = { "bIsAccelerating", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UManAnimInstance), &Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating_SetBit, METADATA_PARAMS(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UManAnimInstance_Statics::NewProp_Lean_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -120,6 +135,18 @@ void EmptyLinkFunctionForGeneratedCodeManAnimInstance() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UManAnimInstance_Statics::NewProp_YawOffset = { "YawOffset", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UManAnimInstance, YawOffset), METADATA_PARAMS(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_YawOffset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_YawOffset_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsRunning_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Movement" },
+		{ "ModuleRelativePath", "Animation/ManAnimInstance.h" },
+	};
+#endif
+	void Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsRunning_SetBit(void* Obj)
+	{
+		((UManAnimInstance*)Obj)->bIsRunning = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsRunning = { "bIsRunning", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UManAnimInstance), &Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsRunning_SetBit, METADATA_PARAMS(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsRunning_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsRunning_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UManAnimInstance_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UManAnimInstance_Statics::NewProp_Character,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UManAnimInstance_Statics::NewProp_Speed,
@@ -127,6 +154,7 @@ void EmptyLinkFunctionForGeneratedCodeManAnimInstance() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsAccelerating,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UManAnimInstance_Statics::NewProp_Lean,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UManAnimInstance_Statics::NewProp_YawOffset,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UManAnimInstance_Statics::NewProp_bIsRunning,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UManAnimInstance_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UManAnimInstance>::IsAbstract,
@@ -164,9 +192,9 @@ void EmptyLinkFunctionForGeneratedCodeManAnimInstance() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Animation_ManAnimInstance_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UManAnimInstance, UManAnimInstance::StaticClass, TEXT("UManAnimInstance"), &Z_Registration_Info_UClass_UManAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UManAnimInstance), 2020626222U) },
+		{ Z_Construct_UClass_UManAnimInstance, UManAnimInstance::StaticClass, TEXT("UManAnimInstance"), &Z_Registration_Info_UClass_UManAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UManAnimInstance), 1454614708U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Animation_ManAnimInstance_h_865025181(TEXT("/Script/ManVsMonsters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Animation_ManAnimInstance_h_4169320095(TEXT("/Script/ManVsMonsters"),
 		Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Animation_ManAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Animation_ManAnimInstance_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

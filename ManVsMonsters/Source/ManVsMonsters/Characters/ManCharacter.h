@@ -24,8 +24,15 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = Camera)
 		float VerticalSenstivity = 45.f;
 
+	bool bIsRunning = false;
+	bool bIsSprinting = false;
+
 public:
 	AManCharacter();
+	virtual void Tick(float DeltaTime) override;
+
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
 
 protected:
 	virtual void BeginPlay() override;
@@ -34,10 +41,10 @@ protected:
 	void MoveRight(float AxisValue);
 	void LookUp(float AxisValue);
 	void LookRight(float AxisValue);
+	void RunningButtonPressed();
 
 public:	
-	virtual void Tick(float DeltaTime) override;
-
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	FORCEINLINE bool GetIsRunning() const { return bIsRunning; }
+	void SetIsRunning(bool bRunning);
 
 };

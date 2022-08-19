@@ -29,16 +29,20 @@ private:
 		float Speed;
 
 	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
-		float bIsInAir;
+		bool bIsInAir;
 
 	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
-		float bIsAccelerating;
+		bool bIsAccelerating;
 
 	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 		float Lean;
 
 	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 		float YawOffset;
+
+	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
+		bool bIsRunning;
+
 
 	// for leaning
 	FRotator CharacterRotationLastFrame;

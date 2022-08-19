@@ -2,6 +2,7 @@
 
 
 #include "ManCharacter.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 
@@ -21,6 +22,10 @@ AManCharacter::AManCharacter()
 void AManCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	// stating the walk speed
+	GetCharacterMovement()->MaxWalkSpeed = 270.f;
+	GetCharacterMovement()->MaxWalkSpeedCrouched = 150.f;
 	
 }
 
@@ -41,6 +46,7 @@ void AManCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 	PlayerInputComponent->BindAction(FName("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(FName("Jump"), EInputEvent::IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction(FName("Run"), EInputEvent::IE_Pressed, this, &AManCharacter::RunningButtonPressed);
 }
 
 void AManCharacter::MoveForward(float AxisValue)
@@ -80,5 +86,27 @@ void AManCharacter::LookRight(float AxisValue)
 {
 	AddControllerYawInput(AxisValue * HorizontalSenstivity * GetWorld()->GetDeltaSeconds());
 }
+
+void AManCharacter::RunningButtonPressed()
+{
+	bIsRunning = true;
+	if (GetCharacterMovement())
+	{
+		GetCharacterMovement()->MaxWalkSpeed = 540.f;
+		GetCharacterMovement()->MaxWalkSpeedCrouched = 300.f;
+	}
+}
+
+
+void AManCharacter::SetIsRunning(bool bRunning)
+{
+	bIsRunning = bRunning;
+	if (!bIsRunning)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = 270.f;
+		GetCharacterMovement()->MaxWalkSpeedCrouched = 150.f;
+	}
+}
+
 
 

@@ -27,6 +27,19 @@ void UManAnimInstance::NativeUpdateAnimation(float DeltaTime)
 		// to see if the character has w key pressed.
 		bIsAccelerating = Character->GetCharacterMovement()->GetCurrentAcceleration().Size() > 0.f ? true : false;
 
+
+		/** Setting Up running */
+		if (bIsAccelerating && Character->GetIsRunning()) bIsRunning = true;
+
+		// condition to make running boolean variable false if the character has stopped accelerating or character is accelerating but the shift key is not pressed which helps in moving.
+		else if (!bIsAccelerating || (bIsAccelerating && !Character->GetIsRunning())) bIsRunning = false;
+
+
+		// setting the running variable found in the manCharacter
+		Character->SetIsRunning(bIsRunning);
+
+		//UE_LOG(LogTemp, Warning, TEXT("Speed : %f, Acceleration : %f"), Speed, Character->GetCharacterMovement()->GetCurrentAcceleration().Size());
+
 		//setting the yaw for strafing.  will be used by both walking and running animations.
 		FRotator AimRotation = Character->GetBaseAimRotation();	//getting the rotation done when mouse is moved
 		FRotator MovementRotation = UKismetMathLibrary::MakeRotFromX(Character->GetVelocity());
@@ -42,6 +55,8 @@ void UManAnimInstance::NativeUpdateAnimation(float DeltaTime)
 		const float Target = Delta.Yaw / DeltaTime;
 		const float Interp = FMath::FInterpTo(Lean, Target, DeltaTime, 6.f);
 		Lean = FMath::Clamp(Interp, -90.f, 90.f);
+
+		
 
 	}
 }
