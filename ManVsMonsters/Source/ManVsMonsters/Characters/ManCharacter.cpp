@@ -4,6 +4,9 @@
 #include "ManCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "DrawDebugHelpers.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
 #include "Camera/CameraComponent.h"
 
 AManCharacter::AManCharacter()
@@ -26,6 +29,7 @@ void AManCharacter::BeginPlay()
 	// stating the walk speed
 	GetCharacterMovement()->MaxWalkSpeed = 270.f;
 	GetCharacterMovement()->MaxWalkSpeedCrouched = 150.f;
+
 	
 }
 
@@ -47,6 +51,7 @@ void AManCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAction(FName("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(FName("Jump"), EInputEvent::IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction(FName("Run"), EInputEvent::IE_Pressed, this, &AManCharacter::RunningButtonPressed);
+	PlayerInputComponent->BindAction(FName("Fire"), EInputEvent::IE_Pressed, this, &AManCharacter::FireButtonPressed);
 }
 
 void AManCharacter::MoveForward(float AxisValue)
@@ -94,6 +99,60 @@ void AManCharacter::RunningButtonPressed()
 	{
 		GetCharacterMovement()->MaxWalkSpeed = 540.f;
 		GetCharacterMovement()->MaxWalkSpeedCrouched = 300.f;
+	}
+}
+
+void AManCharacter::FireButtonPressed()
+{
+	if (FireSoundCue)
+	{
+		// now we want to spawn the sound cue and play it when fire button is pressed
+		UGameplayStatics::PlaySound2D(this, FireSoundCue);
+	}
+
+	// now we want to spawn the impact particle
+	if (FireEmitter)
+	{
+
+		MuzzleTransform = GetMesh()->GetSocketTransform(FName("Muzzle_01"));
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), FireEmitter, MuzzleTransform);
+	}
+
+	// now we want recoid
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance && HipFireMontage)
+	{
+		AnimInstance->Montage_Play(HipFireMontage);
+		AnimInstance->Montage_JumpToSection(FName("FireSection"));
+	}
+
+	TraceForBullet();
+	
+}
+
+void AManCharacter::TraceForBullet()
+{
+	FVector Start = MuzzleTransform.GetLocation();
+	FQuat Rotation = MuzzleTransform.GetRotation();
+	FVector ForwardVectorFromMuzzle = Rotation.GetAxisX();
+	FVector End = Start + ForwardVectorFromMuzzle * 50000.f;
+	FHitResult HitResult;
+	UWorld* World = GetWorld();
+	if (World)
+	{
+		World->LineTraceSingleByChannel(HitResult, Start, End, ECollisionChannel::ECC_Visibility);
+		
+		if (HitResult.bBlockingHit)
+		{
+			// for debugging purposes
+			DrawDebugLine(World, Start, HitResult.Location, FColor::Red, false, 2.f);
+			DrawDebugSphere(World, HitResult.Location, 5.f, 12.f, FColor::Red, false, 2.f);
+		}
+
+		if (HitResult.bBlockingHit && ImpactParticle)
+		{
+			UGameplayStatics::SpawnEmitterAtLocation(this, ImpactParticle, HitResult.ImpactPoint, HitResult.ImpactPoint.Rotation());
+		}
 	}
 }
 

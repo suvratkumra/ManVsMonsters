@@ -15,6 +15,9 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_ManVsMonsters();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
 	void AManCharacter::StaticRegisterNativesAManCharacter()
 	{
@@ -46,6 +49,22 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_VerticalSenstivity_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_VerticalSenstivity;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FireSoundCue_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_FireSoundCue;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FireEmitter_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_FireEmitter;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ImpactParticle_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ImpactParticle;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HipFireMontage_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_HipFireMontage;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -93,11 +112,47 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity = { "VerticalSenstivity", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, VerticalSenstivity), METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_FireSoundCue_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_FireSoundCue = { "FireSoundCue", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, FireSoundCue), Z_Construct_UClass_USoundCue_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_FireSoundCue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_FireSoundCue_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_FireEmitter_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_FireEmitter = { "FireEmitter", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, FireEmitter), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_FireEmitter_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_FireEmitter_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_ImpactParticle_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_ImpactParticle = { "ImpactParticle", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, ImpactParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_ImpactParticle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_ImpactParticle_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage = { "HipFireMontage", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, HipFireMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AManCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_Camera,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalSenstivity,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_FireSoundCue,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_FireEmitter,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_ImpactParticle,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AManCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AManCharacter>::IsAbstract,
@@ -135,9 +190,9 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AManCharacter, AManCharacter::StaticClass, TEXT("AManCharacter"), &Z_Registration_Info_UClass_AManCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManCharacter), 1378039273U) },
+		{ Z_Construct_UClass_AManCharacter, AManCharacter::StaticClass, TEXT("AManCharacter"), &Z_Registration_Info_UClass_AManCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManCharacter), 1832359210U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_732775416(TEXT("/Script/ManVsMonsters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_1090652291(TEXT("/Script/ManVsMonsters"),
 		Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

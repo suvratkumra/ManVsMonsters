@@ -27,12 +27,26 @@ private:
 	bool bIsRunning = false;
 	bool bIsSprinting = false;
 
+	UPROPERTY(EditAnywhere, Category = Weapon, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+		class USoundCue* FireSoundCue;
+
+	UPROPERTY(EditAnywhere, Category = Weapon, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+		class UParticleSystem* FireEmitter;
+
+	UPROPERTY(EditAnywhere, Category = Weapon, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+		class UParticleSystem* ImpactParticle;
+
+	FTransform MuzzleTransform;
+
+	UPROPERTY(EditAnywhere, Category = Weapon, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+		class UAnimMontage* HipFireMontage;
+
 public:
 	AManCharacter();
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+	void TraceForBullet();
 
 protected:
 	virtual void BeginPlay() override;
@@ -42,6 +56,7 @@ protected:
 	void LookUp(float AxisValue);
 	void LookRight(float AxisValue);
 	void RunningButtonPressed();
+	void FireButtonPressed();
 
 public:	
 	FORCEINLINE bool GetIsRunning() const { return bIsRunning; }
