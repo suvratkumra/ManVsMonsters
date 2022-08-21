@@ -18,6 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_USoundCue_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UParticleSystem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
+	MANVSMONSTERS_API UClass* Z_Construct_UClass_AManHUD_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 // End Cross Module References
 	void AManCharacter::StaticRegisterNativesAManCharacter()
 	{
@@ -62,9 +64,41 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_ImpactParticle;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_BeamParticle_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_BeamParticle;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_HipFireMontage_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_HipFireMontage;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ManHUD_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_ManHUD;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CrosshairsTop_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CrosshairsTop;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CrosshairsBottom_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CrosshairsBottom;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CrosshairsCenter_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CrosshairsCenter;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CrosshairsLeft_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CrosshairsLeft;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CrosshairsRight_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CrosshairsRight;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ZoomedPOV_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_ZoomedPOV;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -137,6 +171,14 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_ImpactParticle = { "ImpactParticle", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, ImpactParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_ImpactParticle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_ImpactParticle_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_BeamParticle_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_BeamParticle = { "BeamParticle", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, BeamParticle), Z_Construct_UClass_UParticleSystem_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_BeamParticle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_BeamParticle_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Weapon" },
@@ -144,6 +186,58 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage = { "HipFireMontage", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, HipFireMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_ManHUD_MetaData[] = {
+		{ "Comment", "// making the crosshairs\n" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+		{ "ToolTip", "making the crosshairs" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_ManHUD = { "ManHUD", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, ManHUD), Z_Construct_UClass_AManHUD_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_ManHUD_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_ManHUD_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsTop_MetaData[] = {
+		{ "Category", "Crosshairs" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsTop = { "CrosshairsTop", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, CrosshairsTop), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsTop_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsTop_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsBottom_MetaData[] = {
+		{ "Category", "Crosshairs" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsBottom = { "CrosshairsBottom", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, CrosshairsBottom), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsBottom_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsBottom_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsCenter_MetaData[] = {
+		{ "Category", "Crosshairs" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsCenter = { "CrosshairsCenter", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, CrosshairsCenter), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsCenter_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsCenter_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsLeft_MetaData[] = {
+		{ "Category", "Crosshairs" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsLeft = { "CrosshairsLeft", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, CrosshairsLeft), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsLeft_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsLeft_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsRight_MetaData[] = {
+		{ "Category", "Crosshairs" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsRight = { "CrosshairsRight", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, CrosshairsRight), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsRight_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsRight_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_ZoomedPOV_MetaData[] = {
+		{ "Category", "Weapon" },
+		{ "Comment", "// will be used in interpolation and setting\n" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+		{ "ToolTip", "will be used in interpolation and setting" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_ZoomedPOV = { "ZoomedPOV", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, ZoomedPOV), METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_ZoomedPOV_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_ZoomedPOV_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AManCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_Camera,
@@ -152,7 +246,15 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_FireSoundCue,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_FireEmitter,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_ImpactParticle,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_BeamParticle,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_HipFireMontage,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_ManHUD,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsTop,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsBottom,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsCenter,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsLeft,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsRight,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_ZoomedPOV,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AManCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AManCharacter>::IsAbstract,
@@ -190,9 +292,9 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AManCharacter, AManCharacter::StaticClass, TEXT("AManCharacter"), &Z_Registration_Info_UClass_AManCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManCharacter), 1832359210U) },
+		{ Z_Construct_UClass_AManCharacter, AManCharacter::StaticClass, TEXT("AManCharacter"), &Z_Registration_Info_UClass_AManCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManCharacter), 487330872U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_1090652291(TEXT("/Script/ManVsMonsters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_4214952749(TEXT("/Script/ManVsMonsters"),
 		Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

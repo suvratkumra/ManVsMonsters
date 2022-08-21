@@ -43,6 +43,9 @@ private:
 	UPROPERTY(BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 		bool bIsRunning;
 
+	/* FOR AIMING */
+	UPROPERTY(VisibleAnywhere, Category = Weapon, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		bool bIsAiming = false;
 
 	// for leaning
 	FRotator CharacterRotationLastFrame;

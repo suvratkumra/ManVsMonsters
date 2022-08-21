@@ -8,6 +8,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
 #include "Camera/CameraComponent.h"
+#include "particles/ParticleSystemComponent.h"
 
 AManCharacter::AManCharacter()
 {
@@ -30,13 +31,37 @@ void AManCharacter::BeginPlay()
 	GetCharacterMovement()->MaxWalkSpeed = 270.f;
 	GetCharacterMovement()->MaxWalkSpeedCrouched = 150.f;
 
+	if (Camera)
+	{
+		DefaultPOV = Camera->FieldOfView;
+		CurrentPOV = DefaultPOV;
+	}
 	
 }
 
 void AManCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	SetHUDCrosshairs();
 
+	AdjustingAimingPOV(DeltaTime);
+
+}
+
+void AManCharacter::AdjustingAimingPOV(float DeltaTime)
+{
+	if (bAiming)
+	{
+		CurrentPOV = FMath::FInterpTo(CurrentPOV, ZoomedPOV, DeltaTime, 30.f);
+	}
+	else
+	{
+		CurrentPOV = FMath::FInterpTo(CurrentPOV, DefaultPOV, DeltaTime, 30.f);
+	}
+	if (Camera)
+	{
+		Camera->SetFieldOfView(CurrentPOV);
+	}
 }
 
 void AManCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -52,6 +77,8 @@ void AManCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAction(FName("Jump"), EInputEvent::IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction(FName("Run"), EInputEvent::IE_Pressed, this, &AManCharacter::RunningButtonPressed);
 	PlayerInputComponent->BindAction(FName("Fire"), EInputEvent::IE_Pressed, this, &AManCharacter::FireButtonPressed);
+	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Pressed, this, &AManCharacter::AimButtonPressed);
+	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Released, this, &AManCharacter::AimButtonReleased);
 }
 
 void AManCharacter::MoveForward(float AxisValue)
@@ -118,7 +145,7 @@ void AManCharacter::FireButtonPressed()
 		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), FireEmitter, MuzzleTransform);
 	}
 
-	// now we want recoid
+	// now we want recoil
 	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 	if (AnimInstance && HipFireMontage)
 	{
@@ -130,30 +157,94 @@ void AManCharacter::FireButtonPressed()
 	
 }
 
+void AManCharacter::AimButtonPressed()
+{
+	bAiming = true;
+	
+}
+
+void AManCharacter::AimButtonReleased()
+{
+	bAiming = false;
+	
+}
+
 void AManCharacter::TraceForBullet()
 {
-	FVector Start = MuzzleTransform.GetLocation();
-	FQuat Rotation = MuzzleTransform.GetRotation();
-	FVector ForwardVectorFromMuzzle = Rotation.GetAxisX();
-	FVector End = Start + ForwardVectorFromMuzzle * 50000.f;
-	FHitResult HitResult;
-	UWorld* World = GetWorld();
-	if (World)
+	/*
+		As we have already calculated the viewport middle in the hud class, we will just simply get the values from it instead of calculating them here right now
+	*/
+	if (!PlayerController)
 	{
-		World->LineTraceSingleByChannel(HitResult, Start, End, ECollisionChannel::ECC_Visibility);
-		
-		if (HitResult.bBlockingHit)
+		PlayerController = Cast<APlayerController>(Controller);
+	}
+	if (PlayerController)
+	{
+		ManHUD = ManHUD == nullptr ? Cast<AManHUD>(PlayerController->GetHUD()) : ManHUD;			// checking if manhud is initialized, if not then we do it here.
+	
+		const FVector2D ViewportMiddle{ ManHUD->GetViewportMiddle() };
+		FVector WorldPosition, WorldDirection;
+		UGameplayStatics::DeprojectScreenToWorld(PlayerController, ViewportMiddle, WorldPosition, WorldDirection);
+
+		FHitResult TracingThroughCrosshairs;
+		FVector Start = WorldPosition;
+		FVector End = WorldPosition + WorldDirection * 50'000;
+		FVector BeamEnd = End;			// this is the place where the particles will be spawned when collision happens.
+		// now we have to trace a line shot from the middle of the viewport to where we are looking
+		if (GetWorld())
 		{
-			// for debugging purposes
-			DrawDebugLine(World, Start, HitResult.Location, FColor::Red, false, 2.f);
-			DrawDebugSphere(World, HitResult.Location, 5.f, 12.f, FColor::Red, false, 2.f);
+			GetWorld()->LineTraceSingleByChannel(
+				TracingThroughCrosshairs,
+				Start,
+				End,
+				ECollisionChannel::ECC_Visibility
+			);
+			if (TracingThroughCrosshairs.bBlockingHit)
+			{
+				// we are reconfiguring now the end location of the hit so that the impact particle can spawn at the correct location
+				BeamEnd = TracingThroughCrosshairs.Location;
+
+				//now spawing the impact particle
+				if (ImpactParticle)
+				{
+					UGameplayStatics::SpawnEmitterAtLocation(this, ImpactParticle, BeamEnd);
+				}
+
+				if (BeamParticle)
+				{
+					UParticleSystemComponent* Beam = UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), BeamParticle, MuzzleTransform);
+					if (Beam)
+					{
+						Beam->SetVectorParameter(FName("Target"), BeamEnd);
+					}
+				}
+			}
 		}
 
-		if (HitResult.bBlockingHit && ImpactParticle)
+	}
+		
+}
+
+void AManCharacter::SetHUDCrosshairs()
+{
+	// As the GetHUD function exists on the playercontroller, we need to cast and get it in a local variable.
+	PlayerController = Cast<APlayerController>(Controller);
+	if (PlayerController)
+	{
+		ManHUD = ManHUD == nullptr ? Cast<AManHUD>(PlayerController->GetHUD()) : ManHUD;
+		// we will set the crosshairs here.
+		if (ManHUD)
 		{
-			UGameplayStatics::SpawnEmitterAtLocation(this, ImpactParticle, HitResult.ImpactPoint, HitResult.ImpactPoint.Rotation());
+			// setting the crosshair package to pass into the function to the hud where the crosshairs will get set.
+			CrosshairPackage.CrosshairsBottom = CrosshairsBottom;
+			CrosshairPackage.CrosshairsTop = CrosshairsTop;
+			CrosshairPackage.CrosshairsLeft = CrosshairsLeft;
+			CrosshairPackage.CrosshairsRight = CrosshairsRight;
+			CrosshairPackage.CrosshairsCenter = CrosshairsCenter;
+			ManHUD->SetCrosshairsHUD(CrosshairPackage);
 		}
 	}
+	
 }
 
 
@@ -165,6 +256,11 @@ void AManCharacter::SetIsRunning(bool bRunning)
 		GetCharacterMovement()->MaxWalkSpeed = 270.f;
 		GetCharacterMovement()->MaxWalkSpeedCrouched = 150.f;
 	}
+}
+
+float AManCharacter::GetWalkingSpeed()
+{
+	return GetCharacterMovement()->MaxWalkSpeed;
 }
 
 

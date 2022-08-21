@@ -1,0 +1,20 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\inc\\manvsmonsters\\manhud.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\manvsmonsterseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\development\\manvsmonsters\\definitions.manvsmonsters.h",
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\source\\manvsmonsters\\hud\\manhud.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\hud.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\hudhitbox.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\debugtextinfo.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\debugtextinfo.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\hud.generated.h",
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\inc\\manvsmonsters\\manhud.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

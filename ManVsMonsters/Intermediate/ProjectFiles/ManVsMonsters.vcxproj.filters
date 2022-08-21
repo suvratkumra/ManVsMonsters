@@ -68,5 +68,14 @@
     <ClInclude Include="..\..\Source\ManVsMonsters\Characters\ManCharacter.h">
       <Filter>Source\ManVsMonsters\Characters</Filter>
     </ClInclude>
+    <Filter Include="Source\ManVsMonsters\HUD">
+      <UniqueIdentifier>{FC064EF1-A092-3A25-8206-97DACF9D999F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ManVsMonsters\HUD\ManHUD.cpp">
+      <Filter>Source\ManVsMonsters\HUD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManVsMonsters\HUD\ManHUD.h">
+      <Filter>Source\ManVsMonsters\HUD</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
