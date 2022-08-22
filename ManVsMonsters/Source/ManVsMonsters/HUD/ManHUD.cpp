@@ -5,6 +5,14 @@
 #include "../Characters/ManCharacter.h"
 #include "Kismet/GameplayStatics.h"
 
+
+void AManHUD::BeginPlay()
+{
+	Super::BeginPlay();
+
+	Character = Cast<AManCharacter>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+}
+
 void AManHUD::DrawHUD()
 {
 	// calling the super version of drawhud
@@ -21,15 +29,14 @@ void AManHUD::DrawHUD()
 	FVector2D Mid{ ViewportSize.X / 2.f, ViewportSize.Y / 2.f };
 	ViewportMiddle = Mid;
 
-	float CrosshairSpreadGroundLocomotion = 0.f;
-	FVector2D CharacterVelocity{ 0.f, Character->GetWalkingSpeed() };		// the max speed we have right now, includes running and walking both.
-	FVector2D ClampingRange{ 0.f, 10.f };
-	FVector Velocity = Character->GetVelocity();
-	Velocity.Z = 0.f;
-	CrosshairSpreadGroundLocomotion = FMath::GetMappedRangeValueClamped(CharacterVelocity, ClampingRange, Velocity.Size());
+	CalculateGroundLocomotionSpread();
+	CalculateAimSpread();
+	CalculateCrouchSpread();
+	CalculateJumpSpread();
+	CalculateFiringSpread();
 
 	// overall crosshairs spread
-	CrosshairsSpread = CrosshairSpreadGroundLocomotion;
+	CrosshairsSpread = 0.5f + CrosshairSpreadGroundLocomotion - CrosshairSpreadAiming - CrosshairSpreadCrouch + CrosshairSpreadJump + CrosshairSpreadFire;
 
 	// now we want to draw the viewport in the middle of the screen.
 	
@@ -56,6 +63,69 @@ void AManHUD::DrawHUD()
 
 }
 
+void AManHUD::CalculateAimSpread()
+{
+	if (Character && Character->GetAiming())
+	{
+		//UE_LOG(LogTemp, Warning, TEXT("Aimig"));
+		CrosshairSpreadAiming = 2.f;
+	}
+	else
+	{
+		CrosshairSpreadAiming = 0.f;
+	}
+}
+
+void AManHUD::CalculateGroundLocomotionSpread()
+{
+	CrosshairSpreadGroundLocomotion = 0.f;
+	FVector2D CharacterVelocity{ 0.f, Character->GetWalkingSpeed() };		// the max speed we have right now, includes running and walking both. (checked with the variable)
+	
+	float MaxClampingValue = Character->GetIsRunning() ? 5.f : 2.5f;
+	
+	FVector2D ClampingRange{ 0.f, MaxClampingValue };
+	FVector Velocity = Character->GetVelocity();
+	Velocity.Z = 0.f;
+	CrosshairSpreadGroundLocomotion = FMath::GetMappedRangeValueClamped(CharacterVelocity, ClampingRange, Velocity.Size());
+}
+
+void AManHUD::CalculateJumpSpread()
+{
+	if (Character && Character->GetIsFalling())
+	{
+		CrosshairSpreadJump = 5.f;
+	}
+	else
+	{
+		CrosshairSpreadJump = 0.f;
+	}
+
+}
+
+void AManHUD::CalculateCrouchSpread()
+{
+	if (Character && Character->GetIsCrouched())
+	{
+		CrosshairSpreadCrouch = 1.5f;
+	}
+	else
+	{
+		CrosshairSpreadCrouch = 0.f;
+	}
+}
+
+void AManHUD::CalculateFiringSpread()
+{
+	if (Character && Character->GetIsFiring())
+	{
+		CrosshairSpreadFire = 4.f;
+	}
+	else
+	{
+		CrosshairSpreadFire = 0.f;
+	}
+}
+
 void AManHUD::DrawCrosshair(UTexture2D* Texture, FLinearColor Color, float ViewportMiddleWidth, float ViewportMiddleHeight, float SpreadWidth, float SpreadHeight)
 {
 	const float TextureWidth = Texture->GetSizeX();
@@ -64,11 +134,4 @@ void AManHUD::DrawCrosshair(UTexture2D* Texture, FLinearColor Color, float Viewp
 	const FVector2D PointToDraw(ViewportMiddleWidth - (TextureWidth / 2.f) + SpreadWidth, ViewportMiddleHeight - (TextureHeight / 2.f) + SpreadHeight);
 
 	DrawTexture(Texture, PointToDraw.X, PointToDraw.Y, TextureWidth, TextureHeight, 0.f, 0.f, 1.f, 1.f, Color);
-}
-
-void AManHUD::BeginPlay()
-{
-	Super::BeginPlay();
-
-	Character = Cast<AManCharacter>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
 }

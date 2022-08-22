@@ -84,6 +84,18 @@ private:
 	UPROPERTY(EditAnywhere, Category = Weapon)
 		float ZoomedPOV = 60.f;			// the amount we want to zoom in. 
 
+	/** For Automatic fire */
+	UPROPERTY(EditAnywhere, Category = Weapon)
+	float FireDelay = 1.f;
+	
+	bool bFireButtonHeld = false;
+	bool CanFire = true;			// when this is true only then the bullet can be fired. (to avoid the rapid spam of the fire key)
+	FTimerHandle AutomaticFireTimerHandle;		// need it for the timer.
+
+	void StartFireTimer();
+	void EndFireTimer();
+
+
 public:
 	AManCharacter();
 	virtual void Tick(float DeltaTime) override;
@@ -103,14 +115,21 @@ protected:
 	void LookUp(float AxisValue);
 	void LookRight(float AxisValue);
 	void RunningButtonPressed();
-	void FireButtonPressed();
 	void AimButtonPressed();
 	void AimButtonReleased();
+	
+	// for automatic fire
+	void Fire();
+	void FireButtonPressed();
+	void FireButtonReleased();
 
 public:	
 	FORCEINLINE bool GetIsRunning() const { return bIsRunning; }
 	void SetIsRunning(bool bRunning);
 	FORCEINLINE bool GetAiming() const { return bAiming; }
 	float GetWalkingSpeed();
+	bool GetIsFalling();
+	bool GetIsCrouched();
+	FORCEINLINE bool GetIsFiring() const { return bFireButtonHeld; }
 
 };

@@ -37,8 +37,21 @@ private:
 
 	float CrosshairsSpread;
 
+	/** For crosshair spread */
+	float CrosshairSpreadGroundLocomotion;
+	float CrosshairSpreadAiming;
+	float CrosshairSpreadJump;
+	float CrosshairSpreadCrouch;
+	float CrosshairSpreadFire;
+
 public:
 	virtual void DrawHUD() override;
+
+	void CalculateGroundLocomotionSpread();
+	void CalculateAimSpread();
+	void CalculateJumpSpread();
+	void CalculateCrouchSpread();
+	void CalculateFiringSpread();
 
 protected:
 	void DrawCrosshair(UTexture2D* Texture, FLinearColor Color, float ViewportMiddleWidth, float ViewportMiddleHeight, float SpreadWidth, float SpreadHeight);

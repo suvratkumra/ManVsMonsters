@@ -10,6 +10,7 @@
 #include "Camera/CameraComponent.h"
 #include "particles/ParticleSystemComponent.h"
 
+
 AManCharacter::AManCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -77,6 +78,7 @@ void AManCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAction(FName("Jump"), EInputEvent::IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction(FName("Run"), EInputEvent::IE_Pressed, this, &AManCharacter::RunningButtonPressed);
 	PlayerInputComponent->BindAction(FName("Fire"), EInputEvent::IE_Pressed, this, &AManCharacter::FireButtonPressed);
+	PlayerInputComponent->BindAction(FName("Fire"), EInputEvent::IE_Released, this, &AManCharacter::FireButtonReleased);
 	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Pressed, this, &AManCharacter::AimButtonPressed);
 	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Released, this, &AManCharacter::AimButtonReleased);
 }
@@ -129,7 +131,7 @@ void AManCharacter::RunningButtonPressed()
 	}
 }
 
-void AManCharacter::FireButtonPressed()
+void AManCharacter::Fire()
 {
 	if (FireSoundCue)
 	{
@@ -155,6 +157,38 @@ void AManCharacter::FireButtonPressed()
 
 	TraceForBullet();
 	
+}
+
+void AManCharacter::FireButtonPressed()
+{
+	bFireButtonHeld = true;
+	if (CanFire)
+	{
+		StartFireTimer();
+	}
+}
+
+void AManCharacter::FireButtonReleased()
+{
+	bFireButtonHeld = false;
+}
+
+
+void AManCharacter::StartFireTimer()
+{
+	if (bFireButtonHeld && CanFire)
+	{
+		Fire();
+		CanFire = false;
+		GetWorldTimerManager().SetTimer(AutomaticFireTimerHandle, this, &AManCharacter::EndFireTimer, FireDelay);
+	}
+	
+}
+
+void AManCharacter::EndFireTimer()
+{
+	CanFire = true;
+	StartFireTimer();
 }
 
 void AManCharacter::AimButtonPressed()
@@ -261,6 +295,16 @@ void AManCharacter::SetIsRunning(bool bRunning)
 float AManCharacter::GetWalkingSpeed()
 {
 	return GetCharacterMovement()->MaxWalkSpeed;
+}
+
+bool AManCharacter::GetIsFalling()
+{
+	return GetCharacterMovement()->IsFalling();
+}
+
+bool AManCharacter::GetIsCrouched()
+{
+	return GetCharacterMovement()->IsCrouching();
 }
 
 
