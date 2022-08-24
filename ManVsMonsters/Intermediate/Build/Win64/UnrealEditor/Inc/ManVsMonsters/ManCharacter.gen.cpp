@@ -96,6 +96,14 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_CrosshairsRight;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HorizontalAimSenstivity_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_HorizontalAimSenstivity;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_VerticalAimSenstivity_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_VerticalAimSenstivity;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_ZoomedPOV_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_ZoomedPOV;
@@ -138,18 +146,26 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_Camera = { "Camera", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, Camera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_Camera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_Camera_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalSenstivity_MetaData[] = {
-		{ "Category", "Camera" },
+		{ "Category", "Movement" },
+		{ "ClampMax", "100" },
+		{ "ClampMin", "1" },
 		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+		{ "UIMax", "100" },
+		{ "UIMin", "1" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalSenstivity = { "HorizontalSenstivity", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, HorizontalSenstivity), METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalSenstivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalSenstivity_MetaData)) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalSenstivity = { "HorizontalSenstivity", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, HorizontalSenstivity), METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalSenstivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalSenstivity_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity_MetaData[] = {
-		{ "Category", "Camera" },
+		{ "Category", "Movement" },
+		{ "ClampMax", "100" },
+		{ "ClampMin", "1" },
 		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+		{ "UIMax", "100" },
+		{ "UIMin", "1" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity = { "VerticalSenstivity", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, VerticalSenstivity), METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity_MetaData)) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity = { "VerticalSenstivity", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, VerticalSenstivity), METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalSenstivity_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_FireSoundCue_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -234,6 +250,28 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsRight = { "CrosshairsRight", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, CrosshairsRight), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsRight_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsRight_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalAimSenstivity_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ClampMax", "100" },
+		{ "ClampMin", "1" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+		{ "UIMax", "100" },
+		{ "UIMin", "1" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalAimSenstivity = { "HorizontalAimSenstivity", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, HorizontalAimSenstivity), METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalAimSenstivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalAimSenstivity_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalAimSenstivity_MetaData[] = {
+		{ "Category", "Movement" },
+		{ "ClampMax", "100" },
+		{ "ClampMin", "1" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+		{ "UIMax", "100" },
+		{ "UIMin", "1" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalAimSenstivity = { "VerticalAimSenstivity", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, VerticalAimSenstivity), METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalAimSenstivity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalAimSenstivity_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_ZoomedPOV_MetaData[] = {
 		{ "Category", "Weapon" },
 		{ "Comment", "// will be used in interpolation and setting\n" },
@@ -267,6 +305,8 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsCenter,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsLeft,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CrosshairsRight,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_HorizontalAimSenstivity,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalAimSenstivity,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_ZoomedPOV,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_FireDelay,
 	};
@@ -306,9 +346,9 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AManCharacter, AManCharacter::StaticClass, TEXT("AManCharacter"), &Z_Registration_Info_UClass_AManCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManCharacter), 184919493U) },
+		{ Z_Construct_UClass_AManCharacter, AManCharacter::StaticClass, TEXT("AManCharacter"), &Z_Registration_Info_UClass_AManCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManCharacter), 3191675095U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_3522374806(TEXT("/Script/ManVsMonsters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_2931499119(TEXT("/Script/ManVsMonsters"),
 		Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

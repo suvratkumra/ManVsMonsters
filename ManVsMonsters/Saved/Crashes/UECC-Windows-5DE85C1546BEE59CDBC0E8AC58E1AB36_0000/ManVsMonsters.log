@@ -1,0 +1,1838 @@
+﻿Log file open, 08/23/22 19:27:22
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogProfilingDebugging: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogWindows: Started CrashReportClient (pid=44304)
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: ManVsMonsters
+LogCore: UnrealTraceServer: Trace store launch successful
+LogCsvProfiler: Display: Metadata set : platform="Windows"
+LogCsvProfiler: Display: Metadata set : config="Development"
+LogCsvProfiler: Display: Metadata set : buildversion="++UE5+Release-5.0-CL-20979098"
+LogCsvProfiler: Display: Metadata set : engineversion="5.0.3-20979098+++UE5+Release-5.0"
+LogCsvProfiler: Display: Metadata set : commandline="" "D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\ManVsMonsters.uproject"""
+LogCsvProfiler: Display: Metadata set : os="Windows 11 (21H2) [10.0.22000.856] "
+LogCsvProfiler: Display: Metadata set : cpu="AuthenticAMD|AMD Ryzen 9 5950X 16-Core Processor"
+LogCsvProfiler: Display: Metadata set : pgoenabled="0"
+LogCsvProfiler: Display: Metadata set : loginid="527e50d0488198e897a1e78a61e86b7a"
+LogCsvProfiler: Display: Metadata set : llm="0"
+LogPlatformFile: Not using cached read wrapper
+LogStats: Stats thread started at 0.263207
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -7:00, Platform Override: ''
+LogInit: Session CrashGUID >====================================================
+         Session CrashGUID >   UECC-Windows-5DE85C1546BEE59CDBC0E8AC58E1AB36
+         Session CrashGUID >====================================================
+LogConfig: Display: Loading HoloLens ini files took 0.02 seconds
+LogConfig: Display: Loading IOS ini files took 0.03 seconds
+LogConfig: Display: Loading Android ini files took 0.03 seconds
+LogConfig: Display: Loading VulkanPC ini files took 0.03 seconds
+LogConfig: Display: Loading Mac ini files took 0.03 seconds
+LogConfig: Display: Loading Unix ini files took 0.03 seconds
+LogConfig: Display: Loading Windows ini files took 0.03 seconds
+LogConfig: Display: Loading TVOS ini files took 0.03 seconds
+LogConfig: Display: Loading Linux ini files took 0.03 seconds
+LogConfig: Display: Loading LinuxArm64 ini files took 0.04 seconds
+LogPluginManager: Mounting Engine plugin Bridge
+LogPluginManager: Mounting Engine plugin MeshPainting
+LogPluginManager: Mounting Engine plugin FastBuildController
+LogPluginManager: Mounting Engine plugin XGEController
+LogPluginManager: Mounting Engine plugin TextureFormatOodle
+LogPluginManager: Mounting Engine plugin PerforceSourceControl
+LogPluginManager: Mounting Engine plugin TraceDataFilters
+LogPluginManager: Mounting Engine plugin GitSourceControl
+LogPluginManager: Mounting Engine plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting Engine plugin RiderSourceCodeAccess
+LogPluginManager: Mounting Engine plugin AlembicImporter
+LogPluginManager: Mounting Engine plugin CameraShakePreviewer
+LogPluginManager: Mounting Engine plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting Engine plugin CLionSourceCodeAccess
+LogPluginManager: Mounting Engine plugin PixWinPlugin
+LogPluginManager: Mounting Engine plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting Engine plugin SubversionSourceControl
+LogPluginManager: Mounting Engine plugin BackChannel
+LogPluginManager: Mounting Engine plugin AutomationUtils
+LogPluginManager: Mounting Engine plugin AnimationSharing
+LogPluginManager: Mounting Engine plugin GameplayCameras
+LogPluginManager: Mounting Engine plugin ChaosCloth
+LogPluginManager: Mounting Engine plugin ChaosClothEditor
+LogPluginManager: Mounting Engine plugin OodleNetwork
+LogPluginManager: Mounting Engine plugin Niagara
+LogPluginManager: Mounting Engine plugin PropertyAccessNode
+LogPluginManager: Mounting Engine plugin PluginUtils
+LogPluginManager: Mounting Engine plugin CharacterAI
+LogPluginManager: Mounting Engine plugin UObjectPlugin
+LogPluginManager: Mounting Engine plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting Engine plugin PlasticSourceControl
+LogPluginManager: Mounting Engine plugin FullBodyIK
+LogPluginManager: Mounting Engine plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting Engine plugin ChaosEditor
+LogPluginManager: Mounting Engine plugin NullSourceCodeAccess
+LogPluginManager: Mounting Engine plugin AnimationModifierLibrary
+LogPluginManager: Mounting Engine plugin ChaosSolverPlugin
+LogPluginManager: Mounting Engine plugin BlendSpaceMotionAnalysis
+LogPluginManager: Mounting Engine plugin ControlRig
+LogPluginManager: Mounting Engine plugin ControlRigSpline
+LogPluginManager: Mounting Engine plugin IKRig
+LogPluginManager: Mounting Engine plugin ChaosNiagara
+LogPluginManager: Mounting Engine plugin GeometryCollectionPlugin
+LogPluginManager: Mounting Engine plugin GeometryFlow
+LogPluginManager: Mounting Engine plugin MeshLODToolset
+LogPluginManager: Mounting Engine plugin MeshModelingToolsetExp
+LogPluginManager: Mounting Engine plugin OpenImageDenoise
+LogPluginManager: Mounting Engine plugin ProxyLODPlugin
+LogPluginManager: Mounting Engine plugin PlatformCrypto
+LogPluginManager: Mounting Engine plugin PlanarCut
+LogPluginManager: Mounting Engine plugin PythonScriptPlugin
+LogPluginManager: Mounting Engine plugin AndroidMedia
+LogPluginManager: Mounting Engine plugin SkeletalReduction
+LogPluginManager: Mounting Engine plugin AvfMedia
+LogPluginManager: Mounting Engine plugin ImgMedia
+LogPluginManager: Mounting Engine plugin MediaCompositing
+LogPluginManager: Mounting Engine plugin MediaPlayerEditor
+LogPluginManager: Mounting Engine plugin WmfMedia
+LogPluginManager: Mounting Engine plugin AISupport
+LogPluginManager: Mounting Engine plugin EnvironmentQueryEditor
+LogPluginManager: Mounting Engine plugin TcpMessaging
+LogPluginManager: Mounting Engine plugin UdpMessaging
+LogPluginManager: Mounting Engine plugin ActorSequence
+LogPluginManager: Mounting Engine plugin LevelSequenceEditor
+LogPluginManager: Mounting Engine plugin MatineeToLevelSequence
+LogPluginManager: Mounting Engine plugin AssetManagerEditor
+LogPluginManager: Mounting Engine plugin Paper2D
+LogPluginManager: Mounting Engine plugin CryptoKeys
+LogPluginManager: Mounting Engine plugin CurveEditorTools
+LogPluginManager: Mounting Engine plugin SequencerScripting
+LogPluginManager: Mounting Engine plugin EditorDebugTools
+LogPluginManager: Mounting Engine plugin DataValidation
+LogPluginManager: Mounting Engine plugin TemplateSequence
+LogPluginManager: Mounting Engine plugin EditorScriptingUtilities
+LogPluginManager: Mounting Engine plugin GameplayTagsEditor
+LogPluginManager: Mounting Engine plugin MacGraphicsSwitching
+LogPluginManager: Mounting Engine plugin GeometryMode
+LogPluginManager: Mounting Engine plugin FacialAnimation
+LogPluginManager: Mounting Engine plugin ModelingToolsEditorMode
+LogPluginManager: Mounting Engine plugin MaterialAnalyzer
+LogPluginManager: Mounting Engine plugin WebMMedia
+LogPluginManager: Mounting Engine plugin PluginBrowser
+LogPluginManager: Mounting Engine plugin SequencerAnimTools
+LogPluginManager: Mounting Engine plugin WorldPartitionHLODUtilities
+LogPluginManager: Mounting Engine plugin SpeedTreeImporter
+LogPluginManager: Mounting Engine plugin StylusInput
+LogPluginManager: Mounting Engine plugin OnlineSubsystem
+LogPluginManager: Mounting Engine plugin OnlineBase
+LogPluginManager: Mounting Engine plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting Engine plugin OnlineSubsystemNull
+LogPluginManager: Mounting Engine plugin OnlineSubsystemUtils
+LogPluginManager: Mounting Engine plugin LauncherChunkInstaller
+LogPluginManager: Mounting Engine plugin DatasmithContent
+LogPluginManager: Mounting Engine plugin VariantManagerContent
+LogPluginManager: Mounting Engine plugin ActorLayerUtilities
+LogPluginManager: Mounting Engine plugin AndroidFileServer
+LogPluginManager: Mounting Engine plugin AndroidMoviePlayer
+LogPluginManager: Mounting Engine plugin AppleImageUtils
+LogPluginManager: Mounting Engine plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin ArchVisCharacter
+LogPluginManager: Mounting Engine plugin AssetTags
+LogPluginManager: Mounting Engine plugin AudioCapture
+LogPluginManager: Mounting Engine plugin AndroidPermission
+LogPluginManager: Mounting Engine plugin AppleMoviePlayer
+LogPluginManager: Mounting Engine plugin AudioSynesthesia
+LogPluginManager: Mounting Engine plugin CableComponent
+LogPluginManager: Mounting Engine plugin GeometryCache
+LogPluginManager: Mounting Engine plugin CustomMeshComponent
+LogPluginManager: Mounting Engine plugin GeometryProcessing
+LogPluginManager: Mounting Engine plugin HairStrands
+LogPluginManager: Mounting Engine plugin GoogleCloudMessaging
+LogPluginManager: Mounting Engine plugin GooglePAD
+LogPluginManager: Mounting Engine plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin ChunkDownloader
+LogPluginManager: Mounting Engine plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin LocationServicesBPLibrary
+LogPluginManager: Mounting Engine plugin MeshModelingToolset
+LogPluginManager: Mounting Engine plugin MobilePatchingUtils
+LogPluginManager: Mounting Engine plugin PropertyAccessEditor
+LogPluginManager: Mounting Engine plugin RuntimePhysXCooking
+LogPluginManager: Mounting Engine plugin ResonanceAudio
+LogPluginManager: Mounting Engine plugin SignificanceManager
+LogPluginManager: Mounting Engine plugin SoundFields
+LogPluginManager: Mounting Engine plugin Synthesis
+LogPluginManager: Mounting Engine plugin WebMMoviePlayer
+LogPluginManager: Mounting Engine plugin WindowsMoviePlayer
+LogPluginManager: Mounting Engine plugin WindowsDeviceProfileSelector
+LogPluginManager: Mounting Engine plugin ProceduralMeshComponent
+LogPluginManager: Mounting Engine plugin InterchangeEditor
+LogPluginManager: Mounting Engine plugin Interchange
+LogPluginManager: Mounting Engine plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting Engine plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting Engine plugin ContentBrowserFileDataSource
+LogPluginManager: Mounting Engine plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting Engine plugin OnlineServices
+LogPluginManager: Mounting Engine plugin OnlineSubsystemIOS
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Bridge/Content/' mounted to '/Bridge/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Developer/AnimationSharing/Content/' mounted to '/AnimationSharing/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/ChaosClothEditor/Content/' mounted to '/ChaosClothEditor/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/FX/Niagara/Content/' mounted to '/Niagara/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/FullBodyIK/Content/' mounted to '/FullBodyIK/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/ChaosSolverPlugin/Content/' mounted to '/ChaosSolverPlugin/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Animation/ControlRig/Content/' mounted to '/ControlRig/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Animation/ControlRigSpline/Content/' mounted to '/ControlRigSpline/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Animation/IKRig/Content/' mounted to '/IKRig/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/ChaosNiagara/Content/' mounted to '/ChaosNiagara/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/GeometryCollectionPlugin/Content/' mounted to '/GeometryCollectionPlugin/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/GeometryFlow/Content/' mounted to '/GeometryFlow/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/MeshLODToolset/Content/' mounted to '/MeshLODToolset/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/MeshModelingToolsetExp/Content/' mounted to '/MeshModelingToolsetExp/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Experimental/PythonScriptPlugin/Content/' mounted to '/PythonScriptPlugin/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Media/MediaCompositing/Content/' mounted to '/MediaCompositing/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/2D/Paper2D/Content/' mounted to '/Paper2D/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/MovieScene/SequencerScripting/Content/' mounted to '/SequencerScripting/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/GeometryMode/Content/' mounted to '/GeometryMode/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/ModelingToolsEditorMode/Content/' mounted to '/ModelingToolsEditorMode/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Editor/SpeedTreeImporter/Content/' mounted to '/SpeedTreeImporter/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Enterprise/DatasmithContent/Content/' mounted to '/DatasmithContent/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/AudioSynesthesia/Content/' mounted to '/AudioSynesthesia/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/GeometryProcessing/Content/' mounted to '/GeometryProcessing/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/HairStrands/Content/' mounted to '/HairStrands/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/MeshModelingToolset/Content/' mounted to '/MeshModelingToolset/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/ResonanceAudio/Content/' mounted to '/ResonanceAudio/'
+LogPackageName: Display: FPackageName: Mount point added: '../../Plugins/Runtime/Synthesis/Content/' mounted to '/Synthesis/'
+SourceControl: Source control is disabled
+SourceControl: Source control is disabled
+PixWinPlugin: PIX capture plugin failed to initialize! Check that the process is launched from PIX.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: Created online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE5+Release-5.0-CL-20979098
+LogInit: Engine Version: 5.0.3-20979098+++UE5+Release-5.0
+LogInit: Compatible Engine Version: 5.0.0-19505902+++UE5+Release-5.0
+LogInit: Net CL: 19505902
+LogInit: OS: Windows 11 (21H2) [10.0.22000.856] (), CPU: AMD Ryzen 9 5950X 16-Core Processor            , GPU: NVIDIA GeForce RTX 3060
+LogInit: Compiled (64-bit): Jul  7 2022 02:16:06
+LogInit: Compiled with Visual C++: 19.29.30138.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE5+Release-5.0
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_5.0/Engine/Binaries/Win64/
+LogInit: Allocator: Mimalloc
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 34
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 20
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 45
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 59
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 3
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   UE5-Main (697DD581-E64F-41AB-AA4A-51ECBEB7B628): 59
+LogDevObjectVersion:   UE5-Release (D89B5E42-24BD-4D46-8412-ACA8DF641779): 36
+LogDevObjectVersion:   UE5-PrivateFrosty (59DA5D52-1232-4948-B878-597870B8E98B): 8
+LogDevObjectVersion:   UE5-Dev-Cooker (26075A32-730F-4708-88E9-8C32F1599D05): 0
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogDevObjectVersion:   UE5-Dev-LWCRendering (30D58BE3-95EA-4282-A6E3-B159D8EBB06A): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: CVar [[con.DebugLateDefault:1]] deferred - dummy variable created
+LogConfig: CVar [[con.DebugLateCheat:1]] deferred - dummy variable created
+LogConfig: CVar [[r.DetectAndWarnOfBadDrivers:0]] deferred - dummy variable created
+LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable created
+LogConfig: CVar [[framepro.ScopeMinTimeMicroseconds:10]] deferred - dummy variable created
+LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [Engine]
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VisualizeCalibrationColorMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationColor.PPM_DefaultCalibrationColor]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VisualizeCalibrationGrayscaleMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale.PPM_DefaultCalibrationGrayscale]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[MaxSkinBones:(Default=65536,PerPlatform=(("Mobile", 256)))]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [Engine]
+[2022.08.24-01.27.22:913][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [Engine]
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[s.MaxPackageSummarySize:16384]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__SoundBase]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__MaterialInterface]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__DeviceProfileManager]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [Engine]
+[2022.08.24-01.27.22:913][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [Engine]
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Average",ToolTip="Simulates average internet conditions")]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Bad",ToolTip="Simulates laggy internet conditions")]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [Engine]
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[DefaultPVRTCQuality:1]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[DefaultASTCQualityBySpeed:1]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[DefaultASTCQualityBySize:3]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:WidgetBlueprint]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:GroupActor]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:MetaData]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ObjectRedirector]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:NavMeshRenderingComponent]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ReflectionCaptureComponent]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:TextRenderComponent]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:Font]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:InterpCurveEdSetup]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:MaterialExpression]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:MatineeActorCameraAnim]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:NiagaraEmitter]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:NiagaraScript]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ParticleEmitter]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ParticleLODLevel]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ParticleModule]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:SubUVAnimation]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:SoundNode]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:GameplayEffectUIData]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:WidgetBlueprint]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:GroupActor]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:MetaData]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:ObjectRedirector]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:InterpCurveEdSetup]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:MatineeActorCameraAnim]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.AllowStaticLighting]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.GBuffer]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.VelocityOutputPass]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.SelectiveBasePassOutputs]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.DBuffer]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.Symbols]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.GenerateSymbols]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.WriteSymbols]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.AllowUniqueSymbols]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.ExtraData]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.Optimize]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.CompileShadersForDevelopment]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.MobileHDR]] deferred - dummy variable created
+[2022.08.24-01.27.22:913][  0]LogConfig: CVar [[VersionedIntRValues:r.UsePreExposure]] deferred - dummy variable created
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [GlobalIlluminationQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [ReflectionQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [Scalability]
+[2022.08.24-01.27.22:915][  0]LogConfig: CVar [[r.HairStrands.Interpolation.UseSingleGuide:0]] deferred - dummy variable created
+[2022.08.24-01.27.22:930][  0]LogD3D12RHI: Aftermath initialized
+[2022.08.24-01.27.22:930][  0]LogD3D12RHI: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+[2022.08.24-01.27.23:069][  0]LogD3D12RHI: Found D3D12 adapter 0: NVIDIA GeForce RTX 3060 (Max supported Feature Level 12_1, shader model 6.6)
+[2022.08.24-01.27.23:069][  0]LogD3D12RHI: Adapter has 12142MB of dedicated video memory, 0MB of dedicated system memory, and 32729MB of shared system memory, 1 output[s]
+[2022.08.24-01.27.23:078][  0]LogD3D12RHI: Found D3D12 adapter 1: Microsoft Basic Render Driver (Max supported Feature Level 12_1, shader model 6.2)
+[2022.08.24-01.27.23:078][  0]LogD3D12RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 32729MB of shared system memory, 0 output[s]
+[2022.08.24-01.27.23:078][  0]LogD3D12RHI: Chosen D3D12 Adapter Id = 0
+[2022.08.24-01.27.23:078][  0]LogInit: Selected Device Profile: [WindowsEditor]
+[2022.08.24-01.27.23:078][  0]LogDeviceProfileManager: Applying CVar settings loaded from the selected device profile: [WindowsEditor]
+[2022.08.24-01.27.23:078][  0]LogHAL: Display: Platform has ~ 64 GB [68639096832 / 68719476736 / 64], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.08.24-01.27.23:078][  0]LogDeviceProfileManager: Going up to parent DeviceProfile [Windows]
+[2022.08.24-01.27.23:078][  0]LogDeviceProfileManager: Going up to parent DeviceProfile []
+[2022.08.24-01.27.23:078][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.08.24-01.27.23:078][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2022.08.24-01.27.23:078][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Config/WindowsEditor/Editor.ini]
+[2022.08.24-01.27.23:078][  0]LogInit: Computer: SUVRAT
+[2022.08.24-01.27.23:078][  0]LogInit: User: suvra
+[2022.08.24-01.27.23:078][  0]LogInit: CPU Page size=4096, Cores=16
+[2022.08.24-01.27.23:078][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.08.24-01.27.23:078][  0]LogMemory: Memory total: Physical=63.9GB (64GB approx)
+[2022.08.24-01.27.23:078][  0]LogMemory: Platform Memory Stats for WindowsEditor
+[2022.08.24-01.27.23:078][  0]LogMemory: Process Physical Memory: 310.91 MB used, 319.84 MB peak
+[2022.08.24-01.27.23:078][  0]LogMemory: Process Virtual Memory: 298.81 MB used, 298.81 MB peak
+[2022.08.24-01.27.23:078][  0]LogMemory: Physical Memory: 19476.71 MB used,  45982.63 MB free, 65459.34 MB total
+[2022.08.24-01.27.23:078][  0]LogMemory: Virtual Memory: 25079.02 MB used,  50108.33 MB free, 75187.34 MB total
+[2022.08.24-01.27.23:078][  0]LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+[2022.08.24-01.27.23:267][  0]LogWindows: WindowsPlatformFeatures enabled
+[2022.08.24-01.27.23:284][  0]LogInit: Physics initialised using underlying interface: Chaos
+[2022.08.24-01.27.23:300][  0]LogInit: Using OS detected language (en-US).
+[2022.08.24-01.27.23:300][  0]LogInit: Using OS detected locale (en-CA).
+[2022.08.24-01.27.23:306][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so 'en' will be used for the language.
+[2022.08.24-01.27.23:409][  0]LogInit: Setting process to per monitor DPI aware
+[2022.08.24-01.27.23:420][  0]LogWindowsTextInputMethodSystem: Available input methods:
+[2022.08.24-01.27.23:420][  0]LogWindowsTextInputMethodSystem:   - English (Canada) - (Keyboard).
+[2022.08.24-01.27.23:420][  0]LogWindowsTextInputMethodSystem:   - English (United States) - (Keyboard).
+[2022.08.24-01.27.23:420][  0]LogWindowsTextInputMethodSystem:   - English (Canada) - Touch Input Correction (TSF IME).
+[2022.08.24-01.27.23:420][  0]LogWindowsTextInputMethodSystem: Activated input method: English (Canada) - (Keyboard).
+[2022.08.24-01.27.23:433][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2022.08.24-01.27.23:433][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2022.08.24-01.27.23:560][  0]LogD3D12RHI: InitD3DDevice: -D3DDebug = off -D3D12GPUValidation = off
+[2022.08.24-01.27.23:563][  0]LogD3D12RHI: [Aftermath] Aftermath crash dumping enabled
+[2022.08.24-01.27.23:563][  0]LogD3D12RHI: Emitting draw events for PIX profiling.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: [Aftermath] Aftermath enabled and primed
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: [Aftermath] Aftermath resource tracking enabled
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: ID3D12Device1 is supported.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: ID3D12Device2 is supported.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: ID3D12Device3 is supported.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: ID3D12Device4 is supported.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: ID3D12Device5 is supported.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: ID3D12Device6 is supported.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: ID3D12Device7 is supported.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: D3D12 ray tracing tier 1.0 is supported.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: D3D12 ray tracing tier 1.1 is supported.
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: Mesh shader tier 1.0 is supported
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: AtomicInt64OnTypedResource is supported
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: AtomicInt64OnGroupShared is supported
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: AtomicInt64OnDescriptorHeapResource is supported
+[2022.08.24-01.27.23:636][  0]LogD3D12RHI: Shader Model 6.6 atomic64 is supported
+[2022.08.24-01.27.23:778][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for 3D Queue 0
+[2022.08.24-01.27.23:784][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for Copy Queue 0
+[2022.08.24-01.27.23:798][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for Compute Queue 0
+[2022.08.24-01.27.23:875][  0]LogD3D12RHI: Display: Not using pipeline state disk cache per r.D3D12.PSO.DiskCache=0
+[2022.08.24-01.27.23:875][  0]LogD3D12RHI: Display: Not using driver-optimized pipeline state disk cache per r.D3D12.PSO.DriverOptimizedDiskCache=0
+[2022.08.24-01.27.23:902][  0]LogD3D12RHI:     GPU DeviceId: 0x2504 (for the marketing name, search the web for "GPU Device Id")
+[2022.08.24-01.27.23:902][  0]LogWindows: Attached monitors:
+[2022.08.24-01.27.23:902][  0]LogWindows:     resolution: 1920x1080, work area: (0, 0) -> (1920, 1032), device: '\\.\DISPLAY1' [PRIMARY]
+[2022.08.24-01.27.23:902][  0]LogWindows: Found 1 attached monitors.
+[2022.08.24-01.27.23:902][  0]LogWindows: EnumDisplayDevices:
+[2022.08.24-01.27.23:902][  0]LogWindows:    0. 'NVIDIA GeForce RTX 3060' (P:1 D:1), name: '\\.\DISPLAY1'
+[2022.08.24-01.27.23:902][  0]LogWindows:    1. 'NVIDIA GeForce RTX 3060' (P:0 D:0), name: '\\.\DISPLAY2'
+[2022.08.24-01.27.23:902][  0]LogWindows:    2. 'NVIDIA GeForce RTX 3060' (P:0 D:0), name: '\\.\DISPLAY3'
+[2022.08.24-01.27.23:902][  0]LogWindows:    3. 'NVIDIA GeForce RTX 3060' (P:0 D:0), name: '\\.\DISPLAY4'
+[2022.08.24-01.27.23:903][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2022.08.24-01.27.23:903][  0]LogD3D12RHI:     Adapter Name: NVIDIA GeForce RTX 3060
+[2022.08.24-01.27.23:903][  0]LogD3D12RHI:   Driver Version: 516.59 (internal:31.0.15.1659, unified:516.59)
+[2022.08.24-01.27.23:903][  0]LogD3D12RHI:      Driver Date: 6-23-2022
+[2022.08.24-01.27.23:903][  0]LogRHI: Texture pool is 7165 MB (70% of 10236 MB)
+[2022.08.24-01.27.23:903][  0]LogD3D12RHI: Async texture creation enabled
+[2022.08.24-01.27.23:903][  0]LogD3D12RHI: RHI has support for 64 bit atomics
+[2022.08.24-01.27.23:910][  0]LogRHI: GeForceNow SDK initialized: 0
+[2022.08.24-01.27.23:918][  0]LogTurnkeySupport: Running Turnkey SDK detection: ' -ScriptsForProject="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/ManVsMonsters.uproject" Turnkey -utf8output -WaitForUATMutex -command=VerifySdk -ReportFilename="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Intermediate/TurnkeyReport_0.log" -log="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Intermediate/TurnkeyLog_0.log" -project="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/ManVsMonsters.uproject"  -platform=all'
+[2022.08.24-01.27.23:918][  0]LogMonitoredProcess: Running Serialized UAT: [ cmd.exe /c ""C:/Program Files/Epic Games/UE_5.0/Engine/Build/BatchFiles/RunUAT.bat"  -ScriptsForProject="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/ManVsMonsters.uproject" Turnkey -utf8output -WaitForUATMutex -command=VerifySdk -ReportFilename="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Intermediate/TurnkeyReport_0.log" -log="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Intermediate/TurnkeyLog_0.log" -project="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/ManVsMonsters.uproject"  -platform=all" ]
+[2022.08.24-01.27.23:943][  0]LogTextureFormatETC2: Display: ETC2 Texture loading DLL: TextureConverter.dll
+[2022.08.24-01.27.23:954][  0]LogTextureFormatOodle: Display: Oodle Texture TFO init; latest sdk version = 2.9.5
+[2022.08.24-01.27.23:954][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.5.dll
+[2022.08.24-01.27.23:961][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2022.08.24-01.27.23:961][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2022.08.24-01.27.23:962][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2022.08.24-01.27.23:962][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2022.08.24-01.27.23:962][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2022.08.24-01.27.23:962][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2022.08.24-01.27.23:962][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2022.08.24-01.27.23:962][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2022.08.24-01.27.23:962][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2022.08.24-01.27.23:962][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2022.08.24-01.27.23:981][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'HoloLens'
+[2022.08.24-01.27.23:981][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'HoloLensClient'
+[2022.08.24-01.27.23:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2022.08.24-01.27.23:986][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2022.08.24-01.27.23:989][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2022.08.24-01.27.23:989][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxEditor'
+[2022.08.24-01.27.23:989][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2022.08.24-01.27.23:989][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2022.08.24-01.27.23:993][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxArm64'
+[2022.08.24-01.27.23:993][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxArm64Server'
+[2022.08.24-01.27.23:993][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxArm64Client'
+[2022.08.24-01.27.23:996][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2022.08.24-01.27.23:996][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2022.08.24-01.27.24:003][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2022.08.24-01.27.24:003][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsEditor'
+[2022.08.24-01.27.24:003][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2022.08.24-01.27.24:003][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2022.08.24-01.27.24:003][  0]LogTargetPlatformManager: Display: Building Assets For WindowsEditor
+[2022.08.24-01.27.24:014][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.08.24-01.27.24:018][  0]LogTargetPlatformManager: Unable to find audio format BINKA from hinted modules, loading all potential format modules to find it
+[2022.08.24-01.27.24:018][  0]LogTargetPlatformManager: Loaded format module AudioFormatADPCM
+[2022.08.24-01.27.24:018][  0]LogTargetPlatformManager:   ADPCM
+[2022.08.24-01.27.24:018][  0]LogTargetPlatformManager:   PCM
+[2022.08.24-01.27.24:021][  0]LogTargetPlatformManager: Loaded format module AudioFormatBink
+[2022.08.24-01.27.24:021][  0]LogTargetPlatformManager:   BINKA
+[2022.08.24-01.27.24:021][  0]LogTargetPlatformManager: Loaded format module AudioFormatOgg
+[2022.08.24-01.27.24:021][  0]LogTargetPlatformManager:   OGG
+[2022.08.24-01.27.24:021][  0]LogTargetPlatformManager: Loaded format module AudioFormatOpus
+[2022.08.24-01.27.24:021][  0]LogTargetPlatformManager:   OPUS
+[2022.08.24-01.27.24:110][  0]LogTargetPlatformManager: Unable to find shader format SF_METAL from hinted modules, loading all potential format modules to find it
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager: Loaded format module MetalShaderFormat
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   SF_METAL
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   SF_METAL_MRT
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   SF_METAL_TVOS
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   SF_METAL_MRT_TVOS
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   SF_METAL_SM5
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   SF_METAL_MACES3_1
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   SF_METAL_MRT_MAC
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager: Loaded format module ShaderFormatD3D
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   PCD3D_SM6
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   PCD3D_SM5
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   PCD3D_ES31
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   D3D_ES3_1_HOLOLENS
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager: Loaded format module ShaderFormatOpenGL
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   GLSL_150_ES31
+[2022.08.24-01.27.24:117][  0]LogTargetPlatformManager:   GLSL_ES3_1_ANDROID
+[2022.08.24-01.27.24:121][  0]LogTargetPlatformManager: Loaded format module ShaderFormatVectorVM
+[2022.08.24-01.27.24:121][  0]LogTargetPlatformManager:   VVM_1_0
+[2022.08.24-01.27.24:121][  0]LogTargetPlatformManager: Loaded format module VulkanShaderFormat
+[2022.08.24-01.27.24:121][  0]LogTargetPlatformManager:   SF_VULKAN_SM5
+[2022.08.24-01.27.24:121][  0]LogTargetPlatformManager:   SF_VULKAN_ES31_ANDROID
+[2022.08.24-01.27.24:121][  0]LogTargetPlatformManager:   SF_VULKAN_ES31
+[2022.08.24-01.27.24:121][  0]LogTargetPlatformManager:   SF_VULKAN_SM5_ANDROID
+[2022.08.24-01.27.24:121][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.08.24-01.27.24:121][  0]LogShaderCompilers: Display: Compiling shader autogen file: D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Intermediate/ShaderAutogen/PCD3D_SM5/AutogenShaderHeaders.ush
+[2022.08.24-01.27.24:121][  0]LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2022.08.24-01.27.24:121][  0]LogShaderCompilers: Display: Compiling shader autogen file: D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Intermediate/ShaderAutogen/PCD3D_ES31/AutogenShaderHeaders.ush
+[2022.08.24-01.27.24:121][  0]LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2022.08.24-01.27.24:123][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2022.08.24-01.27.24:123][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchy Hierarchy.
+[2022.08.24-01.27.24:123][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.08.24-01.27.24:123][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchy Hierarchy.
+[2022.08.24-01.27.24:139][  0]LogDerivedDataCache: Display: ../../../Engine/DerivedDataCache/Compressed.ddp: Opened pak cache for reading. (1230 MiB)
+[2022.08.24-01.27.24:139][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.08.24-01.27.24:139][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchy Hierarchy.
+[2022.08.24-01.27.24:147][  0]LogDerivedDataCache: Speed tests for C:/Users/suvra/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.01 seconds
+[2022.08.24-01.27.24:147][  0]LogDerivedDataCache: Display: Performance to C:/Users/suvra/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.03ms. RandomReadSpeed=930.80MBs, RandomWriteSpeed=155.03MBs. Assigned SpeedClass 'Local'
+[2022.08.24-01.27.24:148][  0]LogDerivedDataCache: Using Local data cache path C:/Users/suvra/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2022.08.24-01.27.24:148][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2022.08.24-01.27.24:148][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchy Hierarchy.
+[2022.08.24-01.27.24:153][  0]LogVirtualization: VirtualizationSystem name found in ini file: None
+[2022.08.24-01.27.24:153][  0]LogVirtualization: FNullVirtualizationSystem mounted, virtualization will be disabled
+[2022.08.24-01.27.24:154][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Intermediate/Shaders/WorkingDirectory/48260/).
+[2022.08.24-01.27.24:154][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/suvra/AppData/Local/Temp/UnrealShaderWorkingDir/6C1CD2B147D2ECF873FAEE98B8FBB388/'.
+[2022.08.24-01.27.24:154][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2022.08.24-01.27.24:154][  0]LogShaderCompilers: Display: Using Local Shader Compiler with 16 workers.
+[2022.08.24-01.27.25:243][  0]LogTurnkeySupport: Completed SDK detection: ExitCode = 0
+[2022.08.24-01.27.25:243][  0]LogSlate: Using FreeType 2.10.0
+[2022.08.24-01.27.25:244][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2022.08.24-01.27.25:273][  0]LogAssetRegistry: FAssetRegistry took 0.0088 seconds to start up
+[2022.08.24-01.27.25:277][  0]LogEditorDomain: Display: EditorDomain is Disabled
+[2022.08.24-01.27.25:428][  0]LogSerialization: UsePackageTrailer: 'false'
+[2022.08.24-01.27.25:428][  0]LogTexture: Display: Texture Encode Speed: FinalIfAvailable (editor).
+[2022.08.24-01.27.25:627][  0]LogInit: Selected Device Profile: [WindowsEditor]
+[2022.08.24-01.27.25:627][  0]LogDeviceProfileManager: Active device profile: [000005202F585940][00000520250F0000 50] WindowsEditor
+[2022.08.24-01.27.25:627][  0]LogDeviceProfileManager: Profiles: [000005202F585400][000005201A7C0000 50] Windows, [000005202F585940][00000520250F0000 50] WindowsEditor, [000005202F584EC0][000005202F720000 50] WindowsServer, [000005202F5847C0][000005202F725000 50] WindowsClient, [000005202F585CC0][000005202F727800 50] IOS, [000005202F584600][000005202F72A000 50] iPadAir2, [000005202F585080][00000520250F2800 50] IPadPro, [000005202F585B00][000005202F72C800 50] iPadAir3, [000005202F584B40][000005202F730000 50] iPadAir4, [000005202F5808C0][000005202F735000 50] iPadMini4, [000005202F581C00][000005202F737800 50] iPadMini5, [000005202F584980][000005202F73A000 50] iPadMini6, [000005202F587E00][000005202F7B0000 50] iPhone6S, [000005202F588180][000005202F7B2800 50] iPhone7, [000005202F588500][000005202F7B5000 50] iPodTouch7, [000005202F582D80][000005202F7BA000 50] iPhone6SPlus, [000005202F5863C0][000005202F7BC800 50] iPhone7Plus, [000005202F583100][000005202F722800 50] iPhoneSE, [000005202F581180][000005202F73C800 50] iPhone8, [000005202F581340][000005202F7B7800 50] iPhone8Plus, [000005202F586580][000005202F7F0000 50] iPhoneX, [000005202F587C40][000005202F7F5000 50] iPhoneXS, [000005202F582F40][000005202F7F7800 50] iPhoneXSMax, [000005202F585780][000005202F7FA000 50] iPhoneXR, [000005202F586740][000005202F7FC800 50] iPhone11, [000005202F5832C0][000005202F732800 50] iPhone11Pro, [000005202F581DC0][000005202F7C0000 50] iPhone11ProMax, [000005202F580380][000005202F7C5000 50] iPhoneSE2, [000005202F582680][000005202F7C7800 50] iPhone12Mini, [000005202F581F80][000005202F7CA000 50] iPhone12, [000005202F587A80][000005202F7CC800 50] iPhone12Pro, [000005202F5839C0][000005202F7F2800 50] iPhone12ProMax, [000005202F581A40][000005202F7D0000 50] iPhone13Mini, [000005202F586200][000005202F7D5000 50] iPhone13, [000005202F581880][000005202F7D7800 50] iPhone13Pro, [000005202F588340][000005202F7DA000 50] iPhone13ProMax, [000005202F588880][000005202F7DC800 50] iPadPro105, [000005202F582BC0][000005202F7C2800 50] iPadPro129, [000005202F5824C0][000005202F740000 50] iPadPro97, [000005202F587380][000005202F745000 50] iPadPro2_129, [000005202F583480][000005202F747800 50] iPad5, [000005202F588C00][000005202F74A000 50] iPad6, [000005202F5878C0][000005202F74C800 50] iPad7, [000005202F588A40][000005202F7D2800 50] iPad8, [000005202F580FC0][000005202F750000 50] iPad9, [000005202F580E00][000005202F755000 50] iPadPro11, [000005202F586900][000005202F757800 50] iPadPro2_11, [000005202F583640][000005202F75A000 50] iPadPro3_11, [000005202F580A80][000005202F75C800 50] iPadPro3_129, [000005202F583B80][000005202F742800 50] iPadPro4_129, [000005202F581500][000005202F760000 50] iPadPro5_129, [000005202F582A00][000005202F765000 50] AppleTV, [000005202F5840C0][000005202F767800 50] AppleTV4K, [000005202F585E80][000005202F76A000 50] TVOS, [000005202F58A480][000005202F752800 50] Mac, [000005202F58A800][000005202F76C800 50] MacEditor, [000005202F589840][000005202F770000 50] MacClient, [000005202F584440][000005202F775000 50] MacServer, [000005202F58A9C0][000005202F77A000 50] Linux, [000005202F58AF00][000005202F777800 50] LinuxEditor, [000005202F582840][000005202F77C800 50] LinuxArm64Editor, [000005202F58A2C0][000005202F762800 50] LinuxArm64, [000005202F589680][000005202F780000 50] LinuxClient, [000005202F58A100][000005202F785000 50] LinuxArm64Client, [000005202F586C80][000005202F787800 50] LinuxServer, [000005202F589F40][000005202F78A000 50] LinuxArm64Server, [000005202F587FC0][000005202F78C800 50] Android, [000005202F586E40][000005202F772800 50] Android_Preview_OpenGL, [000005202F589A00][000005202F790000 50] Android_Preview_Vulkan, [000005202F587000][000005202F795000 50] Android_Low, [000005202F582140][000005202F797800 50] Android_Mid, [000005202F58B440][000005202F79A000 50] Android_High, [000005202F588F80][000005202F79C800 50] Android_Default, [000005202F584280][000005202F782800 50] Android_Adreno4xx, [000005202F586040][000005202E810000 50] Android_Adreno5xx_Low, [000005202F58B280][000005202E815000 50] Android_Adreno5xx, [000005202F5871C0][000005202E817800 50] Android_Adreno6xx, [000005202F589D80][000005202E81A000 50] Android_Adreno6xx_Vulkan, [000005202F58A640][000005202E81C800 50] Android_Adreno7xx, [000005202F583F00][000005202F792800 50] Android_Adreno7xx_Vulkan, [000005202F587540][000005202E820000 50] Android_Mali_T6xx, [000005202F584D00][000005202E825000 50] Android_Mali_T7xx, [000005202F580540][000005202E827800 50] Android_Mali_T8xx, [000005202F585240][000005202E82A000 50] Android_Mali_G71, [000005202F583D40][000005202E82C800 50] Android_Mali_G72, [000005202F58AD40][000005202E812800 50] Android_Mali_G72_Vulkan, [000005202F580700][000005202E830000 50] Android_Mali_G76, [000005202F5894C0][000005202E835000 50] Android_Mali_G76_Vulkan, [000005202F58C780][000005202E837800 50] Android_Mali_G77, [000005202F5886C0][000005202E83A000 50] Android_Mali_G77_Vulkan, [000005202F58B0C0][000005202E83C800 50] Android_Mali_G78, [000005202F58BB40][000005202E822800 50] Android_Mali_G78_Vulkan, [000005202F582300][000005202E840000 50] Android_Mali_G710, [000005202F58C240][000005202E845000 50] Android_Mali_G710_Vulkan, [000005202F586AC0][000005202E847800 50] Android_Xclipse_920, [000005202F58B7C0][000005202E84A000 50] Android_Xclipse_920_Vulkan, [000005202F588DC0][000005202E84C800 50] Android_Vulkan_SM5, [000005202F58AB80][000005202E832800 50] Android_PowerVR_G6xxx, [000005202F58CCC0][000005202E850000 50] Android_PowerVR_GT7xxx, [000005202F58D740][000005202E855000 50] Android_PowerVR_GE8xxx, [000005202F58D580][000005202E857800 50] Android_PowerVR_GM9xxx, [000005202F58B980][000005202E85A000 50] Android_PowerVR_GM9xxx_Vulkan, [000005202F58D900][000005202E85C800 50] Android_TegraK1, [000005202F580C40][000005202E842800 50] Android_Unknown_Vulkan, [000005202F58C400][000005202E860000 50] Oculus_Quest, [000005202F58E700][000005202E865000 50] Oculus_Quest2, [000005202F5816C0][000005202E867800 50] HoloLens, 
+[2022.08.24-01.27.25:627][  0]LogCsvProfiler: Display: Metadata set : deviceprofile="WindowsEditor"
+[2022.08.24-01.27.25:630][  0]LogTurnkeySupport: Turnkey Platform: Android: (Status=Invalid, Installed=, AutoSDK=, MinAllowed=r21a, MaxAllowed=r23a, Flags="Platform_InvalidHostPrerequisites", Error="Android Studio is not installed correctly.|Android SDK directory is not set correctly.")
+[2022.08.24-01.27.25:630][  0]LogTurnkeySupport: Turnkey Platform: IOS: (Status=Valid, Installed=1369.122.1.1, AutoSDK=, MinAllowed=1100.0.0.0, MaxAllowed=1399.0, Flags="InstalledSdk_ValidVersionExists")
+[2022.08.24-01.27.25:630][  0]LogTurnkeySupport: Turnkey Platform: Linux: (Status=Invalid, Installed=, AutoSDK=, MinAllowed=v20_clang-13.0.1-centos7, MaxAllowed=v20_clang-13.0.1-centos7, Flags="Platform_ValidHostPrerequisites")
+[2022.08.24-01.27.25:630][  0]LogTurnkeySupport: Turnkey Platform: LinuxArm64: (Status=Invalid, Installed=, AutoSDK=, MinAllowed=v20_clang-13.0.1-centos7, MaxAllowed=v20_clang-13.0.1-centos7, Flags="Platform_ValidHostPrerequisites")
+[2022.08.24-01.27.25:630][  0]LogTurnkeySupport: Turnkey Platform: Win64: (Status=Valid, Installed=10.0.18362.0, AutoSDK=, MinAllowed=10.0.00000.0, MaxAllowed=10.9.99999.0, Flags="InstalledSdk_ValidVersionExists")
+[2022.08.24-01.27.25:647][  0]LogTexture: Display: Oodle Texture Encode Speed settings: Fast: RDO Off Lambda=0, Effort=Normal Final: RDO Off Lambda=0, Effort=Normal
+[2022.08.24-01.27.25:800][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2022.08.24-01.27.25:800][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2022.08.24-01.27.25:800][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2022.08.24-01.27.25:800][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2022.08.24-01.27.25:800][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2022.08.24-01.27.25:816][  0]LogNetVersion: ManVsMonsters 1.0.0, NetCL: 19505902, EngineNetVer: 23, GameNetVer: 0 (Checksum: 2243183584)
+[2022.08.24-01.27.25:920][  0]LogSlate: Border
+[2022.08.24-01.27.25:920][  0]LogSlate: BreadcrumbButton
+[2022.08.24-01.27.25:920][  0]LogSlate: Default
+[2022.08.24-01.27.25:920][  0]LogSlate: Icons.Save
+[2022.08.24-01.27.25:920][  0]LogSlate: Icons.Toolbar.Settings
+[2022.08.24-01.27.25:920][  0]LogSlate: ListView
+[2022.08.24-01.27.25:920][  0]LogSlate: SoftwareCursor_CardinalCross
+[2022.08.24-01.27.25:920][  0]LogSlate: SoftwareCursor_Grab
+[2022.08.24-01.27.25:920][  0]LogSlate: TableView.DarkRow
+[2022.08.24-01.27.25:920][  0]LogSlate: TableView.Row
+[2022.08.24-01.27.25:920][  0]LogSlate: TreeView
+[2022.08.24-01.27.26:048][  0]SourceControl: Source control is disabled
+[2022.08.24-01.27.26:070][  0]SourceControl: Source control is disabled
+[2022.08.24-01.27.26:070][  0]SourceControl: Source control is disabled
+[2022.08.24-01.27.26:158][  0]LogUObjectArray: 20557 objects as part of root set at end of initial load.
+[2022.08.24-01.27.26:158][  0]LogUObjectAllocator: 5584256 out of 0 bytes used by permanent object pool.
+[2022.08.24-01.27.26:158][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2022.08.24-01.27.26:287][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: 07671E5145BF9E0515677FBCEEFCA396 | Instance: 79C5D0D346BA9C1D4D20E4BF45E86AF0 (SUVRAT-48260).
+[2022.08.24-01.27.26:394][  0]LogPython: Using Python 3.9.7
+[2022.08.24-01.27.27:004][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2022.08.24-01.27.27:009][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2022.08.24-01.27.27:198][  0]SourceControl: Source control is disabled
+[2022.08.24-01.27.27:223][  0]SourceControl: Source control is disabled
+[2022.08.24-01.27.27:259][  0]LogUProjectInfo: Found projects:
+[2022.08.24-01.27.27:266][  0]SourceControl: Source control is disabled
+[2022.08.24-01.27.27:417][  0]LogOpenImageDenoise: OIDN starting up
+[2022.08.24-01.27.27:622][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.08.24-01.27.27:622][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.08.24-01.27.27:629][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.08.24-01.27.27:756][  0]LogCollectionManager: Loaded 0 collections in 0.001317 seconds
+[2022.08.24-01.27.27:789][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Collections/' took 0.00s
+[2022.08.24-01.27.27:789][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Developers/suvra/Collections/' took 0.00s
+[2022.08.24-01.27.27:789][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Collections/' took 0.00s
+[2022.08.24-01.27.28:008][  0]LogEngine: Initializing Engine...
+[2022.08.24-01.27.28:020][  0]LogStylusInput: Initializing StylusInput subsystem.
+[2022.08.24-01.27.28:021][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2022.08.24-01.27.28:216][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.08.24-01.27.28:216][  0]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.08.24-01.27.28:226][  0]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.28:251][  0]LogAIModule: Creating AISystem for world Untitled
+[2022.08.24-01.27.28:251][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2022.08.24-01.27.28:271][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2022.08.24-01.27.28:272][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2022.08.24-01.27.28:272][  0]LogAudio: Display: Registering Engine Module Parameter Interfaces...
+[2022.08.24-01.27.28:272][  0]LogAudio: Display: Audio Device Manager Initialized
+[2022.08.24-01.27.28:272][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2022.08.24-01.27.28:272][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.08.24-01.27.28:272][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.08.24-01.27.28:272][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.08.24-01.27.28:272][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.08.24-01.27.28:272][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.08.24-01.27.28:272][  0]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.08.24-01.27.28:272][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.08.24-01.27.28:272][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.08.24-01.27.28:272][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.08.24-01.27.28:272][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.08.24-01.27.28:272][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.08.24-01.27.28:279][  0]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.08.24-01.27.29:412][  0]LogAudioMixer: Display: Using Audio Hardware Device Headphones (Oculus Virtual Audio Device)
+[2022.08.24-01.27.29:413][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.08.24-01.27.29:416][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.08.24-01.27.29:416][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.08.24-01.27.29:417][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=1
+[2022.08.24-01.27.29:417][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2022.08.24-01.27.29:418][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2022.08.24-01.27.29:418][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=1
+[2022.08.24-01.27.29:418][  0]LogInit: FAudioDevice initialized.
+[2022.08.24-01.27.29:418][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2022.08.24-01.27.29:418][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.08.24-01.27.29:418][  0]LogInit: Texture streaming: Enabled
+[2022.08.24-01.27.29:449][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 5.0.3-20979098+++UE5+Release-5.0
+[2022.08.24-01.27.29:458][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2022.08.24-01.27.29:476][  0]LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+[2022.08.24-01.27.29:510][  0]LogInit: Transaction tracking system initialized
+[2022.08.24-01.27.29:573][  0]BlueprintLog: New page: Editor Load
+[2022.08.24-01.27.29:744][  0]LocalizationService: Localization service is disabled
+[2022.08.24-01.27.29:783][  0]TimingProfiler: Initialize
+[2022.08.24-01.27.29:783][  0]TimingProfiler: OnSessionChanged
+[2022.08.24-01.27.29:783][  0]LoadingProfiler: Initialize
+[2022.08.24-01.27.29:783][  0]LoadingProfiler: OnSessionChanged
+[2022.08.24-01.27.29:783][  0]NetworkingProfiler: Initialize
+[2022.08.24-01.27.29:783][  0]NetworkingProfiler: OnSessionChanged
+[2022.08.24-01.27.29:783][  0]MemoryProfiler: Initialize
+[2022.08.24-01.27.29:783][  0]MemoryProfiler: OnSessionChanged
+[2022.08.24-01.27.30:309][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/' took 0.03s
+[2022.08.24-01.27.30:309][  0]LogLevelSequenceEditor: LevelSequenceEditor subsystem initialized.
+[2022.08.24-01.27.30:443][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2022.08.24-01.27.30:446][  0]SourceControl: Source control is disabled
+[2022.08.24-01.27.30:797][  0]LogSlate: Took 0.000163 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.08.24-01.27.32:630][  0]LogSlate: Window 'Restore Packages' being destroyed
+[2022.08.24-01.27.32:636][  0]LogUnrealEdMisc: Loading editor; pre map load, took 10.674
+[2022.08.24-01.27.32:636][  0]Cmd: MAP LOAD FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Maps/MainMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.08.24-01.27.32:636][  0]LightingResults: New page: Lighting Build
+[2022.08.24-01.27.32:643][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-01.27.32:643][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-01.27.32:644][  0]MapCheck: New page: Map Check
+[2022.08.24-01.27.32:644][  0]LightingResults: New page: Lighting Build
+[2022.08.24-01.27.32:648][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.08.24-01.27.32:651][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2022.08.24-01.27.32:871][  0]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Game/ParagonMurdock/Characters/Global/Eyes/Textures/EpicQuadPanorama_CC.EpicQuadPanorama_CC', its maximum texture size has been explicitly set to 512.
+[2022.08.24-01.27.32:974][  0]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Game/ParagonMurdock/Characters/Maps/BackGroundAssets/HDRI_Epic_Courtyard_Daylight.HDRI_Epic_Courtyard_Daylight', its maximum texture size has been explicitly set to 512.
+[2022.08.24-01.27.33:261][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'MainMap'.
+[2022.08.24-01.27.33:261][  0]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.08.24-01.27.33:261][  0]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.33:261][  0]LogAIModule: Creating AISystem for world MainMap
+[2022.08.24-01.27.33:263][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.08.24-01.27.33:269][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2022.08.24-01.27.33:269][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.08.24-01.27.33:269][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.098ms to complete.
+[2022.08.24-01.27.33:269][  0]LogFileHelpers: Loading map 'MainMap' took 0.634
+[2022.08.24-01.27.33:280][  0]LogUnrealEdMisc: Total Editor Startup Time, took 11.320
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: ================================================
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: Total job queries 0, among them cache hits 0 (0.00%)
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: Tracking 0 distinct input hashes that result in 0 distinct outputs (0.00%)
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: RAM used: 0.00 MB (0.00 GB) of 3276.80 MB (3.20 GB) budget. Usage: 0.00%
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: Shaders Compiled: 0
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0.00%)
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2022.08.24-01.27.33:281][  0]LogShaderCompilers: Display: ================================================
+[2022.08.24-01.27.33:353][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.24-01.27.33:356][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.24-01.27.33:360][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.24-01.27.33:363][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.24-01.27.33:376][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/StarterContent.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:376][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:376][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_FirstPerson.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:376][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:377][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_FirstPersonBP.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:377][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:377][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_HandheldARBP.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:377][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:378][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_ThirdPerson.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:378][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:378][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_ThirdPersonBP.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:378][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:378][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_TopDown.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:379][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:379][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_TopDownBP.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:379][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:379][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_VehicleAdvBP.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:379][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:379][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_VirtualRealityBP.upack', mount point: 'root:/'
+[2022.08.24-01.27.33:379][  0]LogPakFile: Display: Mount point: 'root:/' is not mounted to a valid Root Path yet, assets in this pak file may not be accessible until a corresponding UFS Mount Point is added through FPackageName::RegisterMountPoint.
+[2022.08.24-01.27.33:379][  0]LogFeaturePack: Error: Error in Feature pack C:/Program Files/Epic Games/UE_5.0/FeaturePacks/TP_VirtualRealityBP.upack. Failed to parse manifest: Invalid Json Token. Line: 43 Ch: 4
+[2022.08.24-01.27.33:732][  0]LogSlate: Took 0.000163 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2022.08.24-01.27.33:733][  0]LogSlate: Took 0.000111 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.08.24-01.27.33:751][  0]LogSlate: Took 0.000140 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2022.08.24-01.27.33:773][  0]LogViewport: Scene viewport resized to 1161x578, mode Windowed.
+[2022.08.24-01.27.34:274][  0]LogStall: Startup...
+[2022.08.24-01.27.34:275][  0]LogStall: Startup complete.
+[2022.08.24-01.27.34:295][  0]LogLoad: (Engine Initialization) Total time: 12.33 seconds
+[2022.08.24-01.27.34:295][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2022.08.24-01.27.34:338][  0]LogAssetRegistry: Asset discovery search completed in 9.0653 seconds
+[2022.08.24-01.27.34:347][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2022.08.24-01.27.34:382][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2022.08.24-01.27.34:759][ 11]LogRendererCore: Warning: Query 'Unaccounted' not ready.
+[2022.08.24-01.27.34:776][ 13]LogRendererCore: Warning: Query 'Unaccounted' not ready.
+[2022.08.24-01.27.37:296][243]LogPackageName: Warning: FPackagePath::TryFromMountedName was passed an ObjectPath (/Game/Blueprints/Character/BP_ManCharacter.BP_ManCharacter) rather than a PackageName or FilePath; it will be converted to the PackageName. Accepting ObjectPaths is deprecated behavior and will be removed in a future release; TryFromMountedName will fail on ObjectPaths.
+[2022.08.24-01.27.37:296][243]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Character/BP_ManCharacter.BP_ManCharacter
+[2022.08.24-01.27.37:296][243]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.38:007][243]LogPackageName: Warning: FPackagePath::TryFromMountedName was passed an ObjectPath (/Game/ParagonMurdock/Characters/Heroes/Murdock/Meshes/Murdock_WithoutGun.Murdock_WithoutGun) rather than a PackageName or FilePath; it will be converted to the PackageName. Accepting ObjectPaths is deprecated behavior and will be removed in a future release; TryFromMountedName will fail on ObjectPaths.
+[2022.08.24-01.27.38:007][243]LogAssetEditorSubsystem: Opening Asset editor for SkeletalMesh /Game/ParagonMurdock/Characters/Heroes/Murdock/Meshes/Murdock_WithoutGun.Murdock_WithoutGun
+[2022.08.24-01.27.38:020][243]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.38:174][243]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_1:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-01.27.38:191][243]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (Belica_Gun) ...
+[2022.08.24-01.27.38:351][243]LogPackageName: Warning: FPackagePath::TryFromMountedName was passed an ObjectPath (/Game/Blueprints/Animations/BP_ManAnimation.BP_ManAnimation) rather than a PackageName or FilePath; it will be converted to the PackageName. Accepting ObjectPaths is deprecated behavior and will be removed in a future release; TryFromMountedName will fail on ObjectPaths.
+[2022.08.24-01.27.38:351][243]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/Blueprints/Animations/BP_ManAnimation.BP_ManAnimation
+[2022.08.24-01.27.38:352][243]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.38:429][243]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.38:437][243]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_3:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-01.27.38:854][243]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.38:902][243]LogPackageName: Warning: FPackagePath::TryFromMountedName was passed an ObjectPath (/Game/Blueprints/Animations/IK_RETARGET_YBot-Belica.IK_RETARGET_YBot-Belica) rather than a PackageName or FilePath; it will be converted to the PackageName. Accepting ObjectPaths is deprecated behavior and will be removed in a future release; TryFromMountedName will fail on ObjectPaths.
+[2022.08.24-01.27.38:989][243]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Game/ParagonLtBelica/Characters/Global/Eyes/Textures/T_EpicQuadPanorama_CC.T_EpicQuadPanorama_CC', its maximum texture size has been explicitly set to 512.
+[2022.08.24-01.27.39:172][243]LogAssetEditorSubsystem: Opening Asset editor for IKRetargeter /Game/Blueprints/Animations/IK_RETARGET_YBot-Belica.IK_RETARGET_YBot-Belica
+[2022.08.24-01.27.39:174][243]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.39:203][243]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (Belica) ...
+[2022.08.24-01.27.39:225][243]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_5:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-01.27.39:252][243]LogPackageName: Warning: FPackagePath::TryFromMountedName was passed an ObjectPath (/Game/Blueprints/Animations/IK_Ybot.IK_Ybot) rather than a PackageName or FilePath; it will be converted to the PackageName. Accepting ObjectPaths is deprecated behavior and will be removed in a future release; TryFromMountedName will fail on ObjectPaths.
+[2022.08.24-01.27.39:253][243]LogAssetEditorSubsystem: Opening Asset editor for IKRigDefinition /Game/Blueprints/Animations/IK_Ybot.IK_Ybot
+[2022.08.24-01.27.39:253][243]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.39:264][243]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_6:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-01.27.39:264][243]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_6:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-01.27.39:462][243]LogPackageName: Warning: FPackagePath::TryFromMountedName was passed an ObjectPath (/Game/Blueprints/Animations/IKRig_Belica.IKRig_Belica) rather than a PackageName or FilePath; it will be converted to the PackageName. Accepting ObjectPaths is deprecated behavior and will be removed in a future release; TryFromMountedName will fail on ObjectPaths.
+[2022.08.24-01.27.39:463][243]LogAssetEditorSubsystem: Opening Asset editor for IKRigDefinition /Game/Blueprints/Animations/IKRig_Belica.IKRig_Belica
+[2022.08.24-01.27.39:463][243]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.27.39:472][243]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_7:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-01.27.39:472][243]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_7:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-01.27.39:931][243]LogViewport: Scene viewport resized to 1414x858, mode Windowed.
+[2022.08.24-01.27.40:003][243]LogViewport: Scene viewport resized to 763x858, mode Windowed.
+[2022.08.24-01.27.41:013][307]LogSlate: Took 0.000184 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.08.24-01.27.41:023][307]LogSlate: Took 0.000167 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.08.24-01.27.50:429][159]LogLinker: Warning: [AssetLog] D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Content\Mixamo\Rifle_Walk.uasset: Failed to load '/Game/Mixamo/ybot_Skeleton': Can't find file.
+[2022.08.24-01.27.50:429][159]LogLinker: Warning: VerifyImport: Failed to load package for import object 'Package /Game/Mixamo/ybot_Skeleton'
+[2022.08.24-01.27.50:431][159]LogScript: Error: Script Msg: /Game/Mixamo/Rifle_Walk : Invalid USkeleton supplied
+[2022.08.24-01.27.50:454][159]LogScript: Error: Script Msg: /Game/Mixamo/Walk_Forward : Invalid USkeleton supplied
+[2022.08.24-01.27.50:474][159]LogScript: Error: Script Msg: /Game/Mixamo/Walk_Left : Invalid USkeleton supplied
+[2022.08.24-01.27.50:493][159]LogScript: Error: Script Msg: /Game/Mixamo/Walk_Right : Invalid USkeleton supplied
+[2022.08.24-01.27.50:496][159]LogScript: Error: Script Msg: /Game/Mixamo/Walking_Backwards : Invalid USkeleton supplied
+[2022.08.24-01.27.54:333][517]LogSlateStyle: Warning: Unable to find Slate Widget Style 'Window.Buttons.Close'. Using FButtonStyle defaults instead.
+[2022.08.24-01.27.54:333][517]LogSlateStyle: Warning: Unable to find Slate Widget Style 'Window.Buttons.Close'. Using FButtonStyle defaults instead.
+[2022.08.24-01.27.56:697][765]LogEditorFactories: Performing atomic reimport of [D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walking Backwards.fbx]
+[2022.08.24-01.27.56:776][765]LogContentBrowser: Verbose: The majority of assets in the view are of type: Skeleton
+[2022.08.24-01.28.00:846][765]LogSlate: Window 'Choose Skeleton' being destroyed
+[2022.08.24-01.28.00:859][765]LogFbx: Loading FBX Scene from D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walking Backwards.fbx
+[2022.08.24-01.28.00:873][765]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-01.28.00:875][765]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-01.28.00:876][765]LogScript: Warning: Script Msg: /Game/Mixamo/Walking_Backwards : New play length is same as existing one: 1.4 seconds
+[2022.08.24-01.28.01:210][765]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mixamo/Walking_Backwards.Walking_Backwards
+[2022.08.24-01.28.01:211][765]LogEditorFactories: -- imported successfully
+[2022.08.24-01.28.01:236][765]LogEditorFactories: Performing atomic reimport of [D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Rifle Walk.fbx]
+[2022.08.24-01.28.01:333][765]LogContentBrowser: Verbose: The majority of assets in the view are of type: Skeleton
+[2022.08.24-01.28.06:521][765]LogSlate: Window 'Choose Skeleton' being destroyed
+[2022.08.24-01.28.06:533][765]LogFbx: Loading FBX Scene from D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Rifle Walk.fbx
+[2022.08.24-01.28.06:546][765]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-01.28.06:547][765]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-01.28.06:548][765]LogScript: Warning: Script Msg: /Game/Mixamo/Rifle_Walk : New play length is same as existing one: 1.3 seconds
+[2022.08.24-01.28.06:901][765]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mixamo/Rifle_Walk.Rifle_Walk
+[2022.08.24-01.28.06:901][765]LogEditorFactories: -- imported successfully
+[2022.08.24-01.28.06:922][765]LogEditorFactories: Performing atomic reimport of [D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walk Forward.fbx]
+[2022.08.24-01.28.07:018][765]LogContentBrowser: Verbose: The majority of assets in the view are of type: Skeleton
+[2022.08.24-01.28.08:638][765]LogSlate: Window 'Choose Skeleton' being destroyed
+[2022.08.24-01.28.08:649][765]LogFbx: Loading FBX Scene from D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walk Forward.fbx
+[2022.08.24-01.28.08:663][765]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-01.28.08:664][765]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-01.28.08:665][765]LogScript: Warning: Script Msg: /Game/Mixamo/Walk_Forward : New play length is same as existing one: 1 seconds
+[2022.08.24-01.28.10:269][765]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mixamo/Walk_Forward.Walk_Forward
+[2022.08.24-01.28.10:269][765]LogEditorFactories: -- imported successfully
+[2022.08.24-01.28.10:308][765]LogEditorFactories: Performing atomic reimport of [D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walk Left.fbx]
+[2022.08.24-01.28.10:422][765]LogContentBrowser: Verbose: The majority of assets in the view are of type: Skeleton
+[2022.08.24-01.28.12:510][765]LogSlate: Window 'Choose Skeleton' being destroyed
+[2022.08.24-01.28.12:521][765]LogFbx: Loading FBX Scene from D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walk Left.fbx
+[2022.08.24-01.28.12:535][765]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-01.28.12:536][765]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-01.28.12:537][765]LogScript: Warning: Script Msg: /Game/Mixamo/Walk_Left : New play length is same as existing one: 1 seconds
+[2022.08.24-01.28.13:781][765]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mixamo/Walk_Left.Walk_Left
+[2022.08.24-01.28.13:781][765]LogEditorFactories: -- imported successfully
+[2022.08.24-01.28.13:803][765]LogEditorFactories: Performing atomic reimport of [D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walk Right.fbx]
+[2022.08.24-01.28.13:901][765]LogContentBrowser: Verbose: The majority of assets in the view are of type: Skeleton
+[2022.08.24-01.28.15:818][765]LogSlate: Window 'Choose Skeleton' being destroyed
+[2022.08.24-01.28.15:829][765]LogFbx: Loading FBX Scene from D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walk Right.fbx
+[2022.08.24-01.28.15:842][765]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-01.28.15:844][765]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-01.28.15:844][765]LogScript: Warning: Script Msg: /Game/Mixamo/Walk_Right : New play length is same as existing one: 1 seconds
+[2022.08.24-01.28.17:159][765]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mixamo/Walk_Right.Walk_Right
+[2022.08.24-01.28.17:159][765]LogEditorFactories: -- imported successfully
+[2022.08.24-01.28.17:199][765]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.08.24-01.28.19:859][971]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Mixamo/Rifle_Walk.Rifle_Walk
+[2022.08.24-01.28.19:860][971]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.28.19:875][971]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_14:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-01.28.19:985][971]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.28.20:306][971]LogUObjectGlobals: Warning: Failed to find object 'Class None.DestructibleMesh'
+[2022.08.24-01.28.20:310][971]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-01.28.20:330][971]LogViewport: Scene viewport resized to 1141x295, mode Windowed.
+[2022.08.24-01.28.20:348][971]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.08.24-01.29.24:850][103]LogDerivedDataCache: C:/Users/suvra/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.695 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.24-01.37.34:474][621]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2022.08.24-01.37.34:475][621]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/MainMap' took 0.097
+[2022.08.24-01.37.34:475][621]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Mixamo/Rifle_Walk] ([1] browsable assets)...
+[2022.08.24-01.37.34:486][621]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/Mixamo/Rifle_Walk.Rifle_Walk]
+[2022.08.24-01.37.34:486][621]OBJ SavePackage: Finished generating thumbnails for package [/Game/Mixamo/Rifle_Walk]
+[2022.08.24-01.37.34:486][621]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mixamo/Rifle_Walk" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Mixamo/Rifle_Walk_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2022.08.24-01.37.34:493][621]LogPackageLocalizationCache: Processed 30 localized package path(s) for 1 prioritized culture(s) in 0.007599 seconds
+[2022.08.24-01.37.34:500][621]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Mixamo/Rifle_Walk_Auto1
+[2022.08.24-01.37.34:500][621]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Rifle_Walk_Auto1F59C7B9141481CF3D62C8FB31EA2B44F.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Mixamo/Rifle_Walk_Auto1.uasset'
+[2022.08.24-01.37.34:501][621]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Mixamo/Walk_Forward] ([1] browsable assets)...
+[2022.08.24-01.37.34:507][621]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/Mixamo/Walk_Forward.Walk_Forward]
+[2022.08.24-01.37.34:507][621]OBJ SavePackage: Finished generating thumbnails for package [/Game/Mixamo/Walk_Forward]
+[2022.08.24-01.37.34:507][621]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mixamo/Walk_Forward" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Mixamo/Walk_Forward_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2022.08.24-01.37.34:555][621]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Mixamo/Walk_Forward_Auto1
+[2022.08.24-01.37.34:555][621]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Walk_Forward_Auto1235F60CA40B0A7D7B2CB60A69CA1061D.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Mixamo/Walk_Forward_Auto1.uasset'
+[2022.08.24-01.37.34:555][621]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Mixamo/Walk_Left] ([1] browsable assets)...
+[2022.08.24-01.37.34:561][621]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/Mixamo/Walk_Left.Walk_Left]
+[2022.08.24-01.37.34:561][621]OBJ SavePackage: Finished generating thumbnails for package [/Game/Mixamo/Walk_Left]
+[2022.08.24-01.37.34:561][621]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mixamo/Walk_Left" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Mixamo/Walk_Left_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2022.08.24-01.37.34:601][621]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Mixamo/Walk_Left_Auto1
+[2022.08.24-01.37.34:601][621]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Walk_Left_Auto183FEF7114A993ECDC3BE92B14B5E7E02.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Mixamo/Walk_Left_Auto1.uasset'
+[2022.08.24-01.37.34:617][621]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Mixamo/Walk_Right] ([1] browsable assets)...
+[2022.08.24-01.37.34:622][621]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/Mixamo/Walk_Right.Walk_Right]
+[2022.08.24-01.37.34:622][621]OBJ SavePackage: Finished generating thumbnails for package [/Game/Mixamo/Walk_Right]
+[2022.08.24-01.37.34:622][621]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mixamo/Walk_Right" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Mixamo/Walk_Right_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2022.08.24-01.37.34:660][621]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Mixamo/Walk_Right_Auto1
+[2022.08.24-01.37.34:660][621]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Walk_Right_Auto1ACCBBB06495FCA2D9D01438B0FEFEEC8.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Mixamo/Walk_Right_Auto1.uasset'
+[2022.08.24-01.37.34:661][621]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Mixamo/Walking_Backwards] ([1] browsable assets)...
+[2022.08.24-01.37.34:667][621]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/Mixamo/Walking_Backwards.Walking_Backwards]
+[2022.08.24-01.37.34:667][621]OBJ SavePackage: Finished generating thumbnails for package [/Game/Mixamo/Walking_Backwards]
+[2022.08.24-01.37.34:674][621]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Mixamo/Walking_Backwards_Auto1
+[2022.08.24-01.37.34:674][621]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Walking_Backwards_Auto1A69EE10142DCDAC1B3147C9ECF6503C2.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Mixamo/Walking_Backwards_Auto1.uasset'
+[2022.08.24-01.37.34:674][621]LogFileHelpers: Auto-saving content packages took 0.199
+[2022.08.24-02.19.51:229][444]LogViewport: Scene viewport resized to 763x858, mode Windowed.
+[2022.08.24-02.20.05:089][740]LogViewport: Scene viewport resized to 529x598, mode Windowed.
+[2022.08.24-02.20.10:789][148]LogSlate: Window 'IKRig_Belica' being destroyed
+[2022.08.24-02.20.10:794][148]LogSlate: Window 'IKRig_Belica' being destroyed
+[2022.08.24-02.20.10:795][148]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.20.10:795][148]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.20.10:845][148]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.20.10:846][148]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.20.14:670][540]LogAssetEditorSubsystem: Opening Asset editor for SkeletalMesh /Game/AnimationsFromMixamo/Meshes/ybot.ybot
+[2022.08.24-02.20.14:670][540]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.20.14:680][540]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_19:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.20.14:910][540]LogViewport: Scene viewport resized to 791x598, mode Windowed.
+[2022.08.24-02.20.16:107][637]LogSlate: Took 0.000201 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.08.24-02.20.30:749][886]LogSlate: Window 'ybot' being destroyed
+[2022.08.24-02.20.30:752][886]LogSlate: Window 'ybot' being destroyed
+[2022.08.24-02.20.30:754][886]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.20.30:754][886]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.20.45:605][593]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2022.08.24-02.20.47:464][593]LogSlate: Window 'Delete Assets' being destroyed
+[2022.08.24-02.20.47:540][593]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.20.47:540][593]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.20.47:580][593]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.20.47:580][593]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.20.47:597][593]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.20.47:597][593]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.20.47:627][593]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.20.47:627][593]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.20.47:635][593]LogUObjectGlobals: Force Deleting 5 Package(s):
+	Asset Name: /Game/AnimationsFromMixamo/Meshes/Material/Alpha_Body_MAT.Alpha_Body_MAT
+	Asset Type: Material
+	Asset Name: /Game/AnimationsFromMixamo/Meshes/Material/Alpha_Joints_MAT.Alpha_Joints_MAT
+	Asset Type: Material
+	Asset Name: /Game/AnimationsFromMixamo/Meshes/ybot_PhysicsAsset.ybot_PhysicsAsset
+	Asset Type: PhysicsAsset
+	Asset Name: /Game/AnimationsFromMixamo/Meshes/ybot_Skeleton.ybot_Skeleton
+	Asset Type: Skeleton
+	Asset Name: /Game/AnimationsFromMixamo/Meshes/ybot.ybot
+	Asset Type: SkeletalMesh
+[2022.08.24-02.20.48:002][593]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (ybot) ...
+[2022.08.24-02.20.48:029][593]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (ybot) ...
+[2022.08.24-02.20.48:056][593]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (ybot) ...
+[2022.08.24-02.20.48:082][593]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (ybot) ...
+[2022.08.24-02.20.48:107][593]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (ybot) ...
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: ================================================
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: Total job queries 0, among them cache hits 0 (0.00%)
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: Tracking 0 distinct input hashes that result in 0 distinct outputs (0.00%)
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: RAM used: 0.00 MB (0.00 GB) of 3276.80 MB (3.20 GB) budget. Usage: 0.00%
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: Shaders Compiled: 0
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0.00%)
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2022.08.24-02.20.48:273][593]LogShaderCompilers: Display: ================================================
+[2022.08.24-02.20.48:332][593]LogUObjectHash: Compacting FUObjectHashTables data took   1.20ms
+[2022.08.24-02.20.48:369][593]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2022.08.24-02.20.48:399][593]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2022.08.24-02.20.54:048][158]LogAssetEditorSubsystem: Opening Asset editor for IKRigDefinition /Game/Blueprints/Animations/IK_Ybot.IK_Ybot
+[2022.08.24-02.20.54:048][158]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.20.54:269][158]LogViewport: Scene viewport resized to 529x598, mode Windowed.
+[2022.08.24-02.21.01:884][865]LogSlate: Window 'IK_Ybot' being destroyed
+[2022.08.24-02.21.01:888][865]LogSlate: Window 'IK_Ybot' being destroyed
+[2022.08.24-02.21.01:889][865]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.21.01:889][865]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.21.04:103][113]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2022.08.24-02.21.06:334][113]LogSlate: Window 'Delete Assets' being destroyed
+[2022.08.24-02.21.06:363][113]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Blueprints/Animations/IK_Ybot.IK_Ybot
+	Asset Type: IKRigDefinition
+[2022.08.24-02.21.06:613][113]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2022.08.24-02.21.06:643][113]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2022.08.24-02.21.06:672][113]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2022.08.24-02.21.15:096][ 79]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
+[2022.08.24-02.21.16:317][ 79]LogSlate: Window 'Delete Assets' being destroyed
+[2022.08.24-02.21.16:405][ 79]LogUObjectGlobals: Force Deleting 5 Package(s):
+	Asset Name: /Game/Mixamo/Rifle_Walk.Rifle_Walk
+	Asset Type: AnimSequence
+	Asset Name: /Game/Mixamo/Walk_Forward.Walk_Forward
+	Asset Type: AnimSequence
+	Asset Name: /Game/Mixamo/Walk_Left.Walk_Left
+	Asset Type: AnimSequence
+	Asset Name: /Game/Mixamo/Walk_Right.Walk_Right
+	Asset Type: AnimSequence
+	Asset Name: /Game/Mixamo/Walking_Backwards.Walking_Backwards
+	Asset Type: AnimSequence
+[2022.08.24-02.21.16:849][ 79]LogObjectTools: Warning: Detected inconsistencies between reference gathering algorithms. Switching 'Editor.UseLegacyGetReferencersForDeletion' on for the remainder of this editor session.
+[2022.08.24-02.21.17:915][ 79]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2022.08.24-02.21.17:945][ 79]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2022.08.24-02.21.17:973][ 79]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2022.08.24-02.21.44:629][381]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2022.08.24-02.21.44:630][381]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/MainMap' took 0.028
+[2022.08.24-02.21.44:630][381]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Animations/IK_RETARGET_YBot-Belica] ([1] browsable assets)...
+[2022.08.24-02.21.44:630][381]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Animations/IK_RETARGET_YBot-Belica]
+[2022.08.24-02.21.44:632][381]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Blueprints/Animations/IK_RETARGET_YBot-Belica_Auto2
+[2022.08.24-02.21.44:632][381]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/IK_RETARGET_YBot-Belica_Auto250C80D4B43F40AA3A4B24F88314C5023.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Autosaves/Game/Blueprints/Animations/IK_RETARGET_YBot-Belica_Auto2.uasset'
+[2022.08.24-02.21.44:632][381]LogFileHelpers: Auto-saving content packages took 0.002
+[2022.08.24-02.23.23:888][828]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/suvra/Downloads/Walk Right.fbx)
+[2022.08.24-02.23.23:898][828]LogFbx: Loading FBX Scene from ../../../../../../Users/suvra/Downloads/Walk Right.fbx
+[2022.08.24-02.23.23:934][828]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-02.23.29:269][828]LogSlate: Window 'FBX Import Options' being destroyed
+[2022.08.24-02.23.29:286][828]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node Alpha_Surface : The relative matrices do not match
+[2022.08.24-02.23.29:286][828]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node Alpha_Joints : The relative matrices do not match
+[2022.08.24-02.23.29:287][828]LogFbx: Warning: Not valid bind pose for Pose (skinCluster2) - Node Alpha_Surface : The relative matrices do not match
+[2022.08.24-02.23.29:287][828]LogFbx: Warning: Not valid bind pose for Pose (skinCluster2) - Node Alpha_Joints : The relative matrices do not match
+[2022.08.24-02.23.29:287][828]LogFbx: Warning: Getting valid bind pose failed. Try to recreate bind pose
+[2022.08.24-02.23.29:288][828]LogFbx: Valid bind pose for Pose (FbxSDKBindPose) - Alpha_Surface
+[2022.08.24-02.23.29:288][828]LogFbx: Warning: Recreating bind pose succeeded.
+[2022.08.24-02.23.29:290][828]LogMaterial: Display: Material /Game/Rigs/Alpha_Body_MAT.Alpha_Body_MAT needed to have new flag set bUsedWithSkeletalMesh !
+[2022.08.24-02.23.29:293][828]LogMaterial: Display: Missing cached shadermap for Alpha_Body_MAT in PCD3D_SM5, Default, SM5 (DDC key hash: 665B416F60A333EE84A3879E496887C58C69CBB5), compiling. 
+[2022.08.24-02.23.29:363][828]LogMaterial: Display: Missing cached shadermap for Alpha_Body_MAT in PCD3D_SM5, Default, SM5 (DDC key hash: 9ABC09FE45F5FB0ACBFFF85FA454EDE8D52F5EA3), compiling. 
+[2022.08.24-02.23.29:366][828]LogFbx: Triangulating skeletal mesh Alpha_Surface
+[2022.08.24-02.23.29:752][828]LogMaterial: Display: Material /Game/Rigs/Alpha_Joints_MAT.Alpha_Joints_MAT needed to have new flag set bUsedWithSkeletalMesh !
+[2022.08.24-02.23.29:755][828]LogMaterial: Display: Missing cached shadermap for Alpha_Joints_MAT in PCD3D_SM5, Default, SM5 (DDC key hash: 7A97B33154386E81EBDA0EF2343BFC7A6B52F841), compiling. 
+[2022.08.24-02.23.29:788][828]LogMaterial: Display: Missing cached shadermap for Alpha_Joints_MAT in PCD3D_SM5, Default, SM5 (DDC key hash: 0E9166EF896259AF8100DA189D16F721821230F5), compiling. 
+[2022.08.24-02.23.29:790][828]LogFbx: Triangulating skeletal mesh Alpha_Joints
+[2022.08.24-02.23.30:047][828]LogFbx: Warning: Bones digested - 65  Depth of hierarchy - 12
+[2022.08.24-02.23.30:983][828]LogSkeletalMesh: Section 0: Material=0, 34480 triangles
+[2022.08.24-02.23.30:983][828]LogSkeletalMesh: Section 1: Material=1, 20840 triangles
+[2022.08.24-02.23.31:007][828]LogSkeletalMesh: Building Skeletal Mesh Walk_Right...
+[2022.08.24-02.23.31:007][828]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (Walk_Right) ...
+[2022.08.24-02.23.31:865][828]LogSkeletalMesh: Built Skeletal Mesh [0.87s] /Game/Rigs/Walk_Right.Walk_Right
+[2022.08.24-02.23.31:865][828]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.23.31:882][828]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.23.31:882][828]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(0) Hips
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(1) Spine
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(2) Spine1
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(3) Spine2
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(4) Neck
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(5) Head
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(6) HeadTop_End
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(7) LeftShoulder
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(8) LeftArm
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(9) LeftForeArm
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(10) LeftHand
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(11) LeftHandThumb1
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(12) LeftHandThumb2
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(13) LeftHandThumb3
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(14) LeftHandThumb4
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(15) LeftHandIndex1
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(16) LeftHandIndex2
+[2022.08.24-02.23.31:890][828]LogFbx: SortedLinks :(17) LeftHandIndex3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(18) LeftHandIndex4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(19) LeftHandMiddle1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(20) LeftHandMiddle2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(21) LeftHandMiddle3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(22) LeftHandMiddle4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(23) LeftHandRing1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(24) LeftHandRing2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(25) LeftHandRing3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(26) LeftHandRing4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(27) LeftHandPinky1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(28) LeftHandPinky2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(29) LeftHandPinky3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(30) LeftHandPinky4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(31) RightShoulder
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(32) RightArm
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(33) RightForeArm
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(34) RightHand
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(35) RightHandThumb1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(36) RightHandThumb2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(37) RightHandThumb3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(38) RightHandThumb4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(39) RightHandIndex1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(40) RightHandIndex2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(41) RightHandIndex3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(42) RightHandIndex4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(43) RightHandMiddle1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(44) RightHandMiddle2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(45) RightHandMiddle3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(46) RightHandMiddle4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(47) RightHandRing1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(48) RightHandRing2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(49) RightHandRing3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(50) RightHandRing4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(51) RightHandPinky1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(52) RightHandPinky2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(53) RightHandPinky3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(54) RightHandPinky4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(55) LeftUpLeg
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(56) LeftLeg
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(57) LeftFoot
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(58) LeftToeBase
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(59) LeftToe_End
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(60) RightUpLeg
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(61) RightLeg
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(62) RightFoot
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(63) RightToeBase
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(64) RightToe_End
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(0) Hips
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(1) Spine
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(2) Spine1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(3) Spine2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(4) Neck
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(5) Head
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(6) HeadTop_End
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(7) LeftShoulder
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(8) LeftArm
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(9) LeftForeArm
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(10) LeftHand
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(11) LeftHandThumb1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(12) LeftHandThumb2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(13) LeftHandThumb3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(14) LeftHandThumb4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(15) LeftHandIndex1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(16) LeftHandIndex2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(17) LeftHandIndex3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(18) LeftHandIndex4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(19) LeftHandMiddle1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(20) LeftHandMiddle2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(21) LeftHandMiddle3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(22) LeftHandMiddle4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(23) LeftHandRing1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(24) LeftHandRing2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(25) LeftHandRing3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(26) LeftHandRing4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(27) LeftHandPinky1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(28) LeftHandPinky2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(29) LeftHandPinky3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(30) LeftHandPinky4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(31) RightShoulder
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(32) RightArm
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(33) RightForeArm
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(34) RightHand
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(35) RightHandThumb1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(36) RightHandThumb2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(37) RightHandThumb3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(38) RightHandThumb4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(39) RightHandIndex1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(40) RightHandIndex2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(41) RightHandIndex3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(42) RightHandIndex4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(43) RightHandMiddle1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(44) RightHandMiddle2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(45) RightHandMiddle3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(46) RightHandMiddle4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(47) RightHandRing1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(48) RightHandRing2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(49) RightHandRing3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(50) RightHandRing4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(51) RightHandPinky1
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(52) RightHandPinky2
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(53) RightHandPinky3
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(54) RightHandPinky4
+[2022.08.24-02.23.31:891][828]LogFbx: SortedLinks :(55) LeftUpLeg
+[2022.08.24-02.23.31:892][828]LogFbx: SortedLinks :(56) LeftLeg
+[2022.08.24-02.23.31:892][828]LogFbx: SortedLinks :(57) LeftFoot
+[2022.08.24-02.23.31:892][828]LogFbx: SortedLinks :(58) LeftToeBase
+[2022.08.24-02.23.31:892][828]LogFbx: SortedLinks :(59) LeftToe_End
+[2022.08.24-02.23.31:892][828]LogFbx: SortedLinks :(60) RightUpLeg
+[2022.08.24-02.23.31:892][828]LogFbx: SortedLinks :(61) RightLeg
+[2022.08.24-02.23.31:892][828]LogFbx: SortedLinks :(62) RightFoot
+[2022.08.24-02.23.31:892][828]LogFbx: SortedLinks :(63) RightToeBase
+[2022.08.24-02.23.31:892][828]LogFbx: SortedLinks :(64) RightToe_End
+[2022.08.24-02.23.31:892][828]LogFbx: Parsing AnimStack Take 001
+[2022.08.24-02.23.33:284][828]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Rigs/Walk_Right_Anim_Take_001.Walk_Right_Anim_Take_001
+[2022.08.24-02.23.33:284][828]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-02.23.34:534][828]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Rigs/Walk_Right_Anim_mixamo_com.Walk_Right_Anim_mixamo_com
+[2022.08.24-02.23.34:538][828]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2022.08.24-02.23.34:538][828]FBXImport: Warning: The following bones are missing from the bind pose:
+mixamorig:HeadTop_End  
+mixamorig:LeftHandThumb4  
+mixamorig:LeftHandIndex4  
+mixamorig:LeftHandMiddle4  
+mixamorig:LeftHandRing4  
+mixamorig:LeftHandPinky4  
+mixamorig:RightHandThumb4  
+mixamorig:RightHandIndex4  
+mixamorig:RightHandMiddle4  
+mixamorig:RightHandRing4  
+mixamorig:RightHandPinky4  
+mixamorig:LeftToe_End  
+mixamorig:RightToe_End  
+
+This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
+please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
+[2022.08.24-02.23.38:671][210]LogSlate: Window 'Message Log' being destroyed
+[2022.08.24-02.23.38:675][210]LogSlate: Window 'Message Log' being destroyed
+[2022.08.24-02.23.39:707][317]LogAssetEditorSubsystem: Opening Asset editor for SkeletalMesh /Game/Rigs/Walk_Right.Walk_Right
+[2022.08.24-02.23.39:708][317]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.23.39:720][317]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_28:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.23.39:955][317]LogViewport: Scene viewport resized to 791x598, mode Windowed.
+[2022.08.24-02.23.41:824][466]LogSlate: Window 'Walk_Right' being destroyed
+[2022.08.24-02.23.41:828][466]LogSlate: Window 'Walk_Right' being destroyed
+[2022.08.24-02.23.41:829][466]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.23.41:829][466]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.23.48:803][148]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Rigs/Walk_Right_Anim_Take_001.Walk_Right_Anim_Take_001
+[2022.08.24-02.23.48:804][148]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.23.48:816][148]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_29:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.23.48:956][148]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.23.49:030][148]LogUObjectGlobals: Warning: Failed to find object 'Class None.DestructibleMesh'
+[2022.08.24-02.23.49:034][148]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.23.49:054][148]LogViewport: Scene viewport resized to 791x208, mode Windowed.
+[2022.08.24-02.23.49:073][148]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.08.24-02.23.50:718][292]LogSlate: Window 'Walk_Right_Anim_Take_001' being destroyed
+[2022.08.24-02.23.50:723][292]LogSlate: Window 'Walk_Right_Anim_Take_001' being destroyed
+[2022.08.24-02.23.50:723][292]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.23.50:723][292]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.23.50:736][292]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.23.50:736][292]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.23.50:782][292]LogWorld: UWorld::CleanupWorld for World_30, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.23.50:782][292]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.23.54:069][612]LogAssetEditorSubsystem: Opening Asset editor for SkeletalMesh /Game/Rigs/Walk_Right.Walk_Right
+[2022.08.24-02.23.54:070][612]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.23.54:080][612]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_32:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.23.54:308][612]LogViewport: Scene viewport resized to 791x598, mode Windowed.
+[2022.08.24-02.23.59:480][ 20]LogSlate: Window 'Walk_Right' being destroyed
+[2022.08.24-02.23.59:484][ 20]LogSlate: Window 'Walk_Right' being destroyed
+[2022.08.24-02.23.59:486][ 20]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.23.59:486][ 20]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.24.07:925][851]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2022.08.24-02.24.10:503][851]LogSlate: Window 'Delete Assets' being destroyed
+[2022.08.24-02.24.11:805][851]LogUObjectGlobals: Force Deleting 7 Package(s):
+	Asset Name: /Game/Rigs/Alpha_Body_MAT.Alpha_Body_MAT
+	Asset Type: Material
+	Asset Name: /Game/Rigs/Alpha_Joints_MAT.Alpha_Joints_MAT
+	Asset Type: Material
+	Asset Name: /Game/Rigs/Walk_Right.Walk_Right
+	Asset Type: SkeletalMesh
+	Asset Name: /Game/Rigs/Walk_Right_Anim_mixamo_com.Walk_Right_Anim_mixamo_com
+	Asset Type: AnimSequence
+	Asset Name: /Game/Rigs/Walk_Right_Anim_Take_001.Walk_Right_Anim_Take_001
+	Asset Type: AnimSequence
+	Asset Name: /Game/Rigs/Walk_Right_PhysicsAsset.Walk_Right_PhysicsAsset
+	Asset Type: PhysicsAsset
+	Asset Name: /Game/Rigs/Walk_Right_Skeleton.Walk_Right_Skeleton
+	Asset Type: Skeleton
+[2022.08.24-02.24.12:184][851]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (Walk_Right) ...
+[2022.08.24-02.24.12:211][851]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (Walk_Right) ...
+[2022.08.24-02.24.12:238][851]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (Walk_Right) ...
+[2022.08.24-02.24.12:266][851]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (Walk_Right) ...
+[2022.08.24-02.24.14:161][851]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2022.08.24-02.24.14:198][851]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2022.08.24-02.24.14:229][851]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2022.08.24-02.24.14:250][852]LogAnimation: Warning: SkeletalMesh SkeletalMesh /Game/Rigs/Walk_Right.Walk_Right has no skeleton. This needs to fixed before an animation can be set
+[2022.08.24-02.24.14:589][853]LogAnimation: Warning: SkeletalMesh SkeletalMesh /Game/Rigs/Walk_Right.Walk_Right has no skeleton. This needs to fixed before an animation can be set
+[2022.08.24-02.25.45:404][ 10]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/suvra/Downloads/Y Bot.fbx)
+[2022.08.24-02.25.45:414][ 10]LogFbx: Loading FBX Scene from ../../../../../../Users/suvra/Downloads/Y Bot.fbx
+[2022.08.24-02.25.45:450][ 10]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-02.25.47:469][ 10]LogSlate: Window 'FBX Import Options' being destroyed
+[2022.08.24-02.25.47:488][ 10]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node Alpha_Surface : The relative matrices do not match
+[2022.08.24-02.25.47:488][ 10]LogFbx: Warning: Not valid bind pose for Pose (skinCluster1) - Node Alpha_Joints : The relative matrices do not match
+[2022.08.24-02.25.47:489][ 10]LogFbx: Warning: Not valid bind pose for Pose (skinCluster2) - Node Alpha_Surface : The relative matrices do not match
+[2022.08.24-02.25.47:489][ 10]LogFbx: Warning: Not valid bind pose for Pose (skinCluster2) - Node Alpha_Joints : The relative matrices do not match
+[2022.08.24-02.25.47:489][ 10]LogFbx: Warning: Getting valid bind pose failed. Try to recreate bind pose
+[2022.08.24-02.25.47:490][ 10]LogFbx: Valid bind pose for Pose (FbxSDKBindPose) - Alpha_Surface
+[2022.08.24-02.25.47:490][ 10]LogFbx: Warning: Recreating bind pose succeeded.
+[2022.08.24-02.25.47:492][ 10]LogMaterial: Display: Material /Game/Rigs/Alpha_Body_MAT.Alpha_Body_MAT needed to have new flag set bUsedWithSkeletalMesh !
+[2022.08.24-02.25.47:495][ 10]LogMaterial: Display: Missing cached shadermap for Alpha_Body_MAT in PCD3D_SM5, Default, SM5 (DDC key hash: C947934839495EE5D51412D187E7C514B5F98D28), compiling. 
+[2022.08.24-02.25.47:532][ 10]LogMaterial: Display: Missing cached shadermap for Alpha_Body_MAT in PCD3D_SM5, Default, SM5 (DDC key hash: 9A18F8484549C782EE3F3A3A5C2104E84DE203D2), compiling. 
+[2022.08.24-02.25.47:535][ 10]LogFbx: Triangulating skeletal mesh Alpha_Surface
+[2022.08.24-02.25.47:947][ 10]LogMaterial: Display: Material /Game/Rigs/Alpha_Joints_MAT.Alpha_Joints_MAT needed to have new flag set bUsedWithSkeletalMesh !
+[2022.08.24-02.25.47:951][ 10]LogMaterial: Display: Missing cached shadermap for Alpha_Joints_MAT in PCD3D_SM5, Default, SM5 (DDC key hash: A72F3585D5BB9D76FFF60914AB3EF51C0780E0FB), compiling. 
+[2022.08.24-02.25.47:987][ 10]LogMaterial: Display: Missing cached shadermap for Alpha_Joints_MAT in PCD3D_SM5, Default, SM5 (DDC key hash: 82DC51097780C08D06956FE9F6052F5739A685A5), compiling. 
+[2022.08.24-02.25.47:989][ 10]LogFbx: Triangulating skeletal mesh Alpha_Joints
+[2022.08.24-02.25.48:265][ 10]LogFbx: Warning: Bones digested - 65  Depth of hierarchy - 12
+[2022.08.24-02.25.49:244][ 10]LogSkeletalMesh: Section 0: Material=0, 34480 triangles
+[2022.08.24-02.25.49:244][ 10]LogSkeletalMesh: Section 1: Material=1, 20840 triangles
+[2022.08.24-02.25.49:271][ 10]LogSkeletalMesh: Building Skeletal Mesh Y_Bot...
+[2022.08.24-02.25.49:271][ 10]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (Y_Bot) ...
+[2022.08.24-02.25.50:188][ 10]LogSkeletalMesh: Built Skeletal Mesh [0.92s] /Game/Rigs/Y_Bot.Y_Bot
+[2022.08.24-02.25.50:189][ 10]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.25.50:214][ 10]LogWorld: UWorld::CleanupWorld for World_33, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.25.50:214][ 10]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.25.50:226][ 10]LogFbx: SortedLinks :(0) Hips
+[2022.08.24-02.25.50:226][ 10]LogFbx: SortedLinks :(1) Spine
+[2022.08.24-02.25.50:226][ 10]LogFbx: SortedLinks :(2) Spine1
+[2022.08.24-02.25.50:226][ 10]LogFbx: SortedLinks :(3) Spine2
+[2022.08.24-02.25.50:226][ 10]LogFbx: SortedLinks :(4) Neck
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(5) Head
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(6) HeadTop_End
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(7) LeftShoulder
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(8) LeftArm
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(9) LeftForeArm
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(10) LeftHand
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(11) LeftHandThumb1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(12) LeftHandThumb2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(13) LeftHandThumb3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(14) LeftHandThumb4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(15) LeftHandIndex1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(16) LeftHandIndex2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(17) LeftHandIndex3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(18) LeftHandIndex4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(19) LeftHandMiddle1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(20) LeftHandMiddle2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(21) LeftHandMiddle3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(22) LeftHandMiddle4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(23) LeftHandRing1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(24) LeftHandRing2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(25) LeftHandRing3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(26) LeftHandRing4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(27) LeftHandPinky1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(28) LeftHandPinky2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(29) LeftHandPinky3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(30) LeftHandPinky4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(31) RightShoulder
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(32) RightArm
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(33) RightForeArm
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(34) RightHand
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(35) RightHandThumb1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(36) RightHandThumb2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(37) RightHandThumb3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(38) RightHandThumb4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(39) RightHandIndex1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(40) RightHandIndex2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(41) RightHandIndex3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(42) RightHandIndex4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(43) RightHandMiddle1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(44) RightHandMiddle2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(45) RightHandMiddle3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(46) RightHandMiddle4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(47) RightHandRing1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(48) RightHandRing2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(49) RightHandRing3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(50) RightHandRing4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(51) RightHandPinky1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(52) RightHandPinky2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(53) RightHandPinky3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(54) RightHandPinky4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(55) LeftUpLeg
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(56) LeftLeg
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(57) LeftFoot
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(58) LeftToeBase
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(59) LeftToe_End
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(60) RightUpLeg
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(61) RightLeg
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(62) RightFoot
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(63) RightToeBase
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(64) RightToe_End
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(0) Hips
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(1) Spine
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(2) Spine1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(3) Spine2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(4) Neck
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(5) Head
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(6) HeadTop_End
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(7) LeftShoulder
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(8) LeftArm
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(9) LeftForeArm
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(10) LeftHand
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(11) LeftHandThumb1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(12) LeftHandThumb2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(13) LeftHandThumb3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(14) LeftHandThumb4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(15) LeftHandIndex1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(16) LeftHandIndex2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(17) LeftHandIndex3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(18) LeftHandIndex4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(19) LeftHandMiddle1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(20) LeftHandMiddle2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(21) LeftHandMiddle3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(22) LeftHandMiddle4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(23) LeftHandRing1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(24) LeftHandRing2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(25) LeftHandRing3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(26) LeftHandRing4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(27) LeftHandPinky1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(28) LeftHandPinky2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(29) LeftHandPinky3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(30) LeftHandPinky4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(31) RightShoulder
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(32) RightArm
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(33) RightForeArm
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(34) RightHand
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(35) RightHandThumb1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(36) RightHandThumb2
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(37) RightHandThumb3
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(38) RightHandThumb4
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(39) RightHandIndex1
+[2022.08.24-02.25.50:227][ 10]LogFbx: SortedLinks :(40) RightHandIndex2
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(41) RightHandIndex3
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(42) RightHandIndex4
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(43) RightHandMiddle1
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(44) RightHandMiddle2
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(45) RightHandMiddle3
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(46) RightHandMiddle4
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(47) RightHandRing1
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(48) RightHandRing2
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(49) RightHandRing3
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(50) RightHandRing4
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(51) RightHandPinky1
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(52) RightHandPinky2
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(53) RightHandPinky3
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(54) RightHandPinky4
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(55) LeftUpLeg
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(56) LeftLeg
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(57) LeftFoot
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(58) LeftToeBase
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(59) LeftToe_End
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(60) RightUpLeg
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(61) RightLeg
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(62) RightFoot
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(63) RightToeBase
+[2022.08.24-02.25.50:228][ 10]LogFbx: SortedLinks :(64) RightToe_End
+[2022.08.24-02.25.50:228][ 10]LogFbx: Parsing AnimStack Take 001
+[2022.08.24-02.25.50:329][ 10]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Rigs/Y_Bot_Anim_Take_001.Y_Bot_Anim_Take_001
+[2022.08.24-02.25.50:329][ 10]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-02.25.50:348][ 10]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Rigs/Y_Bot_Anim_mixamo_com.Y_Bot_Anim_mixamo_com
+[2022.08.24-02.25.50:354][ 10]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2022.08.24-02.25.50:354][ 10]FBXImport: Warning: The following bones are missing from the bind pose:
+mixamorig:HeadTop_End  
+mixamorig:LeftHandThumb4  
+mixamorig:LeftHandIndex4  
+mixamorig:LeftHandMiddle4  
+mixamorig:LeftHandRing4  
+mixamorig:LeftHandPinky4  
+mixamorig:RightHandThumb4  
+mixamorig:RightHandIndex4  
+mixamorig:RightHandMiddle4  
+mixamorig:RightHandRing4  
+mixamorig:RightHandPinky4  
+mixamorig:LeftToe_End  
+mixamorig:RightToe_End  
+
+This can happen for bones that are not vert weighted. If they are not in the correct orientation after importing,
+please set the "Use T0 as ref pose" option or add them to the bind pose and reimport the skeletal mesh. 
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: ================================================
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Total job queries 144, among them cache hits 4 (2.78%)
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Tracking 12 distinct input hashes that result in 4 distinct outputs (33.33%)
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: RAM used: 0.01 MB (0.00 GB) of 3276.80 MB (3.20 GB) budget. Usage: 0.00%
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Shaders Compiled: 64
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Jobs assigned 12, completed 12 (100.00%)
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Average time worker was idle: 0.11 s
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Time job spent in pending queue: average 0.04 s, longest 0.06 s
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Job execution time: average 0.74 s, max 0.84 s
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Job life time (pending + execution): average 0.78 s, max 0.90
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 1.74 s
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Jobs were issued in 12 batches (only local compilation was used), average 1.00 jobs/batch
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Average processing rate: 6.90 jobs/sec
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Effective parallelization: 3.72 (times faster than compiling all shaders on one thread). Compare with number of workers: 16
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display: Top 4 most expensive shader types by average time:
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display:                                                 FLumenCardVS (compiled    2 times, average 0.64 sec, max 0.68 sec, min 0.61 sec)
+[2022.08.24-02.25.50:447][ 11]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy (compiled    4 times, average 0.63 sec, max 0.68 sec, min 0.58 sec)
+[2022.08.24-02.25.50:448][ 11]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled    4 times, average 0.56 sec, max 0.59 sec, min 0.53 sec)
+[2022.08.24-02.25.50:448][ 11]LogShaderCompilers: Display:                                          FLumenCardPS<false> (compiled    2 times, average 0.23 sec, max 0.23 sec, min 0.23 sec)
+[2022.08.24-02.25.50:448][ 11]LogShaderCompilers: Display: Top 4 shader types by total compile time:
+[2022.08.24-02.25.50:448][ 11]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 38.59% of total time (compiled    4 times, average 0.63 sec, max 0.68 sec, min 0.58 sec)
+[2022.08.24-02.25.50:448][ 11]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 34.50% of total time (compiled    4 times, average 0.56 sec, max 0.59 sec, min 0.53 sec)
+[2022.08.24-02.25.50:448][ 11]LogShaderCompilers: Display:                                                 FLumenCardVS - 19.83% of total time (compiled    2 times, average 0.64 sec, max 0.68 sec, min 0.61 sec)
+[2022.08.24-02.25.50:448][ 11]LogShaderCompilers: Display:                                          FLumenCardPS<false> - 7.09% of total time (compiled    2 times, average 0.23 sec, max 0.23 sec, min 0.23 sec)
+[2022.08.24-02.25.50:448][ 11]LogShaderCompilers: Display: ================================================
+[2022.08.24-02.25.50:501][ 13]LogAnimation: Warning: SkeletalMesh SkeletalMesh /Game/Rigs/Walk_Right.Walk_Right has no skeleton. This needs to fixed before an animation can be set
+[2022.08.24-02.25.53:952][352]LogSlate: Window 'Message Log' being destroyed
+[2022.08.24-02.25.53:956][352]LogSlate: Window 'Message Log' being destroyed
+[2022.08.24-02.26.20:222][545]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/suvra/OneDrive/AnimationsFromMixamo/Walk Forward.fbx)
+[2022.08.24-02.26.20:229][545]LogFbx: Loading FBX Scene from ../../../../../../Users/suvra/OneDrive/AnimationsFromMixamo/Walk Forward.fbx
+[2022.08.24-02.26.20:245][545]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-02.26.25:751][545]LogSlate: Window 'FBX Import Options' being destroyed
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(0) Hips
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(1) Spine
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(2) Spine1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(3) Spine2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(4) Neck
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(5) Head
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(6) HeadTop_End
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(7) LeftShoulder
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(8) LeftArm
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(9) LeftForeArm
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(10) LeftHand
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(11) LeftHandThumb1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(12) LeftHandThumb2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(13) LeftHandThumb3
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(14) LeftHandThumb4
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(15) LeftHandIndex1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(16) LeftHandIndex2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(17) LeftHandIndex3
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(18) LeftHandIndex4
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(19) LeftHandMiddle1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(20) LeftHandMiddle2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(21) LeftHandMiddle3
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(22) LeftHandMiddle4
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(23) LeftHandRing1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(24) LeftHandRing2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(25) LeftHandRing3
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(26) LeftHandRing4
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(27) LeftHandPinky1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(28) LeftHandPinky2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(29) LeftHandPinky3
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(30) LeftHandPinky4
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(31) RightShoulder
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(32) RightArm
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(33) RightForeArm
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(34) RightHand
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(35) RightHandThumb1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(36) RightHandThumb2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(37) RightHandThumb3
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(38) RightHandThumb4
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(39) RightHandIndex1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(40) RightHandIndex2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(41) RightHandIndex3
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(42) RightHandIndex4
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(43) RightHandMiddle1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(44) RightHandMiddle2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(45) RightHandMiddle3
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(46) RightHandMiddle4
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(47) RightHandRing1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(48) RightHandRing2
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(49) RightHandRing3
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(50) RightHandRing4
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(51) RightHandPinky1
+[2022.08.24-02.26.25:766][545]LogFbx: SortedLinks :(52) RightHandPinky2
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(53) RightHandPinky3
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(54) RightHandPinky4
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(55) LeftUpLeg
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(56) LeftLeg
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(57) LeftFoot
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(58) LeftToeBase
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(59) LeftToe_End
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(60) RightUpLeg
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(61) RightLeg
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(62) RightFoot
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(63) RightToeBase
+[2022.08.24-02.26.25:767][545]LogFbx: SortedLinks :(64) RightToe_End
+[2022.08.24-02.26.25:767][545]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-02.26.27:239][545]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mixamo/Walk_Forward.Walk_Forward
+[2022.08.24-02.26.27:239][545]LogFactory: FactoryCreateFile: AnimSequence with FbxFactory (0 0 ../../../../../../Users/suvra/OneDrive/AnimationsFromMixamo/Walk Left.fbx)
+[2022.08.24-02.26.27:246][545]LogFbx: Loading FBX Scene from ../../../../../../Users/suvra/OneDrive/AnimationsFromMixamo/Walk Left.fbx
+[2022.08.24-02.26.27:262][545]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(0) Hips
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(1) Spine
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(2) Spine1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(3) Spine2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(4) Neck
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(5) Head
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(6) HeadTop_End
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(7) LeftShoulder
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(8) LeftArm
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(9) LeftForeArm
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(10) LeftHand
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(11) LeftHandThumb1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(12) LeftHandThumb2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(13) LeftHandThumb3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(14) LeftHandThumb4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(15) LeftHandIndex1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(16) LeftHandIndex2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(17) LeftHandIndex3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(18) LeftHandIndex4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(19) LeftHandMiddle1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(20) LeftHandMiddle2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(21) LeftHandMiddle3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(22) LeftHandMiddle4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(23) LeftHandRing1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(24) LeftHandRing2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(25) LeftHandRing3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(26) LeftHandRing4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(27) LeftHandPinky1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(28) LeftHandPinky2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(29) LeftHandPinky3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(30) LeftHandPinky4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(31) RightShoulder
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(32) RightArm
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(33) RightForeArm
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(34) RightHand
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(35) RightHandThumb1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(36) RightHandThumb2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(37) RightHandThumb3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(38) RightHandThumb4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(39) RightHandIndex1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(40) RightHandIndex2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(41) RightHandIndex3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(42) RightHandIndex4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(43) RightHandMiddle1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(44) RightHandMiddle2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(45) RightHandMiddle3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(46) RightHandMiddle4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(47) RightHandRing1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(48) RightHandRing2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(49) RightHandRing3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(50) RightHandRing4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(51) RightHandPinky1
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(52) RightHandPinky2
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(53) RightHandPinky3
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(54) RightHandPinky4
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(55) LeftUpLeg
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(56) LeftLeg
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(57) LeftFoot
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(58) LeftToeBase
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(59) LeftToe_End
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(60) RightUpLeg
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(61) RightLeg
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(62) RightFoot
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(63) RightToeBase
+[2022.08.24-02.26.27:263][545]LogFbx: SortedLinks :(64) RightToe_End
+[2022.08.24-02.26.27:264][545]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-02.26.28:372][545]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mixamo/Walk_Left.Walk_Left
+[2022.08.24-02.26.28:372][545]LogFactory: FactoryCreateFile: AnimSequence with FbxFactory (0 0 ../../../../../../Users/suvra/OneDrive/AnimationsFromMixamo/Walk Right.fbx)
+[2022.08.24-02.26.28:379][545]LogFbx: Loading FBX Scene from ../../../../../../Users/suvra/OneDrive/AnimationsFromMixamo/Walk Right.fbx
+[2022.08.24-02.26.28:393][545]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(0) Hips
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(1) Spine
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(2) Spine1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(3) Spine2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(4) Neck
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(5) Head
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(6) HeadTop_End
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(7) LeftShoulder
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(8) LeftArm
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(9) LeftForeArm
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(10) LeftHand
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(11) LeftHandThumb1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(12) LeftHandThumb2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(13) LeftHandThumb3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(14) LeftHandThumb4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(15) LeftHandIndex1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(16) LeftHandIndex2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(17) LeftHandIndex3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(18) LeftHandIndex4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(19) LeftHandMiddle1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(20) LeftHandMiddle2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(21) LeftHandMiddle3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(22) LeftHandMiddle4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(23) LeftHandRing1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(24) LeftHandRing2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(25) LeftHandRing3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(26) LeftHandRing4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(27) LeftHandPinky1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(28) LeftHandPinky2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(29) LeftHandPinky3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(30) LeftHandPinky4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(31) RightShoulder
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(32) RightArm
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(33) RightForeArm
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(34) RightHand
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(35) RightHandThumb1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(36) RightHandThumb2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(37) RightHandThumb3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(38) RightHandThumb4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(39) RightHandIndex1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(40) RightHandIndex2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(41) RightHandIndex3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(42) RightHandIndex4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(43) RightHandMiddle1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(44) RightHandMiddle2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(45) RightHandMiddle3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(46) RightHandMiddle4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(47) RightHandRing1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(48) RightHandRing2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(49) RightHandRing3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(50) RightHandRing4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(51) RightHandPinky1
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(52) RightHandPinky2
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(53) RightHandPinky3
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(54) RightHandPinky4
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(55) LeftUpLeg
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(56) LeftLeg
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(57) LeftFoot
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(58) LeftToeBase
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(59) LeftToe_End
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(60) RightUpLeg
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(61) RightLeg
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(62) RightFoot
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(63) RightToeBase
+[2022.08.24-02.26.28:395][545]LogFbx: SortedLinks :(64) RightToe_End
+[2022.08.24-02.26.28:395][545]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-02.26.29:507][545]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mixamo/Walk_Right.Walk_Right
+[2022.08.24-02.26.29:507][545]LogFactory: FactoryCreateFile: AnimSequence with FbxFactory (0 0 ../../../../../../Users/suvra/OneDrive/AnimationsFromMixamo/Walking Backwards.fbx)
+[2022.08.24-02.26.29:515][545]LogFbx: Loading FBX Scene from ../../../../../../Users/suvra/OneDrive/AnimationsFromMixamo/Walking Backwards.fbx
+[2022.08.24-02.26.29:529][545]LogFbx: FBX Scene Loaded Succesfully
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(0) Hips
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(1) Spine
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(2) Spine1
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(3) Spine2
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(4) Neck
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(5) Head
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(6) HeadTop_End
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(7) LeftShoulder
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(8) LeftArm
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(9) LeftForeArm
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(10) LeftHand
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(11) LeftHandThumb1
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(12) LeftHandThumb2
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(13) LeftHandThumb3
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(14) LeftHandThumb4
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(15) LeftHandIndex1
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(16) LeftHandIndex2
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(17) LeftHandIndex3
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(18) LeftHandIndex4
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(19) LeftHandMiddle1
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(20) LeftHandMiddle2
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(21) LeftHandMiddle3
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(22) LeftHandMiddle4
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(23) LeftHandRing1
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(24) LeftHandRing2
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(25) LeftHandRing3
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(26) LeftHandRing4
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(27) LeftHandPinky1
+[2022.08.24-02.26.29:530][545]LogFbx: SortedLinks :(28) LeftHandPinky2
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(29) LeftHandPinky3
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(30) LeftHandPinky4
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(31) RightShoulder
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(32) RightArm
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(33) RightForeArm
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(34) RightHand
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(35) RightHandThumb1
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(36) RightHandThumb2
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(37) RightHandThumb3
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(38) RightHandThumb4
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(39) RightHandIndex1
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(40) RightHandIndex2
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(41) RightHandIndex3
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(42) RightHandIndex4
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(43) RightHandMiddle1
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(44) RightHandMiddle2
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(45) RightHandMiddle3
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(46) RightHandMiddle4
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(47) RightHandRing1
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(48) RightHandRing2
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(49) RightHandRing3
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(50) RightHandRing4
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(51) RightHandPinky1
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(52) RightHandPinky2
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(53) RightHandPinky3
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(54) RightHandPinky4
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(55) LeftUpLeg
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(56) LeftLeg
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(57) LeftFoot
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(58) LeftToeBase
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(59) LeftToe_End
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(60) RightUpLeg
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(61) RightLeg
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(62) RightFoot
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(63) RightToeBase
+[2022.08.24-02.26.29:531][545]LogFbx: SortedLinks :(64) RightToe_End
+[2022.08.24-02.26.29:531][545]LogFbx: Parsing AnimStack mixamo.com
+[2022.08.24-02.26.29:642][545]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mixamo/Walking_Backwards.Walking_Backwards
+[2022.08.24-02.26.35:016][153]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Mixamo/Walk_Forward.Walk_Forward
+[2022.08.24-02.26.35:017][153]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.26.35:026][153]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_36:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.26.35:192][153]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.26.35:266][153]LogUObjectGlobals: Warning: Failed to find object 'Class None.DestructibleMesh'
+[2022.08.24-02.26.35:271][153]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.26.35:293][153]LogViewport: Scene viewport resized to 791x208, mode Windowed.
+[2022.08.24-02.26.35:312][153]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.08.24-02.26.38:406][428]LogViewport: Scene viewport resized to 791x211, mode Windowed.
+[2022.08.24-02.26.38:435][430]LogViewport: Scene viewport resized to 791x215, mode Windowed.
+[2022.08.24-02.26.38:468][432]LogViewport: Scene viewport resized to 791x223, mode Windowed.
+[2022.08.24-02.26.38:498][434]LogViewport: Scene viewport resized to 791x233, mode Windowed.
+[2022.08.24-02.26.38:532][436]LogViewport: Scene viewport resized to 791x243, mode Windowed.
+[2022.08.24-02.26.38:563][438]LogViewport: Scene viewport resized to 791x255, mode Windowed.
+[2022.08.24-02.26.38:597][440]LogViewport: Scene viewport resized to 791x270, mode Windowed.
+[2022.08.24-02.26.38:630][442]LogViewport: Scene viewport resized to 791x284, mode Windowed.
+[2022.08.24-02.26.38:661][444]LogViewport: Scene viewport resized to 791x295, mode Windowed.
+[2022.08.24-02.26.38:691][446]LogViewport: Scene viewport resized to 791x304, mode Windowed.
+[2022.08.24-02.26.38:718][448]LogViewport: Scene viewport resized to 791x314, mode Windowed.
+[2022.08.24-02.26.38:752][450]LogViewport: Scene viewport resized to 791x325, mode Windowed.
+[2022.08.24-02.26.38:783][452]LogViewport: Scene viewport resized to 791x330, mode Windowed.
+[2022.08.24-02.26.38:813][454]LogViewport: Scene viewport resized to 791x335, mode Windowed.
+[2022.08.24-02.26.38:841][456]LogViewport: Scene viewport resized to 791x338, mode Windowed.
+[2022.08.24-02.26.38:873][458]LogViewport: Scene viewport resized to 791x344, mode Windowed.
+[2022.08.24-02.26.39:483][529]LogViewport: Scene viewport resized to 791x343, mode Windowed.
+[2022.08.24-02.26.39:518][531]LogViewport: Scene viewport resized to 791x330, mode Windowed.
+[2022.08.24-02.26.39:548][533]LogViewport: Scene viewport resized to 791x322, mode Windowed.
+[2022.08.24-02.26.39:580][535]LogViewport: Scene viewport resized to 791x314, mode Windowed.
+[2022.08.24-02.26.39:612][537]LogViewport: Scene viewport resized to 791x308, mode Windowed.
+[2022.08.24-02.26.39:638][539]LogViewport: Scene viewport resized to 791x304, mode Windowed.
+[2022.08.24-02.26.39:671][541]LogViewport: Scene viewport resized to 791x298, mode Windowed.
+[2022.08.24-02.26.39:705][543]LogViewport: Scene viewport resized to 791x291, mode Windowed.
+[2022.08.24-02.26.39:737][545]LogViewport: Scene viewport resized to 791x286, mode Windowed.
+[2022.08.24-02.26.39:768][547]LogViewport: Scene viewport resized to 791x281, mode Windowed.
+[2022.08.24-02.26.39:800][549]LogViewport: Scene viewport resized to 791x278, mode Windowed.
+[2022.08.24-02.26.39:857][554]LogViewport: Scene viewport resized to 791x277, mode Windowed.
+[2022.08.24-02.26.39:906][558]LogViewport: Scene viewport resized to 791x272, mode Windowed.
+[2022.08.24-02.26.39:935][560]LogViewport: Scene viewport resized to 791x270, mode Windowed.
+[2022.08.24-02.26.40:677][631]LogViewport: Scene viewport resized to 128x128, mode Windowed.
+[2022.08.24-02.26.45:289][982]LogSlate: Window 'Walk_Forward' being destroyed
+[2022.08.24-02.26.45:293][982]LogSlate: Window 'Walk_Forward' being destroyed
+[2022.08.24-02.26.45:294][982]LogWorld: UWorld::CleanupWorld for World_36, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.26.45:294][982]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.26.45:309][982]LogWorld: UWorld::CleanupWorld for World_38, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.26.45:309][982]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.26.45:355][982]LogWorld: UWorld::CleanupWorld for World_37, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.26.45:355][982]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.26.52:734][832]LogContentBrowser: Attempting asset rename: IK_RETARGET_YBot-Belica -> IK_RETARGET_YBot-Belica
+[2022.08.24-02.26.53:928][970]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2022.08.24-02.26.55:253][970]LogSlate: Window 'Delete Assets' being destroyed
+[2022.08.24-02.26.55:289][970]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
+[2022.08.24-02.26.55:319][970]LogUObjectHash: Compacting FUObjectHashTables data took   1.30ms
+[2022.08.24-02.26.55:348][970]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2022.08.24-02.27.01:965][288]LogSlate: Window 'Pick IK Rig To Copy Animation From' being destroyed
+[2022.08.24-02.27.13:009][ 99]LogSlate: Window 'Pick Skeletal Mesh' being destroyed
+[2022.08.24-02.27.13:017][ 99]LogContentBrowser: Deferred new asset file creation: NewIKRig
+[2022.08.24-02.27.13:021][ 99]LogContentBrowser: Creating deferred item: NewIKRig
+[2022.08.24-02.27.13:031][100]LogContentBrowser: Renaming the item being created (Deferred Item: NewIKRig).
+[2022.08.24-02.27.18:072][703]LogContentBrowser: Attempting asset rename: NewIKRig -> IK_YBot
+[2022.08.24-02.27.18:072][703]LogContentBrowser: End creating deferred item NewIKRig
+[2022.08.24-02.27.19:573][870]LogAssetEditorSubsystem: Opening Asset editor for IKRigDefinition /Game/Blueprints/Animations/IK_YBot.IK_YBot
+[2022.08.24-02.27.19:573][870]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.27.19:582][870]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_40:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.27.19:582][870]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_40:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.27.19:790][870]LogViewport: Scene viewport resized to 529x598, mode Windowed.
+[2022.08.24-02.27.38:626][595]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.27.46:764][278]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.27.51:483][585]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.27.56:186][918]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.27.59:744][164]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.03:262][393]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.07:659][710]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.11:984][999]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.15:636][237]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.22:262][720]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.25:817][948]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.29:694][225]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.32:962][445]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.36:502][664]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.40:844][930]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.50:178][699]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.28.53:742][944]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.29.12:314][586]LogSlate: Window 'Add New Retarget Chain' being destroyed
+[2022.08.24-02.29.15:083][816]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Animations/IK_YBot" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Blueprints/Animations/IK_YBot.uasset" SILENT=true
+[2022.08.24-02.29.15:089][816]LogSavePackage: Moving output files for package: /Game/Blueprints/Animations/IK_YBot
+[2022.08.24-02.29.15:089][816]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/IK_YBot7D0E224E401E99B445B9A78BB106B722.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Blueprints/Animations/IK_YBot.uasset'
+[2022.08.24-02.29.15:103][816]AssetCheck: New page: Asset Save: IK_YBot
+[2022.08.24-02.29.15:103][816]LogContentValidation: Display: Validating IKRigDefinition /Game/Blueprints/Animations/IK_YBot.IK_YBot
+[2022.08.24-02.29.16:063][899]LogSlate: Window 'IK_YBot' being destroyed
+[2022.08.24-02.29.16:067][899]LogSlate: Window 'IK_YBot' being destroyed
+[2022.08.24-02.29.16:068][899]LogWorld: UWorld::CleanupWorld for World_40, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.29.16:068][899]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.29.24:877][733]LogDerivedDataCache: C:/Users/suvra/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.717 and deleted 0 file(s) with total size 0 MiB.
+[2022.08.24-02.29.26:511][733]LogSlate: Window 'Pick IK Rig To Copy Animation From' being destroyed
+[2022.08.24-02.29.26:517][733]LogContentBrowser: Deferred new asset file creation: NewIKRetargeter
+[2022.08.24-02.29.26:521][733]LogContentBrowser: Creating deferred item: NewIKRetargeter
+[2022.08.24-02.29.26:531][734]LogContentBrowser: Renaming the item being created (Deferred Item: NewIKRetargeter).
+[2022.08.24-02.29.28:853][988]LogContentBrowser: Attempting asset rename: NewIKRetargeter -> IK_RETARGET_YBot-Belica
+[2022.08.24-02.29.28:854][988]LogContentBrowser: End creating deferred item NewIKRetargeter
+[2022.08.24-02.29.30:222][140]LogAssetEditorSubsystem: Opening Asset editor for IKRetargeter /Game/Blueprints/Animations/IK_RETARGET_YBot-Belica.IK_RETARGET_YBot-Belica
+[2022.08.24-02.29.30:222][140]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.29.30:230][140]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_41:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.29.30:272][140]LogViewport: Scene viewport resized to 1414x858, mode Windowed.
+[2022.08.24-02.29.30:304][140]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.08.24-02.29.52:636][139]LogSlate: Window 'Create New Retarget Pose' being destroyed
+[2022.08.24-02.31.12:358][408]LogSlate: Took 0.000228 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.08.24-02.31.12:360][408]LogViewport: Scene viewport resized to 475x409, mode Windowed.
+[2022.08.24-02.31.12:376][408]LogSlateStyle: Warning: Missing Resource from 'CoreStyle' Style: 'Unable to find Color 'Graph.Node.Comment.TextColor'.'
+[2022.08.24-02.31.12:382][408]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2022.08.24-02.31.12:420][411]LogD3D12RHI: OnlineHeap RollOver Detected. Increase the heap size to prevent creation of additional heaps
+[2022.08.24-02.31.16:525][846]LogAssetEditorSubsystem: Opening Asset editor for IKRigDefinition /Game/Blueprints/Animations/IK_YBot.IK_YBot
+[2022.08.24-02.31.16:526][846]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.31.16:535][846]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_42:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.31.16:535][846]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_42:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.31.16:751][846]LogViewport: Scene viewport resized to 529x598, mode Windowed.
+[2022.08.24-02.31.18:185][974]LogSlate: Window 'IK_YBot' being destroyed
+[2022.08.24-02.31.18:190][974]LogSlate: Window 'IK_YBot' being destroyed
+[2022.08.24-02.31.18:190][974]LogWorld: UWorld::CleanupWorld for World_42, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.31.18:190][974]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.31.19:262][ 89]LogAssetEditorSubsystem: Opening Asset editor for IKRigDefinition /Game/Blueprints/Animations/IKRig_Belica.IKRig_Belica
+[2022.08.24-02.31.19:262][ 89]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.31.19:272][ 89]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_43:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.31.19:272][ 89]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_43:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.31.19:487][ 89]LogViewport: Scene viewport resized to 529x598, mode Windowed.
+[2022.08.24-02.31.23:402][410]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Animations/IKRig_Belica" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Blueprints/Animations/IKRig_Belica.uasset" SILENT=true
+[2022.08.24-02.31.23:411][410]LogSavePackage: Moving output files for package: /Game/Blueprints/Animations/IKRig_Belica
+[2022.08.24-02.31.23:412][410]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/IKRig_BelicaD7DA40C24DF6ED0A539039B6AE40BBB2.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Blueprints/Animations/IKRig_Belica.uasset'
+[2022.08.24-02.31.23:425][410]AssetCheck: New page: Asset Save: IKRig_Belica
+[2022.08.24-02.31.23:425][410]LogContentValidation: Display: Validating IKRigDefinition /Game/Blueprints/Animations/IKRig_Belica.IKRig_Belica
+[2022.08.24-02.31.24:639][517]LogSlate: Window 'IKRig_Belica' being destroyed
+[2022.08.24-02.31.24:644][517]LogSlate: Window 'IKRig_Belica' being destroyed
+[2022.08.24-02.31.24:645][517]LogWorld: UWorld::CleanupWorld for World_43, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.31.24:645][517]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.31.35:875][800]LogAssetEditorSubsystem: Opening Asset editor for IKRigDefinition /Game/Blueprints/Animations/IK_YBot.IK_YBot
+[2022.08.24-02.31.35:875][800]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.24-02.31.35:884][800]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_44:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.31.35:884][800]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_44:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2022.08.24-02.31.36:094][800]LogViewport: Scene viewport resized to 529x598, mode Windowed.
+[2022.08.24-02.31.48:136][885]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Animations/IK_YBot" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Blueprints/Animations/IK_YBot.uasset" SILENT=true
+[2022.08.24-02.31.48:141][885]LogSavePackage: Moving output files for package: /Game/Blueprints/Animations/IK_YBot
+[2022.08.24-02.31.48:142][885]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/IK_YBot88E17E6645C568ED3BBCCAA901AF2BB3.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Blueprints/Animations/IK_YBot.uasset'
+[2022.08.24-02.31.48:152][885]AssetCheck: New page: Asset Save: IK_YBot
+[2022.08.24-02.31.48:152][885]LogContentValidation: Display: Validating IKRigDefinition /Game/Blueprints/Animations/IK_YBot.IK_YBot
+[2022.08.24-02.31.49:631][ 17]LogSlate: Window 'IK_YBot' being destroyed
+[2022.08.24-02.31.49:635][ 17]LogSlate: Window 'IK_YBot' being destroyed
+[2022.08.24-02.31.49:636][ 17]LogWorld: UWorld::CleanupWorld for World_44, bSessionEnded=true, bCleanupResources=true
+[2022.08.24-02.31.49:636][ 17]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.24-02.33.36:958][751]LogSlate: Window 'Select Export Path' being destroyed
+[2022.08.24-02.33.36:964][751]LogTemp: Display: Duplicating and Retargeting: AnimSequence /Game/Mixamo/Walk_Forward.Walk_Forward
+[2022.08.24-02.33.36:964][751]LogTemp: Display: Duplicating and Retargeting: AnimSequence /Game/Mixamo/Walk_Left.Walk_Left
+[2022.08.24-02.33.36:964][751]LogTemp: Display: Duplicating and Retargeting: AnimSequence /Game/Mixamo/Walk_Right.Walk_Right
+[2022.08.24-02.33.36:964][751]LogTemp: Display: Duplicating and Retargeting: AnimSequence /Game/Mixamo/Walking_Backwards.Walking_Backwards
+[2022.08.24-02.33.37:493][751]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Blueprints/Animations/RetargettedAnimations/Walk_Forward_Retargeted.Walk_Forward_Retargeted
+[2022.08.24-02.33.37:493][751]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Blueprints/Animations/RetargettedAnimations/Walk_Left_Retargeted.Walk_Left_Retargeted
+[2022.08.24-02.33.37:493][751]LogTextFormatter: Warning: Failed to parse argument "Asset" as a number (using "0" as a fallback). Please check your format string for errors: "Retargeting animation asset: {Asset}".
+[2022.08.24-02.33.37:565][751]LogTextFormatter: Warning: Failed to parse argument "Asset" as a number (using "0" as a fallback). Please check your format string for errors: "Retargeting animation asset: {Asset}".
+[2022.08.24-02.33.37:616][751]LogTextFormatter: Warning: Failed to parse argument "Asset" as a number (using "0" as a fallback). Please check your format string for errors: "Retargeting animation asset: {Asset}".
+[2022.08.24-02.33.37:668][751]LogTextFormatter: Warning: Failed to parse argument "Asset" as a number (using "0" as a fallback). Please check your format string for errors: "Retargeting animation asset: {Asset}".
+[2022.08.24-02.33.37:674][751]LogTemp: Display: Duplicate and Retarget - New Asset Created: Walk_Forward_Retargeted
+[2022.08.24-02.33.37:674][751]LogTemp: Display: Duplicate and Retarget - New Asset Created: Walk_Left_Retargeted
+[2022.08.24-02.33.37:674][751]LogTemp: Display: Duplicate and Retarget - New Asset Created: Walk_Right_Retargeted
+[2022.08.24-02.33.37:674][751]LogTemp: Display: Duplicate and Retarget - New Asset Created: Walking_Backwards_Retargeted
+[2022.08.24-02.33.37:842][751]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Blueprints/Animations/RetargettedAnimations/Walking_Backwards_Retargeted.Walking_Backwards_Retargeted
+[2022.08.24-02.33.37:842][751]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Blueprints/Animations/RetargettedAnimations/Walk_Left_Retargeted.Walk_Left_Retargeted
+[2022.08.24-02.33.38:069][754]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Blueprints/Animations/RetargettedAnimations/Walk_Forward_Retargeted.Walk_Forward_Retargeted
+[2022.08.24-02.33.40:009][895]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Blueprints/Animations/RetargettedAnimations/Walk_Right_Retargeted.Walk_Right_Retargeted
+[2022.08.24-02.33.41:392][972]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2022.08.24-02.33.41:493][972]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mixamo/Walk_Right" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walk_Right.uasset" SILENT=true
+[2022.08.24-02.33.41:533][972]LogSavePackage: Moving output files for package: /Game/Mixamo/Walk_Right
+[2022.08.24-02.33.41:533][972]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Walk_Right26CFB1FB4A3B7052AA6B1B8AC4AFF602.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walk_Right.uasset'
+[2022.08.24-02.33.41:541][972]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Mixamo/Walking_Backwards" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walking_Backwards.uasset" SILENT=true
+[2022.08.24-02.33.41:549][972]LogSavePackage: Moving output files for package: /Game/Mixamo/Walking_Backwards
+[2022.08.24-02.33.41:549][972]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Walking_Backwards957C4B604E3ECAA6343D3BBEBD9BD87D.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Mixamo/Walking_Backwards.uasset'
+[2022.08.24-02.33.41:556][972]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Rigs/Y_Bot" FILE="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Rigs/Y_Bot.uasset" SILENT=true
+[2022.08.24-02.33.41:612][972]LogSavePackage: Moving output files for package: /Game/Rigs/Y_Bot
+[2022.08.24-02.33.41:612][972]LogSavePackage: Moving 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Saved/Y_BotAEE1E0AB49FC4741010ED0884BA80AA9.tmp' to 'D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/Content/Rigs/Y_Bot.uasset'

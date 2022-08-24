@@ -19,14 +19,14 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class UCameraComponent* Camera;
 
-	UPROPERTY(VisibleAnywhere, Category = Camera)
+	UPROPERTY(EditAnywhere, Category = Movement, meta = (ClampMin = "1", ClampMax = "100", UIMin = "1", UIMax = "100"))
 		float HorizontalSenstivity = 45.f;
 
-	UPROPERTY(VisibleAnywhere, Category = Camera)
+	UPROPERTY(EditAnywhere, Category = Movement, meta = (ClampMin = "1", ClampMax = "100", UIMin = "1", UIMax = "100"))
 		float VerticalSenstivity = 45.f;
 
-	bool bIsRunning = false;
-	bool bIsSprinting = false;
+	bool bIsRunning = true;
+	bool bIsSprinting = true;
 
 	UPROPERTY(EditAnywhere, Category = Weapon, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 		class USoundCue* FireSoundCue;
@@ -76,6 +76,12 @@ private:
 
 	/** For aiming */
 	bool bAiming = false;
+
+	UPROPERTY(EditAnywhere, Category = Movement, meta = (ClampMin = "1", ClampMax = "100", UIMin = "1", UIMax = "100"))
+		float HorizontalAimSenstivity = 0.f;
+
+	UPROPERTY(EditAnywhere, Category = Movement, meta = (ClampMin = "1", ClampMax = "100", UIMin = "1", UIMax = "100"))
+		float VerticalAimSenstivity = 0.f;
 
 	// as we want smooth interpolation between aimng and not aiming, we need to add variables which will be helpful for POV
 	float DefaultPOV;			// set in BeginPlay

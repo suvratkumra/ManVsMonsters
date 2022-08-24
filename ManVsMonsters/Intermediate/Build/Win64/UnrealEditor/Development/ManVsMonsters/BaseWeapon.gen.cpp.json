@@ -1,0 +1,17 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\inc\\manvsmonsters\\baseweapon.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\manvsmonsterseditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\development\\manvsmonsters\\definitions.manvsmonsters.h",
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\source\\manvsmonsters\\items\\weapons\\baseweapon.h",
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\source\\manvsmonsters\\items\\item.h",
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\inc\\manvsmonsters\\item.generated.h",
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\inc\\manvsmonsters\\baseweapon.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

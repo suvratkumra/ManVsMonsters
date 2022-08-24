@@ -28,9 +28,6 @@ void AManCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// stating the walk speed
-	GetCharacterMovement()->MaxWalkSpeed = 270.f;
-	GetCharacterMovement()->MaxWalkSpeedCrouched = 150.f;
 
 	if (Camera)
 	{
@@ -113,22 +110,33 @@ void AManCharacter::MoveRight(float AxisValue)
 
 void AManCharacter::LookUp(float AxisValue)
 {
-	AddControllerPitchInput(AxisValue * VerticalSenstivity * GetWorld()->GetDeltaSeconds());
+	if (bAiming)
+	{
+		AddControllerPitchInput(AxisValue * VerticalAimSenstivity * GetWorld()->GetDeltaSeconds());
+	}
+	else
+	{
+		AddControllerPitchInput(AxisValue * VerticalSenstivity * GetWorld()->GetDeltaSeconds());
+	}
 }
 
 void AManCharacter::LookRight(float AxisValue)
 {
-	AddControllerYawInput(AxisValue * HorizontalSenstivity * GetWorld()->GetDeltaSeconds());
+	if (bAiming)
+	{
+		AddControllerYawInput(AxisValue * HorizontalAimSenstivity * GetWorld()->GetDeltaSeconds());
+	}
+	else
+	{
+		AddControllerYawInput(AxisValue * HorizontalSenstivity * GetWorld()->GetDeltaSeconds());
+	}
+	
 }
 
 void AManCharacter::RunningButtonPressed()
 {
 	bIsRunning = true;
-	if (GetCharacterMovement())
-	{
-		GetCharacterMovement()->MaxWalkSpeed = 540.f;
-		GetCharacterMovement()->MaxWalkSpeedCrouched = 300.f;
-	}
+	
 }
 
 void AManCharacter::Fire()
@@ -285,11 +293,7 @@ void AManCharacter::SetHUDCrosshairs()
 void AManCharacter::SetIsRunning(bool bRunning)
 {
 	bIsRunning = bRunning;
-	if (!bIsRunning)
-	{
-		GetCharacterMovement()->MaxWalkSpeed = 270.f;
-		GetCharacterMovement()->MaxWalkSpeedCrouched = 150.f;
-	}
+	
 }
 
 float AManCharacter::GetWalkingSpeed()
