@@ -32,4 +32,6 @@ protected:
 public:	
 	virtual void Tick(float DeltaTime) override;
 	FORCEINLINE USkeletalMeshComponent* GetMesh() const { return Mesh; }
+	FORCEINLINE USphereComponent* GetCollisionSphere() const { return CollisionSphere; }
+	FORCEINLINE UWidgetComponent* GetWidget() const { return PickupWidget; }
 };

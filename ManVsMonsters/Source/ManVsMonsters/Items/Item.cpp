@@ -17,7 +17,8 @@ AItem::AItem()
 	CollisionSphere->SetupAttachment(RootComponent);
 
 	PickupWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("Pickup Widget"));
-	PickupWidget->SetupAttachment(RootComponent);
+	PickupWidget->SetupAttachment(RootComponent); 
+	//sPickupWidget->SetVisibility(true);
 
 }
 

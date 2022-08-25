@@ -8,14 +8,27 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef MANVSMONSTERS_Weapon_generated_h
 #error "Weapon.generated.h already included, missing '#pragma once' in Weapon.h"
 #endif
 #define MANVSMONSTERS_Weapon_generated_h
 
 #define FID_ManVsMonsters_Source_ManVsMonsters_Items_Weapon_h_15_SPARSE_DATA
-#define FID_ManVsMonsters_Source_ManVsMonsters_Items_Weapon_h_15_RPC_WRAPPERS
-#define FID_ManVsMonsters_Source_ManVsMonsters_Items_Weapon_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_ManVsMonsters_Source_ManVsMonsters_Items_Weapon_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnSphereEndOverlap); \
+	DECLARE_FUNCTION(execOnSphereBeginOverlap);
+
+
+#define FID_ManVsMonsters_Source_ManVsMonsters_Items_Weapon_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnSphereEndOverlap); \
+	DECLARE_FUNCTION(execOnSphereBeginOverlap);
+
+
 #define FID_ManVsMonsters_Source_ManVsMonsters_Items_Weapon_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWeapon(); \
@@ -36,7 +49,7 @@ public: \
 
 #define FID_ManVsMonsters_Source_ManVsMonsters_Items_Weapon_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AWeapon(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AWeapon(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AWeapon) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AWeapon); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AWeapon); \
@@ -48,8 +61,6 @@ public:
 
 
 #define FID_ManVsMonsters_Source_ManVsMonsters_Items_Weapon_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AWeapon() { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AWeapon(AWeapon&&); \

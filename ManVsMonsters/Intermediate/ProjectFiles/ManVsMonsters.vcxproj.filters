@@ -77,6 +77,18 @@
     <ClInclude Include="..\..\Source\ManVsMonsters\HUD\ManHUD.h">
       <Filter>Source\ManVsMonsters\HUD</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\ManVsMonsters\HUD\PickupUserWidget.cpp">
+      <Filter>Source\ManVsMonsters\HUD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManVsMonsters\HUD\PickupUserWidget.h">
+      <Filter>Source\ManVsMonsters\HUD</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManVsMonsters\HUD\PickupWidgetHUD.cpp">
+      <Filter>Source\ManVsMonsters\HUD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManVsMonsters\HUD\PickupWidgetHUD.h">
+      <Filter>Source\ManVsMonsters\HUD</Filter>
+    </ClInclude>
     <Filter Include="Source\ManVsMonsters\Items">
       <UniqueIdentifier>{8B200C31-3514-3E75-8054-DB3514E21C42}</UniqueIdentifier>
     </Filter>
