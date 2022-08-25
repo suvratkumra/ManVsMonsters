@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Item.h"
+#include "WeaponState.h"
 #include "Weapon.generated.h"
 
 /**
@@ -15,12 +16,22 @@ class MANVSMONSTERS_API AWeapon : public AItem
 	GENERATED_BODY()
 
 private:
+	/** Weapon Property Variables. */
 	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
-		FText WeaponType;
+		EWeaponType WeaponType;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
+		FText WeaponAmmo;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
+		FText WeaponName;
 
 public:
 	AWeapon();
 	virtual void Tick(float DeltaTime) override;
+	void SetWeaponInitialProperties();
+	void SetWeaponType();
+	void SetAllStarsVisibility(bool bVisible);
 
 protected:
 	virtual void BeginPlay() override;
@@ -29,8 +40,6 @@ protected:
 	
 	UFUNCTION()
 	virtual void OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-
-	void SetWeaponAmmo();
 
 	UPROPERTY(EditAnywhere)
 	class UPickupUserWidget* PickupWidgetPointer;

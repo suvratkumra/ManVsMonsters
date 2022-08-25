@@ -83,12 +83,6 @@
     <ClInclude Include="..\..\Source\ManVsMonsters\HUD\PickupUserWidget.h">
       <Filter>Source\ManVsMonsters\HUD</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\ManVsMonsters\HUD\PickupWidgetHUD.cpp">
-      <Filter>Source\ManVsMonsters\HUD</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\ManVsMonsters\HUD\PickupWidgetHUD.h">
-      <Filter>Source\ManVsMonsters\HUD</Filter>
-    </ClInclude>
     <Filter Include="Source\ManVsMonsters\Items">
       <UniqueIdentifier>{8B200C31-3514-3E75-8054-DB3514E21C42}</UniqueIdentifier>
     </Filter>
@@ -104,14 +98,10 @@
     <ClInclude Include="..\..\Source\ManVsMonsters\Items\Weapon.h">
       <Filter>Source\ManVsMonsters\Items</Filter>
     </ClInclude>
-    <Filter Include="Source\ManVsMonsters\Items\Weapons">
-      <UniqueIdentifier>{9720AB17-F6BA-30AF-8587-C989167D452E}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\ManVsMonsters\Items\Weapons\BaseWeapon.cpp">
-      <Filter>Source\ManVsMonsters\Items\Weapons</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\ManVsMonsters\Items\Weapons\BaseWeapon.h">
-      <Filter>Source\ManVsMonsters\Items\Weapons</Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\ManVsMonsters\Items\WeaponState.h">
+      <Filter>Source\ManVsMonsters\Items</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

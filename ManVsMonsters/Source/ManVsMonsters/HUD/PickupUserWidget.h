@@ -15,8 +15,6 @@ class MANVSMONSTERS_API UPickupUserWidget : public UUserWidget
 	GENERATED_BODY()
 
 protected:
-	//virtual void BeginPlay() override;
-	virtual void NativeConstruct() override;
 
 public:
 
@@ -28,7 +26,21 @@ public:
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
 		UTextBlock* AmmoText;
 
-	UFUNCTION()
-		void SetWeaponAmmo(FString AmmoAmount);
+	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
+		UTextBlock* WeaponName;
 
+	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
+		class UImage* Star1Image;
+
+	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
+		class UImage* Star2Image;
+
+	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
+		class UImage* Star3Image;
+
+	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
+		class UImage* Star4Image;
+
+	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
+		class UImage* Star5Image;
 };

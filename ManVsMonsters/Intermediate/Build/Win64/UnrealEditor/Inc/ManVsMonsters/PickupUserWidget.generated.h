@@ -14,16 +14,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define MANVSMONSTERS_PickupUserWidget_generated_h
 
 #define FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_15_SPARSE_DATA
-#define FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_15_RPC_WRAPPERS \
- \
-	DECLARE_FUNCTION(execSetWeaponAmmo);
-
-
-#define FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execSetWeaponAmmo);
-
-
+#define FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_15_RPC_WRAPPERS
+#define FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS
 #define FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPickupUserWidget(); \
