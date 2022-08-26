@@ -62,6 +62,10 @@ void EmptyLinkFunctionForGeneratedCodePickupUserWidget() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Star5Image_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_Star5Image;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_E_Key_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_E_Key;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -148,6 +152,15 @@ void EmptyLinkFunctionForGeneratedCodePickupUserWidget() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_Star5Image = { "Star5Image", nullptr, (EPropertyFlags)0x001000000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPickupUserWidget, Star5Image), Z_Construct_UClass_UImage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_Star5Image_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_Star5Image_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_E_Key_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "Category", "PickupUserWidget" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HUD/PickupUserWidget.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_E_Key = { "E_Key", nullptr, (EPropertyFlags)0x001000000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPickupUserWidget, E_Key), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_E_Key_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_E_Key_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPickupUserWidget_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_WeaponTypeText,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_AmmoText,
@@ -157,6 +170,7 @@ void EmptyLinkFunctionForGeneratedCodePickupUserWidget() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_Star3Image,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_Star4Image,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_Star5Image,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPickupUserWidget_Statics::NewProp_E_Key,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UPickupUserWidget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UPickupUserWidget>::IsAbstract,
@@ -194,9 +208,9 @@ void EmptyLinkFunctionForGeneratedCodePickupUserWidget() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UPickupUserWidget, UPickupUserWidget::StaticClass, TEXT("UPickupUserWidget"), &Z_Registration_Info_UClass_UPickupUserWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPickupUserWidget), 4247356004U) },
+		{ Z_Construct_UClass_UPickupUserWidget, UPickupUserWidget::StaticClass, TEXT("UPickupUserWidget"), &Z_Registration_Info_UClass_UPickupUserWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPickupUserWidget), 2136770235U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_516158979(TEXT("/Script/ManVsMonsters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_433351339(TEXT("/Script/ManVsMonsters"),
 		Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_HUD_PickupUserWidget_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

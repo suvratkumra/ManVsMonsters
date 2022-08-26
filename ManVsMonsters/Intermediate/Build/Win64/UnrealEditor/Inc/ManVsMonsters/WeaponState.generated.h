@@ -18,7 +18,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define FOREACH_ENUM_EWEAPONTYPE(op) \
-	op(EWeaponType::EWT_Used) \
+	op(EWeaponType::EWT_Damaged) \
 	op(EWeaponType::EWT_Common) \
 	op(EWeaponType::EWT_Uncommon) \
 	op(EWeaponType::EWT_Rare) \

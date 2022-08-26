@@ -11,7 +11,7 @@
 #include "Components/Image.h"
 #include "Components/WidgetComponent.h"
 
-AWeapon::AWeapon()
+AWeapon::AWeapon() : E_KeyColor(1.f, 0.f, 0.f)		// setting the color to Red
 {
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -28,6 +28,52 @@ AWeapon::AWeapon()
 void AWeapon::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	/** Setting the blinking E_Key */
+	SetPickupKeyBlink(bPickupWidgetVisibility);
+}
+
+/** Change the color of the blinking E_Key*/
+void AWeapon::SetPickupKeyBlink(bool bPickupVisible)
+{
+	if (bPickupVisible && PickupWidget2)
+	{
+		if (bKeyColorDirection == false)			// here we want to change the color from Red to White, 
+		{
+			if (GetWorld())
+			{
+				E_KeyColor.Y = FMath::FInterpTo(E_KeyColor.Y, 1.f, GetWorld()->GetDeltaSeconds(), E_KeyInterpolationSpeed);
+				E_KeyColor.Z = FMath::FInterpTo(E_KeyColor.Z, 1.f, GetWorld()->GetDeltaSeconds(), E_KeyInterpolationSpeed);
+				if (E_KeyColor.Y == 1.f && E_KeyColor.Z == 1.f) bKeyColorDirection = true;			// now we want to reverse it
+			}
+			
+		}
+		else
+		{
+			if (GetWorld())
+			{
+				E_KeyColor.Y = FMath::FInterpTo(E_KeyColor.Y, 0.f, GetWorld()->GetDeltaSeconds(), E_KeyInterpolationSpeed);
+				E_KeyColor.Z = FMath::FInterpTo(E_KeyColor.Z, 0.f, GetWorld()->GetDeltaSeconds(), E_KeyInterpolationSpeed);
+				if (E_KeyColor.Y == 0.f && E_KeyColor.Z == 0.f) bKeyColorDirection = false;			// now we want to reverse it
+			}
+		}
+		
+
+		PickupWidgetPointer = PickupWidgetPointer == nullptr ? Cast<UPickupUserWidget>(PickupWidget2->GetUserWidgetObject()) : PickupWidgetPointer;
+		if (PickupWidgetPointer)
+		{
+			if (PickupWidgetPointer->E_Key)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("Here"));
+				FLinearColor LinearColor(E_KeyColor);
+				PickupWidgetPointer->E_Key->SetColorAndOpacity(LinearColor);
+			}
+		}
+	}
+	else if (!bPickupVisible && PickupWidget2)
+	{
+		E_KeyColor.Y = E_KeyColor.Z = 0.f;				// resetting it back to red;
+	}
 }
 
 void AWeapon::SetWeaponInitialProperties()
@@ -56,10 +102,10 @@ void AWeapon::SetWeaponType()
 {
 	switch (WeaponType)
 	{
-		case EWeaponType::EWT_Used:
+		case EWeaponType::EWT_Damaged:
 			if (PickupWidgetPointer->WeaponTypeText)
 			{
-				PickupWidgetPointer->WeaponTypeText->SetText(FText::FromString("Used"));
+				PickupWidgetPointer->WeaponTypeText->SetText(FText::FromString("Damaged"));
 
 				/*Setting the text color to grey*/
 				FLinearColor LinearColor;
@@ -179,6 +225,8 @@ void AWeapon::OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 	AManCharacter* Character = Cast<AManCharacter>(OtherActor);
 	if (OtherActor)
 	{
+		// now we want to make the E key change colors rapidly, so we will do that only when the widget is visible, so that its efficient
+		bPickupWidgetVisibility = true;
 		PickupWidgetPointer->SetVisibility(ESlateVisibility::Visible);
 		
 	}
@@ -190,6 +238,7 @@ void AWeapon::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActo
 	AManCharacter* Character = Cast<AManCharacter>(OtherActor);
 	if (OtherActor)
 	{
+		bPickupWidgetVisibility = false;
 		PickupWidgetPointer->SetVisibility(ESlateVisibility::Hidden);
 	}
 }

@@ -43,4 +43,7 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
 		class UImage* Star5Image;
+
+	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
+	UTextBlock* E_Key;
 };

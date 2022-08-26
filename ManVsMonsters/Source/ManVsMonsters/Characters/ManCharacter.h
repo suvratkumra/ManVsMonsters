@@ -123,6 +123,7 @@ protected:
 	void RunningButtonPressed();
 	void AimButtonPressed();
 	void AimButtonReleased();
+	void WorldShiftButtonPressed();
 	
 	// for automatic fire
 	void Fire();

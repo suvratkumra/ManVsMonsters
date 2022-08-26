@@ -26,12 +26,21 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
 		FText WeaponName;
 
+	bool bPickupWidgetVisibility = false;
+
+	FVector E_KeyColor;
+	bool bKeyColorDirection = false;
+
+	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
+		float E_KeyInterpolationSpeed = 50.f;
+
 public:
 	AWeapon();
 	virtual void Tick(float DeltaTime) override;
 	void SetWeaponInitialProperties();
 	void SetWeaponType();
 	void SetAllStarsVisibility(bool bVisible);
+	void SetPickupKeyBlink(bool bVisible);
 
 protected:
 	virtual void BeginPlay() override;
