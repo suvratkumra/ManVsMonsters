@@ -841,3 +841,223 @@ LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
 [2022.08.26-12.27.04:237][218]LogDerivedDataCache: C:/Users/suvra/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.736 and deleted 0 file(s) with total size 0 MiB.
 [2022.08.26-13.06.55:863][352]LogWindowsTextInputMethodSystem: Activated input method: English (Canada) - (Keyboard).
 [2022.08.26-13.06.55:863][352]LogWindowsTextInputMethodSystem: Activated input method: English (Canada) - (Keyboard).
+[2022.08.26-13.07.49:312][329]LogSlate: Took 0.000251 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.08.26-13.07.49:322][329]LogSlate: Took 0.000295 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.08.26-13.07.49:477][331]LogSkeletalMesh: Display: Waiting for skeletal meshes to be ready 0/1 (Belica) ...
+[2022.08.26-13.08.35:206][715]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2022.08.26-13.08.35:273][715]LogUObjectGlobals: Warning: Failed to find object 'Class None.Physics'
+[2022.08.26-13.14.47:910][124]LogHotReload: New module detected: UnrealEditor-ManVsMonsters-0001.dll
+[2022.08.26-13.14.48:929][128]LogHotReload: Starting Hot-Reload from IDE
+[2022.08.26-13.14.49:079][128]LogClass: /Script/ManVsMonsters Reload.
+[2022.08.26-13.14.49:079][128]LogClass: ManCharacter Reload.
+[2022.08.26-13.14.49:081][128]LogClass: Could not find existing class ManCharacter in package /Script/ManVsMonsters for reload, assuming new or modified class
+[2022.08.26-13.14.49:101][128]Re-instancing ManCharacter after reload.
+[2022.08.26-13.14.49:219][128]Display: HotReload took  0.3s.
+[2022.08.26-13.14.49:219][128]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 6 classes unchanged, 1 enum unchanged, 1 scriptstruct unchanged, 2 functions remapped, 1 scriptstruct remapped
+[2022.08.26-13.23.08:360][615]LogHotReload: New module detected: UnrealEditor-ManVsMonsters-0002.dll
+[2022.08.26-13.23.09:379][619]LogHotReload: Starting Hot-Reload from IDE
+[2022.08.26-13.23.09:800][619]Display: HotReload took  0.4s.
+[2022.08.26-13.23.09:800][619]Display: Reload/Re-instancing Complete: 1 package changed, 7 classes unchanged, 1 enum unchanged, 1 scriptstruct unchanged, 2 functions remapped, 1 scriptstruct remapped
+[2022.08.26-13.23.15:187][888]LogSlate: Window 'Project Settings' being destroyed
+[2022.08.26-13.23.15:199][888]LogSlate: Window 'Project Settings' being destroyed
+[2022.08.26-13.23.16:551][ 39]Candidate modules for hot reload:
+[2022.08.26-13.23.16:551][ 39]  ManVsMonsters
+[2022.08.26-13.23.16:555][ 39]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_5.0/Engine/Binaries/DotNET/UnrealBuildTool/UnrealBuildTool.exe  -ModuleWithSuffix=ManVsMonsters,3055 ManVsMonstersEditor Win64 Development -Project="D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/ManVsMonsters.uproject" "D:/Unreal Engine Projects/ManVsMonsters/ManVsMonsters/ManVsMonsters.uproject"  -IgnoreJunk]
+[2022.08.26-13.23.16:558][ 39]Warning: Starting HotReload took  0.0s.
+[2022.08.26-13.23.18:434][185]CompilerResultsLog: New page: Compilation - Aug. 26, 2022, 1:23:18 a.m.
+[2022.08.26-13.23.18:434][185]CompilerResultsLog: Log file: C:\Users\suvra\AppData\Local\UnrealBuildTool\Log.txt
+[2022.08.26-13.23.18:434][185]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Unreal Engine Projects\ManVsMonsters).
+[2022.08.26-13.23.18:435][185]CompilerResultsLog: Building ManVsMonstersEditor...
+[2022.08.26-13.23.18:435][185]CompilerResultsLog: Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.08.26-13.23.18:435][185]CompilerResultsLog: Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
+[2022.08.26-13.23.18:435][185]CompilerResultsLog:   Executing up to 16 processes, one per physical core
+[2022.08.26-13.23.18:435][185]CompilerResultsLog: Building 3 actions with 3 processes...
+[2022.08.26-13.23.18:435][185]CompilerResultsLog: [1/3] Link UnrealEditor-ManVsMonsters-3055.lib
+[2022.08.26-13.23.18:435][185]CompilerResultsLog:    Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-3055.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-3055.exp
+[2022.08.26-13.23.18:435][185]CompilerResultsLog: [2/3] Link UnrealEditor-ManVsMonsters-3055.dll
+[2022.08.26-13.23.18:435][185]CompilerResultsLog:    Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-3055.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-3055.suppressed.exp
+[2022.08.26-13.23.18:435][185]CompilerResultsLog: [3/3] WriteMetadata ManVsMonstersEditor.target
+[2022.08.26-13.23.18:435][185]CompilerResultsLog: Total time in Parallel executor: 1.16 seconds
+[2022.08.26-13.23.18:435][185]CompilerResultsLog: Total execution time: 1.76 seconds
+[2022.08.26-13.23.18:435][185]LogMainFrame: MainFrame: Module compiling took 1.900 seconds
+[2022.08.26-13.23.18:487][185]Display: HotReload took  2.0s.
+[2022.08.26-13.23.18:487][185]Display: Reload/Re-instancing Complete: 1 package changed, 7 classes unchanged, 1 enum unchanged, 1 scriptstruct unchanged, 2 functions remapped, 1 scriptstruct remapped
+[2022.08.26-13.23.21:315][501]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.08.26-13.23.21:320][501]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.08.26-13.23.21:320][501]PIE: New page: PIE session: MainMap (Aug. 26, 2022, 1:23:21 a.m.)
+[2022.08.26-13.23.21:356][501]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2022.08.26-13.23.21:358][501]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002366s)
+[2022.08.26-13.23.21:358][501]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.002456s)
+[2022.08.26-13.23.21:358][501]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.08.26-13.23.21:358][501]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.26-13.23.21:359][501]LogAIModule: Creating AISystem for world MainMap
+[2022.08.26-13.23.21:359][501]LogPlayLevel: PIE: World Init took: (0.000865s)
+[2022.08.26-13.23.21:365][501]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+[2022.08.26-13.23.21:366][501]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2022.08.26-13.23.21:366][501]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.08.26-13.23.21:366][501]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.08.26-13.23.21:366][501]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.08.26-13.23.21:366][501]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.08.26-13.23.21:366][501]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.08.26-13.23.21:366][501]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.08.26-13.23.21:366][501]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.08.26-13.23.21:366][501]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.08.26-13.23.21:366][501]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.08.26-13.23.21:366][501]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.08.26-13.23.21:366][501]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.08.26-13.23.21:368][501]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.08.26-13.23.21:392][501]LogAudioMixer: Display: Using Audio Hardware Device Headphones (SteelSeries Arctis 7P)
+[2022.08.26-13.23.21:392][501]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.08.26-13.23.21:392][501]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.08.26-13.23.21:392][501]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.08.26-13.23.21:394][501]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2022.08.26-13.23.21:394][501]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2022.08.26-13.23.21:395][501]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2022.08.26-13.23.21:395][501]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2022.08.26-13.23.21:395][501]LogInit: FAudioDevice initialized.
+[2022.08.26-13.23.21:395][501]LogAudio: Display: Audio Device (ID: 4) registered with world 'MainMap'.
+[2022.08.26-13.23.21:403][501]LogLoad: Game class is 'BP_GameMode_C'
+[2022.08.26-13.23.21:405][501]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2022.08.26-07.23.21
+[2022.08.26-13.23.21:405][501]LogWorld: Bringing up level for play took: 0.001469
+[2022.08.26-13.23.21:406][501]LogOnline: OSS: Created online subsystem instance for: :Context_10
+[2022.08.26-13.23.21:407][501]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2022.08.26-13.23.21:407][501]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2022.08.26-13.23.21:407][501]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2022.08.26-13.23.21:410][501]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2022.08.26-13.23.21:410][501]PIE: Server logged in
+[2022.08.26-13.23.21:411][501]PIE: Play in editor total start time 0.091 seconds.
+[2022.08.26-13.23.22:316][601]LogAnimMontage: Warning: Playing a Montage (FireAnimMontage) for the wrong Skeleton (Belica_Skeleton) instead of (Murdock_Skeleton).
+[2022.08.26-13.23.40:775][581]LogAnimMontage: Warning: Playing a Montage (FireAnimMontage) for the wrong Skeleton (Belica_Skeleton) instead of (Murdock_Skeleton).
+[2022.08.26-13.23.47:119][342]LogAnimMontage: Warning: Playing a Montage (FireAnimMontage) for the wrong Skeleton (Belica_Skeleton) instead of (Murdock_Skeleton).
+[2022.08.26-13.23.50:886][740]LogUObjectGlobals: Warning: Failed to find object 'Class None.DestructibleMesh'
+[2022.08.26-13.23.50:902][741]LogViewport: Scene viewport resized to 366x182, mode Windowed.
+[2022.08.26-13.23.57:408][368]LogUObjectGlobals: Warning: Failed to find object 'Class None.DestructibleMesh'
+[2022.08.26-13.23.57:417][369]LogViewport: Scene viewport resized to 366x182, mode Windowed.
+[2022.08.26-13.24.14:885][887]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.26-13.24.14:885][887]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2022.08.26-13.24.14:886][887]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2022.08.26-13.24.14:886][887]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.26-13.24.14:893][887]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.08.26-13.24.14:895][887]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.26-13.24.14:900][887]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.08.26-13.24.14:900][887]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2022.08.26-13.24.14:901][887]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2022.08.26-13.24.14:903][887]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.26-13.24.14:905][887]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2022.08.26-13.24.14:944][891]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2022.08.26-13.24.16:609][ 89]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.08.26-13.24.16:614][ 89]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.08.26-13.24.16:614][ 89]PIE: New page: PIE session: MainMap (Aug. 26, 2022, 1:24:16 a.m.)
+[2022.08.26-13.24.16:614][ 89]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2022.08.26-13.24.16:617][ 89]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002761s)
+[2022.08.26-13.24.16:617][ 89]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.002829s)
+[2022.08.26-13.24.16:617][ 89]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.08.26-13.24.16:617][ 89]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.26-13.24.16:617][ 89]LogAIModule: Creating AISystem for world MainMap
+[2022.08.26-13.24.16:617][ 89]LogPlayLevel: PIE: World Init took: (0.000700s)
+[2022.08.26-13.24.16:623][ 89]LogUObjectHash: Compacting FUObjectHashTables data took   0.45ms
+[2022.08.26-13.24.16:624][ 89]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.08.26-13.24.16:624][ 89]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.08.26-13.24.16:624][ 89]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.08.26-13.24.16:624][ 89]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.08.26-13.24.16:624][ 89]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.08.26-13.24.16:624][ 89]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.08.26-13.24.16:624][ 89]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.08.26-13.24.16:624][ 89]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.08.26-13.24.16:624][ 89]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.08.26-13.24.16:624][ 89]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.08.26-13.24.16:624][ 89]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.08.26-13.24.16:624][ 89]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.08.26-13.24.16:626][ 89]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.08.26-13.24.16:649][ 89]LogAudioMixer: Display: Using Audio Hardware Device Headphones (SteelSeries Arctis 7P)
+[2022.08.26-13.24.16:649][ 89]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.08.26-13.24.16:649][ 89]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.08.26-13.24.16:649][ 89]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.08.26-13.24.16:649][ 89]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=5
+[2022.08.26-13.24.16:650][ 89]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=5
+[2022.08.26-13.24.16:651][ 89]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=5
+[2022.08.26-13.24.16:651][ 89]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=5
+[2022.08.26-13.24.16:651][ 89]LogInit: FAudioDevice initialized.
+[2022.08.26-13.24.16:651][ 89]LogAudio: Display: Audio Device (ID: 5) registered with world 'MainMap'.
+[2022.08.26-13.24.16:663][ 89]LogLoad: Game class is 'BP_GameMode_C'
+[2022.08.26-13.24.16:664][ 89]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2022.08.26-07.24.16
+[2022.08.26-13.24.16:664][ 89]LogWorld: Bringing up level for play took: 0.001346
+[2022.08.26-13.24.16:665][ 89]LogOnline: OSS: Created online subsystem instance for: :Context_11
+[2022.08.26-13.24.16:666][ 89]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2022.08.26-13.24.16:666][ 89]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2022.08.26-13.24.16:666][ 89]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2022.08.26-13.24.16:669][ 89]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2022.08.26-13.24.16:669][ 89]PIE: Server logged in
+[2022.08.26-13.24.16:670][ 89]PIE: Play in editor total start time 0.056 seconds.
+[2022.08.26-13.24.17:118][135]LogAnimMontage: Warning: Playing a Montage (FireAnimMontage) for the wrong Skeleton (Belica_Skeleton) instead of (Murdock_Skeleton).
+[2022.08.26-13.24.21:086][608]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.26-13.24.21:086][608]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2022.08.26-13.24.21:086][608]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2022.08.26-13.24.21:087][608]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.26-13.24.21:100][608]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.08.26-13.24.21:102][608]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.26-13.24.21:107][608]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.26-13.24.21:107][608]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2022.08.26-13.24.21:108][608]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2022.08.26-13.24.21:112][608]LogUObjectHash: Compacting FUObjectHashTables data took   0.38ms
+[2022.08.26-13.24.21:163][611]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2022.08.26-13.24.22:156][729]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2022.08.26-13.24.22:826][729]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.08.26-13.24.22:827][729]PIE: New page: PIE session: MainMap (Aug. 26, 2022, 1:24:22 a.m.)
+[2022.08.26-13.24.22:827][729]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMap
+[2022.08.26-13.24.22:829][729]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001972s)
+[2022.08.26-13.24.22:829][729]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMap.MainMap to /Game/Maps/UEDPIE_0_MainMap.MainMap (0.002026s)
+[2022.08.26-13.24.22:829][729]LogSubsystemCollection: Failed to initialize subsystem dependency (WorldPartitionSubsystem)
+[2022.08.26-13.24.22:829][729]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2022.08.26-13.24.22:829][729]LogAIModule: Creating AISystem for world MainMap
+[2022.08.26-13.24.22:829][729]LogPlayLevel: PIE: World Init took: (0.000596s)
+[2022.08.26-13.24.22:834][729]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2022.08.26-13.24.22:835][729]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2022.08.26-13.24.22:835][729]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.08.26-13.24.22:835][729]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.08.26-13.24.22:835][729]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.08.26-13.24.22:835][729]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.08.26-13.24.22:835][729]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.08.26-13.24.22:835][729]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2022.08.26-13.24.22:835][729]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.08.26-13.24.22:835][729]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.08.26-13.24.22:835][729]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.08.26-13.24.22:835][729]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.08.26-13.24.22:835][729]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.08.26-13.24.22:837][729]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2022.08.26-13.24.22:858][729]LogAudioMixer: Display: Using Audio Hardware Device Headphones (SteelSeries Arctis 7P)
+[2022.08.26-13.24.22:858][729]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.08.26-13.24.22:858][729]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.08.26-13.24.22:858][729]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.08.26-13.24.22:859][729]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=6
+[2022.08.26-13.24.22:859][729]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=6
+[2022.08.26-13.24.22:860][729]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=6
+[2022.08.26-13.24.22:860][729]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=6
+[2022.08.26-13.24.22:860][729]LogInit: FAudioDevice initialized.
+[2022.08.26-13.24.22:860][729]LogAudio: Display: Audio Device (ID: 6) registered with world 'MainMap'.
+[2022.08.26-13.24.22:867][729]LogLoad: Game class is 'BP_GameMode_C'
+[2022.08.26-13.24.22:868][729]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMap.MainMap up for play (max tick rate 0) at 2022.08.26-07.24.22
+[2022.08.26-13.24.22:868][729]LogWorld: Bringing up level for play took: 0.001249
+[2022.08.26-13.24.22:869][729]LogOnline: OSS: Created online subsystem instance for: :Context_12
+[2022.08.26-13.24.22:870][729]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2022.08.26-13.24.22:870][729]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2022.08.26-13.24.22:870][729]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2022.08.26-13.24.22:873][729]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2022.08.26-13.24.22:873][729]PIE: Server logged in
+[2022.08.26-13.24.22:873][729]PIE: Play in editor total start time 0.047 seconds.
+[2022.08.26-13.24.22:885][730]LogAnimMontage: Warning: Playing a Montage (FireAnimMontage) for the wrong Skeleton (Belica_Skeleton) instead of (Murdock_Skeleton).
+[2022.08.26-13.24.31:378][737]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.26-13.24.31:378][737]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MainMap
+[2022.08.26-13.24.31:378][737]LogWorld: UWorld::CleanupWorld for MainMap, bSessionEnded=true, bCleanupResources=true
+[2022.08.26-13.24.31:378][737]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.26-13.24.31:391][737]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.08.26-13.24.31:393][737]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.08.26-13.24.31:397][737]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.08.26-13.24.31:398][737]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2022.08.26-13.24.31:399][737]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2022.08.26-13.24.31:403][737]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2022.08.26-13.24.31:440][741]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2022.08.26-13.25.53:604][ 68]LogHotReload: New module detected: UnrealEditor-ManVsMonsters-0004.dll
+[2022.08.26-13.25.54:277][ 71]LogHotReload: Starting Hot-Reload from IDE
+[2022.08.26-13.25.54:388][ 71]Display: HotReload took  0.1s.
+[2022.08.26-13.25.54:388][ 71]Display: Reload/Re-instancing Complete: 1 package changed, 7 classes unchanged, 1 enum unchanged, 1 scriptstruct unchanged, 2 functions remapped, 1 scriptstruct remapped

@@ -51,8 +51,14 @@ void AManCharacter::BeginPlay()
 		}
 		if (BaseWeapon)
 		{
+			PrimaryWeapon = BaseWeapon;
+			ActiveWeapon = PrimaryWeapon;		// as this is the weapon we have equipped right now.
 			/** Attaching the weapon to right hand. */
-			AttachActorToRightHand(BaseWeapon);
+			AttachActorToRightHand(PrimaryWeapon);			// attaching the primary weapon to hand
+			if (SecondaryWeapon)
+			{
+				AttachActorToSpine(SecondaryWeapon);		// if bychance secondary weapon exists, attaching that to the spine
+			}
 		}
 	}
 
@@ -111,6 +117,27 @@ void AManCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Pressed, this, &AManCharacter::AimButtonPressed);
 	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Released, this, &AManCharacter::AimButtonReleased);
 	PlayerInputComponent->BindAction(FName("Equip"), EInputEvent::IE_Pressed, this, &AManCharacter::EquipButtonPressed);
+	PlayerInputComponent->BindAction(FName("PrimaryWeapon"), EInputEvent::IE_Pressed, this, &AManCharacter::PrimaryWeaponButtonPressed);
+	PlayerInputComponent->BindAction(FName("SecondaryWeapon"), EInputEvent::IE_Pressed, this, &AManCharacter::SecondaryWeaponButtonPressed);
+
+}
+
+// for switching to secondary weapon
+void AManCharacter::SecondaryWeaponButtonPressed()
+{
+	if (SecondaryWeapon)
+	{
+		AWeapon* TempWeapon = ActiveWeapon;
+		if(ActiveWeapon) ActiveWeapon = SecondaryWeapon;
+		if(ActiveWeapon) SecondaryWeapon = TempWeapon;
+		AttachActorToRightHand(ActiveWeapon);			// as now the active weapon is the secondary weapon, attaching that to the right hand of the actor
+		AttachActorToSpine(SecondaryWeapon);			// as now previous active weapon is secondary weapon, attaching that to the spine of the character.
+	}
+}
+
+// for switching to primary weapon
+void AManCharacter::PrimaryWeaponButtonPressed()
+{
 
 }
 
@@ -131,10 +158,15 @@ void AManCharacter::HandleEquippingSecondaryWeapon()
 		OverlappingWeapon->GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		OverlappingWeapon->GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		OverlappingWeapon->GetMesh()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
-		const USkeletalMeshSocket* Socket = GetMesh()->GetSocketByName(FName("SecondaryWeaponSocket"));
-		if(Socket) Socket->AttachActor(OverlappingWeapon, GetMesh());
+		AttachActorToSpine(OverlappingWeapon);			// secondary weapon to the back
 		SecondaryWeapon = OverlappingWeapon;
 	}
+}
+
+void AManCharacter::AttachActorToSpine(AWeapon* WeaponToAttach)
+{
+	const USkeletalMeshSocket* Socket = GetMesh()->GetSocketByName(FName("SecondaryWeaponSocket"));
+	if (Socket) Socket->AttachActor(WeaponToAttach, GetMesh());
 }
 
 void AManCharacter::MoveForward(float AxisValue)

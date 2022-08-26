@@ -110,6 +110,7 @@ private:
 		TSubclassOf<AWeapon> BaseWeaponClass;
 
 	void AttachActorToRightHand(AWeapon* WeaponToAttach);
+	void AttachActorToSpine(AWeapon* WeaponToAttach);
 
 	/** For Equipping a secondary weapon */
 	UPROPERTY()
@@ -119,6 +120,13 @@ private:
 		AWeapon* SecondaryWeapon;
 
 	void HandleEquippingSecondaryWeapon();
+
+	/** FOR SWITCHING b/w a secondary and primary weapon */
+	UPROPERTY()
+	AWeapon* ActiveWeapon;
+
+	UPROPERTY()
+		AWeapon* PrimaryWeapon;
 
 public:
 	AManCharacter();
@@ -149,6 +157,12 @@ protected:
 	
 	// for equipping weapon
 	void EquipButtonPressed();
+
+	// for switching to secondary weapon
+	void SecondaryWeaponButtonPressed();
+
+	// for switching to primary weapon
+	void PrimaryWeaponButtonPressed();
 
 public:	
 	FORCEINLINE bool GetIsRunning() const { return bIsRunning; }
