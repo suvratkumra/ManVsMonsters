@@ -110,6 +110,31 @@ void AManCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAction(FName("Fire"), EInputEvent::IE_Released, this, &AManCharacter::FireButtonReleased);
 	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Pressed, this, &AManCharacter::AimButtonPressed);
 	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Released, this, &AManCharacter::AimButtonReleased);
+	PlayerInputComponent->BindAction(FName("Equip"), EInputEvent::IE_Pressed, this, &AManCharacter::EquipButtonPressed);
+
+}
+
+void AManCharacter::EquipButtonPressed()
+{
+	if (SecondaryWeapon == nullptr)
+	{
+		HandleEquippingSecondaryWeapon();
+	}
+}
+
+void AManCharacter::HandleEquippingSecondaryWeapon()
+{
+	if (OverlappingWeapon)
+	{	
+		OverlappingWeapon->GetCollisionSphere()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+		OverlappingWeapon->GetPickupWidgetPointer()->SetVisibility(ESlateVisibility::Hidden);
+		OverlappingWeapon->GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		OverlappingWeapon->GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		OverlappingWeapon->GetMesh()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+		const USkeletalMeshSocket* Socket = GetMesh()->GetSocketByName(FName("SecondaryWeaponSocket"));
+		if(Socket) Socket->AttachActor(OverlappingWeapon, GetMesh());
+		SecondaryWeapon = OverlappingWeapon;
+	}
 }
 
 void AManCharacter::MoveForward(float AxisValue)

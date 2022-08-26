@@ -17,11 +17,10 @@ AWeapon::AWeapon() : E_KeyColor(1.f, 0.f, 0.f)		// setting the color to Red
 
 	PickupWidget2 = CreateDefaultSubobject<UWidgetComponent>(TEXT("PopupWidget"));
 	PickupWidget2->SetupAttachment(RootComponent);
-	PickupWidget2->SetVisibility(false);
+	//PickupWidget2->SetVisibility(false);
 
 	/** Very important to set these as we want our pawn to oveerlap with the sphere in order to trigger the events. */
 	GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	GetCollisionSphere()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 	GetCollisionSphere()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
 	GetCollisionSphere()->OnComponentBeginOverlap.AddDynamic(this, &AWeapon::OnSphereBeginOverlap);
 	GetCollisionSphere()->OnComponentEndOverlap.AddDynamic(this, &AWeapon::OnSphereEndOverlap);
@@ -66,7 +65,7 @@ void AWeapon::SetPickupKeyBlink(bool bPickupVisible)
 		{
 			if (PickupWidgetPointer->E_Key)
 			{
-				UE_LOG(LogTemp, Warning, TEXT("Here"));
+				//UE_LOG(LogTemp, Warning, TEXT("Here"));
 				FLinearColor LinearColor(E_KeyColor);
 				PickupWidgetPointer->E_Key->SetColorAndOpacity(LinearColor);
 			}
@@ -229,8 +228,8 @@ void AWeapon::OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 	{
 		// now we want to make the E key change colors rapidly, so we will do that only when the widget is visible, so that its efficient
 		bPickupWidgetVisibility = true;
-		PickupWidgetPointer->SetVisibility(ESlateVisibility::Visible);
-		
+		PickupWidgetPointer->SetVisibility(ESlateVisibility::Visible);	
+		Character->SetOverlappingWeapon(this);			// telling the Character that this is the weapon which got overlapped, sending it to the character to handle equipping
 	}
 	
 }

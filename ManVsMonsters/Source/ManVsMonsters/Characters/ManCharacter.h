@@ -111,6 +111,15 @@ private:
 
 	void AttachActorToRightHand(AWeapon* WeaponToAttach);
 
+	/** For Equipping a secondary weapon */
+	UPROPERTY()
+		AWeapon* OverlappingWeapon;
+
+	UPROPERTY()
+		AWeapon* SecondaryWeapon;
+
+	void HandleEquippingSecondaryWeapon();
+
 public:
 	AManCharacter();
 	virtual void Tick(float DeltaTime) override;
@@ -137,6 +146,9 @@ protected:
 	void Fire();
 	void FireButtonPressed();
 	void FireButtonReleased();
+	
+	// for equipping weapon
+	void EquipButtonPressed();
 
 public:	
 	FORCEINLINE bool GetIsRunning() const { return bIsRunning; }
@@ -146,5 +158,6 @@ public:
 	bool GetIsFalling();
 	bool GetIsCrouched();
 	FORCEINLINE bool GetIsFiring() const { return bFireButtonHeld; }
+	void SetOverlappingWeapon(AWeapon* Weapon) { OverlappingWeapon = Weapon; }
 
 };

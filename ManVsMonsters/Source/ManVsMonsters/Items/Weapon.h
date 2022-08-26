@@ -53,9 +53,6 @@ protected:
 	UPROPERTY(EditAnywhere)
 	class UPickupUserWidget* PickupWidgetPointer;
 
-	UPROPERTY(EditAnywhere)
-	TSubclassOf<class UUserWidget> PickupWidgetClass;
-
 	UPROPERTY(EditAnywhere, Category = "Item Properties")
 		class UWidgetComponent* PickupWidget2;
 
