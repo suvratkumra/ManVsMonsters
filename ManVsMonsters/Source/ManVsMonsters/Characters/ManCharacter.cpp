@@ -4,8 +4,13 @@
 #include "ManCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Engine/SkeletalMeshSocket.h"
 #include "DrawDebugHelpers.h"
 #include "Kismet/GameplayStatics.h"
+#include "../Items/Weapon.h"
+#include "Components/SphereComponent.h"
+#include "Components/CapsuleComponent.h"
+#include "../HUD/PickupUserWidget.h"
 #include "Sound/SoundCue.h"
 #include "Camera/CameraComponent.h"
 #include "particles/ParticleSystemComponent.h"
@@ -28,11 +33,38 @@ void AManCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-
 	if (Camera)
 	{
 		DefaultPOV = Camera->FieldOfView;
 		CurrentPOV = DefaultPOV;
+	}
+
+	if (BaseWeaponClass)
+	{
+		if (GetWorld())
+		{
+			/** First Spawn the weapon */
+			BaseWeapon = GetWorld()->SpawnActor<AWeapon>(BaseWeaponClass);
+			
+			// So that our Base Weapon's widget is not visible when overlapping
+			BaseWeapon->GetCollisionSphere()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+		}
+		if (BaseWeapon)
+		{
+			/** Attaching the weapon to right hand. */
+			AttachActorToRightHand(BaseWeapon);
+		}
+	}
+
+}
+
+void AManCharacter::AttachActorToRightHand(AWeapon* WeaponToAttach)
+{
+	// get the socket on the hand where the gun needs to go
+	const USkeletalMeshSocket* GunSocket = GetMesh()->GetSocketByName(FName("GunSocket"));
+	if (WeaponToAttach)
+	{
+		GunSocket->AttachActor(WeaponToAttach, GetMesh());
 	}
 	
 }
@@ -132,6 +164,8 @@ void AManCharacter::LookRight(float AxisValue)
 	}
 	
 }
+
+
 
 void AManCharacter::RunningButtonPressed()
 {

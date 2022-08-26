@@ -17,9 +17,11 @@ AWeapon::AWeapon() : E_KeyColor(1.f, 0.f, 0.f)		// setting the color to Red
 
 	PickupWidget2 = CreateDefaultSubobject<UWidgetComponent>(TEXT("PopupWidget"));
 	PickupWidget2->SetupAttachment(RootComponent);
+	PickupWidget2->SetVisibility(false);
 
 	/** Very important to set these as we want our pawn to oveerlap with the sphere in order to trigger the events. */
 	GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	GetCollisionSphere()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 	GetCollisionSphere()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
 	GetCollisionSphere()->OnComponentBeginOverlap.AddDynamic(this, &AWeapon::OnSphereBeginOverlap);
 	GetCollisionSphere()->OnComponentEndOverlap.AddDynamic(this, &AWeapon::OnSphereEndOverlap);

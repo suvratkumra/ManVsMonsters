@@ -6,11 +6,11 @@
   Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
     Executing up to 16 processes, one per physical core
   Building 4 actions with 4 processes...
-  [1/4] Compile Weapon.cpp
-  [2/4] Link UnrealEditor-ManVsMonsters-0042.lib
-     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0042.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0042.exp
-  [3/4] Link UnrealEditor-ManVsMonsters-0042.dll
-     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0042.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0042.suppressed.exp
+  [1/4] Compile ManCharacter.cpp
+  [2/4] Link UnrealEditor-ManVsMonsters-0066.lib
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0066.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0066.exp
+  [3/4] Link UnrealEditor-ManVsMonsters-0066.dll
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0066.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0066.suppressed.exp
   [4/4] WriteMetadata ManVsMonstersEditor.target
-  Total time in Parallel executor: 6.00 seconds
-  Total execution time: 6.62 seconds
+  Total time in Parallel executor: 6.32 seconds
+  Total execution time: 6.92 seconds

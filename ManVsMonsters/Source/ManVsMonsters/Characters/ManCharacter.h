@@ -90,6 +90,7 @@ private:
 	UPROPERTY(EditAnywhere, Category = Weapon)
 		float ZoomedPOV = 60.f;			// the amount we want to zoom in. 
 
+
 	/** For Automatic fire */
 	UPROPERTY(EditAnywhere, Category = Weapon)
 	float FireDelay = 1.f;
@@ -101,6 +102,14 @@ private:
 	void StartFireTimer();
 	void EndFireTimer();
 
+
+	/** For Spawning a base weapon*/
+	class AWeapon* BaseWeapon;
+
+	UPROPERTY(EditDefaultsOnly, Category = Weapon)
+		TSubclassOf<AWeapon> BaseWeaponClass;
+
+	void AttachActorToRightHand(AWeapon* WeaponToAttach);
 
 public:
 	AManCharacter();
@@ -123,7 +132,6 @@ protected:
 	void RunningButtonPressed();
 	void AimButtonPressed();
 	void AimButtonReleased();
-	void WorldShiftButtonPressed();
 	
 	// for automatic fire
 	void Fire();
