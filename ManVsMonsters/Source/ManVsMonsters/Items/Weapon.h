@@ -53,8 +53,8 @@ protected:
 	UPROPERTY(EditAnywhere)
 	class UPickupUserWidget* PickupWidgetPointer;
 
-	UPROPERTY(EditAnywhere, Category = "Item Properties")
-		class UWidgetComponent* PickupWidget2;
+	//UPROPERTY(EditAnywhere, Category = "Item Properties")
+	//	class UWidgetComponent* PickupWidget2;
 
 public:
 	FORCEINLINE UPickupUserWidget* GetPickupWidgetPointer() const{ return PickupWidgetPointer; }

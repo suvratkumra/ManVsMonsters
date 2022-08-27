@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "WeaponState.h"
 #include "GameFramework/Actor.h"
 #include "Item.generated.h"
 
@@ -13,6 +14,12 @@ class MANVSMONSTERS_API AItem : public AActor
 	
 public:	
 	AItem();
+
+	EWeaponState WeaponState;
+	void SetWeaponState(EWeaponState State);
+
+	UPROPERTY(EditAnywhere, Category = "Item Properties")
+		class UWidgetComponent* PickupWidget;
 	
 private:
 	// we need a skeletal mesh for the weapon or any other thing we add in the future
@@ -22,8 +29,7 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Item Properties")
 		class USphereComponent* CollisionSphere;
 
-	UPROPERTY(EditAnywhere, Category = "Item Properties")
-		class UWidgetComponent* PickupWidget;
+	
 
 
 protected:

@@ -7,6 +7,7 @@
         "Includes": [
             "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\development\\manvsmonsters\\definitions.manvsmonsters.h",
             "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\source\\manvsmonsters\\items\\item.h",
+            "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\source\\manvsmonsters\\items\\weaponstate.h",
             "d:\\unreal engine projects\\manvsmonsters\\manvsmonsters\\intermediate\\build\\win64\\unrealeditor\\inc\\manvsmonsters\\item.generated.h"
         ],
         "ImportedModules": [],

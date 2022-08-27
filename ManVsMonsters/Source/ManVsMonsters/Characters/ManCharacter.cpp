@@ -125,27 +125,88 @@ void AManCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 // for switching to secondary weapon
 void AManCharacter::SecondaryWeaponButtonPressed()
 {
-	if (SecondaryWeapon)
+	if (SecondaryWeapon && bUsingPrimary)
 	{
-		AWeapon* TempWeapon = ActiveWeapon;
-		if(ActiveWeapon) ActiveWeapon = SecondaryWeapon;
-		if(ActiveWeapon) SecondaryWeapon = TempWeapon;
-		AttachActorToRightHand(ActiveWeapon);			// as now the active weapon is the secondary weapon, attaching that to the right hand of the actor
-		AttachActorToSpine(SecondaryWeapon);			// as now previous active weapon is secondary weapon, attaching that to the spine of the character.
+		HandleSwapWeapon();
+		CanFire = false;
+		bFireButtonHeld = false;
+		GetWorldTimerManager().SetTimer(DisableFireTimerHandle, this, &AManCharacter::EndFireTimer, 1.f);
 	}
+
+		
 }
 
 // for switching to primary weapon
 void AManCharacter::PrimaryWeaponButtonPressed()
 {
-
+	if (PrimaryWeapon && !bUsingPrimary)
+	{
+		HandleSwapWeapon();
+		CanFire = false;
+		bFireButtonHeld = false;
+		GetWorldTimerManager().SetTimer(DisableFireTimerHandle, this, &AManCharacter::EndFireTimer, 1.f);
+	}
 }
+
+void AManCharacter::FinishFireTimerHandle()
+{
+	// now we will re-enable the canFire boolean so that the weapon can fire.
+	CanFire = true;
+	bFireButtonHeld = true;
+}
+
+void AManCharacter::HandleSwapWeapon()
+{
+	AWeapon* TempWeapon = ActiveWeapon;
+	if (ActiveWeapon) ActiveWeapon = SecondaryWeapon;
+	if (ActiveWeapon) SecondaryWeapon = TempWeapon;
+	AttachActorToRightHand(ActiveWeapon);			// as now the active weapon is the secondary weapon, attaching that to the right hand of the actor
+	AttachActorToSpine(SecondaryWeapon);			// as now previous active weapon is secondary weapon, attaching that to the spine of the character.
+
+	// setting primary weapon to active weapon and secondary weapon will remain as it is.
+	if (ActiveWeapon) PrimaryWeapon = ActiveWeapon;
+
+	// playing animation montage for the swapping of the weapon;
+	UAnimInstance* AnimMontage = GetMesh()->GetAnimInstance();
+	if (AnimMontage && SwapWeaponMontage)
+	{
+		AnimMontage->Montage_Play(SwapWeaponMontage);
+		AnimMontage->Montage_JumpToSection(FName("PlayMontage"));
+	}
+
+	// now setting primary to false so that we can switch to primary when 1 is clicked
+	bUsingPrimary = !bUsingPrimary;			// opposite of what the value is right now.
+}
+
+
 
 void AManCharacter::EquipButtonPressed()
 {
 	if (SecondaryWeapon == nullptr)
 	{
 		HandleEquippingSecondaryWeapon();
+	}
+	else if (SecondaryWeapon && PrimaryWeapon)
+	{
+		// detaching the primary weapon we have right now.
+		if (PrimaryWeapon)
+		{
+			FDetachmentTransformRules DetachRules(EDetachmentRule::KeepWorld, true);
+			PrimaryWeapon->GetMesh()->DetachFromComponent(DetachRules);
+		}
+
+		// attaching a new weapon to the mesh
+		if (OverlappingWeapon)
+		{
+			OverlappingWeapon->GetCollisionSphere()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+			OverlappingWeapon->GetPickupWidgetPointer()->SetVisibility(ESlateVisibility::Hidden);
+			OverlappingWeapon->GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			OverlappingWeapon->GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			OverlappingWeapon->GetMesh()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+			AttachActorToRightHand(OverlappingWeapon);			// new weapon to the hand
+			PrimaryWeapon = OverlappingWeapon;
+			ActiveWeapon = PrimaryWeapon;
+		}
 	}
 }
 
@@ -232,30 +293,33 @@ void AManCharacter::RunningButtonPressed()
 
 void AManCharacter::Fire()
 {
-	if (FireSoundCue)
+	UE_LOG(LogTemp, Warning, TEXT("%d"), CanFire ? 1 : 0);
+	if (CanFire)
 	{
-		// now we want to spawn the sound cue and play it when fire button is pressed
-		UGameplayStatics::PlaySound2D(this, FireSoundCue);
+		if (FireSoundCue)
+		{
+			// now we want to spawn the sound cue and play it when fire button is pressed
+			UGameplayStatics::PlaySound2D(this, FireSoundCue);
+		}
+
+		// now we want to spawn the impact particle
+		if (FireEmitter)
+		{
+
+			MuzzleTransform = GetMesh()->GetSocketTransform(FName("Muzzle_01"));
+			UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), FireEmitter, MuzzleTransform);
+		}
+
+		// now we want recoil
+		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+		if (AnimInstance && HipFireMontage)
+		{
+			AnimInstance->Montage_Play(HipFireMontage);
+			AnimInstance->Montage_JumpToSection(FName("FireSection"));
+		}
+
+		TraceForBullet();
 	}
-
-	// now we want to spawn the impact particle
-	if (FireEmitter)
-	{
-
-		MuzzleTransform = GetMesh()->GetSocketTransform(FName("Muzzle_01"));
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), FireEmitter, MuzzleTransform);
-	}
-
-	// now we want recoil
-	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
-	if (AnimInstance && HipFireMontage)
-	{
-		AnimInstance->Montage_Play(HipFireMontage);
-		AnimInstance->Montage_JumpToSection(FName("FireSection"));
-	}
-
-	TraceForBullet();
-	
 }
 
 void AManCharacter::FireButtonPressed()

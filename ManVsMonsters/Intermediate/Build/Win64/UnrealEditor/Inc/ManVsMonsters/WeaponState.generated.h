@@ -27,4 +27,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 enum class EWeaponType : uint8;
 template<> MANVSMONSTERS_API UEnum* StaticEnum<EWeaponType>();
 
+#define FOREACH_ENUM_EWEAPONSTATE(op) \
+	op(EWeaponState::EWS_Equipped) \
+	op(EWeaponState::EWS_Dropped) 
+
+enum class EWeaponState : uint8;
+template<> MANVSMONSTERS_API UEnum* StaticEnum<EWeaponState>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

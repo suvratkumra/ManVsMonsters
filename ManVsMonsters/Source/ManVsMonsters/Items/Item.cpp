@@ -34,3 +34,13 @@ void AItem::Tick(float DeltaTime)
 
 }
 
+void AItem::SetWeaponState(EWeaponState State)
+{
+	switch (State)
+	{
+		case EWeaponState::EWS_Dropped:
+
+		break;
+	}
+}
+

@@ -116,7 +116,7 @@ void AManHUD::CalculateCrouchSpread()
 
 void AManHUD::CalculateFiringSpread()
 {
-	if (Character && Character->GetIsFiring())
+	if (Character && Character->GetIsFiring() && Character->GetCanFire())
 	{
 		CrosshairSpreadFire = 4.f;
 	}

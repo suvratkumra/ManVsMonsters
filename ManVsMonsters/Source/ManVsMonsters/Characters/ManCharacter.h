@@ -110,6 +110,7 @@ private:
 		TSubclassOf<AWeapon> BaseWeaponClass;
 
 	void AttachActorToRightHand(AWeapon* WeaponToAttach);
+
 	void AttachActorToSpine(AWeapon* WeaponToAttach);
 
 	/** For Equipping a secondary weapon */
@@ -127,6 +128,15 @@ private:
 
 	UPROPERTY()
 		AWeapon* PrimaryWeapon;
+
+	UPROPERTY(EditAnywhere, Category = Weapon, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+		class UAnimMontage* SwapWeaponMontage;
+
+	bool bUsingPrimary = true;
+
+	FTimerHandle DisableFireTimerHandle;
+	void FinishFireTimerHandle();
+
 
 public:
 	AManCharacter();
@@ -161,6 +171,8 @@ protected:
 	// for switching to secondary weapon
 	void SecondaryWeaponButtonPressed();
 
+	void HandleSwapWeapon();
+
 	// for switching to primary weapon
 	void PrimaryWeaponButtonPressed();
 
@@ -171,6 +183,7 @@ public:
 	float GetWalkingSpeed();
 	bool GetIsFalling();
 	bool GetIsCrouched();
+	FORCEINLINE bool GetCanFire() const { return CanFire; }
 	FORCEINLINE bool GetIsFiring() const { return bFireButtonHeld; }
 	void SetOverlappingWeapon(AWeapon* Weapon) { OverlappingWeapon = Weapon; }
 

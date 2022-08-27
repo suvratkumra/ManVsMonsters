@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeWeaponState() {}
 // Cross Module References
 	MANVSMONSTERS_API UEnum* Z_Construct_UEnum_ManVsMonsters_EWeaponType();
 	UPackage* Z_Construct_UPackage__Script_ManVsMonsters();
+	MANVSMONSTERS_API UEnum* Z_Construct_UEnum_ManVsMonsters_EWeaponState();
 // End Cross Module References
 	static FEnumRegistrationInfo Z_Registration_Info_UEnum_EWeaponType;
 	static UEnum* EWeaponType_StaticEnum()
@@ -79,14 +80,73 @@ void EmptyLinkFunctionForGeneratedCodeWeaponState() {}
 		}
 		return Z_Registration_Info_UEnum_EWeaponType.InnerSingleton;
 	}
+	static FEnumRegistrationInfo Z_Registration_Info_UEnum_EWeaponState;
+	static UEnum* EWeaponState_StaticEnum()
+	{
+		if (!Z_Registration_Info_UEnum_EWeaponState.OuterSingleton)
+		{
+			Z_Registration_Info_UEnum_EWeaponState.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_ManVsMonsters_EWeaponState, Z_Construct_UPackage__Script_ManVsMonsters(), TEXT("EWeaponState"));
+		}
+		return Z_Registration_Info_UEnum_EWeaponState.OuterSingleton;
+	}
+	template<> MANVSMONSTERS_API UEnum* StaticEnum<EWeaponState>()
+	{
+		return EWeaponState_StaticEnum();
+	}
+	struct Z_Construct_UEnum_ManVsMonsters_EWeaponState_Statics
+	{
+		static const UECodeGen_Private::FEnumeratorParam Enumerators[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FEnumParams EnumParams;
+	};
+	const UECodeGen_Private::FEnumeratorParam Z_Construct_UEnum_ManVsMonsters_EWeaponState_Statics::Enumerators[] = {
+		{ "EWeaponState::EWS_Equipped", (int64)EWeaponState::EWS_Equipped },
+		{ "EWeaponState::EWS_Dropped", (int64)EWeaponState::EWS_Dropped },
+		{ "EWeaponState::EWS_MAX", (int64)EWeaponState::EWS_MAX },
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_ManVsMonsters_EWeaponState_Statics::Enum_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "EWS_Dropped.DisplayName", "Dropped" },
+		{ "EWS_Dropped.Name", "EWeaponState::EWS_Dropped" },
+		{ "EWS_Equipped.DisplayName", "Equipped" },
+		{ "EWS_Equipped.Name", "EWeaponState::EWS_Equipped" },
+		{ "EWS_MAX.DisplayName", "DefaultMax" },
+		{ "EWS_MAX.Name", "EWeaponState::EWS_MAX" },
+		{ "ModuleRelativePath", "Items/WeaponState.h" },
+	};
+#endif
+	const UECodeGen_Private::FEnumParams Z_Construct_UEnum_ManVsMonsters_EWeaponState_Statics::EnumParams = {
+		(UObject*(*)())Z_Construct_UPackage__Script_ManVsMonsters,
+		nullptr,
+		"EWeaponState",
+		"EWeaponState",
+		Z_Construct_UEnum_ManVsMonsters_EWeaponState_Statics::Enumerators,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_ManVsMonsters_EWeaponState_Statics::Enumerators),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EEnumFlags::None,
+		(uint8)UEnum::ECppForm::EnumClass,
+		METADATA_PARAMS(Z_Construct_UEnum_ManVsMonsters_EWeaponState_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_ManVsMonsters_EWeaponState_Statics::Enum_MetaDataParams))
+	};
+	UEnum* Z_Construct_UEnum_ManVsMonsters_EWeaponState()
+	{
+		if (!Z_Registration_Info_UEnum_EWeaponState.InnerSingleton)
+		{
+			UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_EWeaponState.InnerSingleton, Z_Construct_UEnum_ManVsMonsters_EWeaponState_Statics::EnumParams);
+		}
+		return Z_Registration_Info_UEnum_EWeaponState.InnerSingleton;
+	}
 	struct Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Items_WeaponState_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 	};
 	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Items_WeaponState_h_Statics::EnumInfo[] = {
 		{ EWeaponType_StaticEnum, TEXT("EWeaponType"), &Z_Registration_Info_UEnum_EWeaponType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1102259309U) },
+		{ EWeaponState_StaticEnum, TEXT("EWeaponState"), &Z_Registration_Info_UEnum_EWeaponState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4190655493U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Items_WeaponState_h_3972666642(TEXT("/Script/ManVsMonsters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Items_WeaponState_h_2694339211(TEXT("/Script/ManVsMonsters"),
 		nullptr, 0,
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Items_WeaponState_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Items_WeaponState_h_Statics::EnumInfo));

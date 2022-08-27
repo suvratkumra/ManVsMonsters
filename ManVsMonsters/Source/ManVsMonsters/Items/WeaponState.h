@@ -10,3 +10,12 @@ enum class EWeaponType : uint8
 	EWT_Legendary UMETA(DisplayName = "Legendary Weapon"),
 	EWT_MAX UMETA(DisplayName = "Default MAX")
 };
+
+UENUM(BlueprintType)
+enum class EWeaponState : uint8
+{
+	EWS_Equipped UMETA(DisplayName = "Equipped"),
+	EWS_Dropped UMETA(DisplayName = "Dropped"),
+
+	EWS_MAX UMETA(DisplayName = "DefaultMax")
+};

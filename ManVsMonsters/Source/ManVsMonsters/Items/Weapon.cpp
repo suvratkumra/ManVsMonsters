@@ -15,8 +15,8 @@ AWeapon::AWeapon() : E_KeyColor(1.f, 0.f, 0.f)		// setting the color to Red
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-	PickupWidget2 = CreateDefaultSubobject<UWidgetComponent>(TEXT("PopupWidget"));
-	PickupWidget2->SetupAttachment(RootComponent);
+	//PickupWidget2 = CreateDefaultSubobject<UWidgetComponent>(TEXT("PopupWidget"));
+	//PickupWidget2->SetupAttachment(RootComponent);
 	//PickupWidget2->SetVisibility(false);
 
 	/** Very important to set these as we want our pawn to oveerlap with the sphere in order to trigger the events. */
@@ -37,7 +37,7 @@ void AWeapon::Tick(float DeltaTime)
 /** Change the color of the blinking E_Key*/
 void AWeapon::SetPickupKeyBlink(bool bPickupVisible)
 {
-	if (bPickupVisible && PickupWidget2)
+	if (bPickupVisible && PickupWidget)
 	{
 		if (bKeyColorDirection == false)			// here we want to change the color from Red to White, 
 		{
@@ -60,7 +60,7 @@ void AWeapon::SetPickupKeyBlink(bool bPickupVisible)
 		}
 		
 
-		PickupWidgetPointer = PickupWidgetPointer == nullptr ? Cast<UPickupUserWidget>(PickupWidget2->GetUserWidgetObject()) : PickupWidgetPointer;
+		PickupWidgetPointer = PickupWidgetPointer == nullptr ? Cast<UPickupUserWidget>(PickupWidget->GetUserWidgetObject()) : PickupWidgetPointer;
 		if (PickupWidgetPointer)
 		{
 			if (PickupWidgetPointer->E_Key)
@@ -71,7 +71,7 @@ void AWeapon::SetPickupKeyBlink(bool bPickupVisible)
 			}
 		}
 	}
-	else if (!bPickupVisible && PickupWidget2)
+	else if (!bPickupVisible && PickupWidget)
 	{
 		E_KeyColor.Y = E_KeyColor.Z = 0.f;				// resetting it back to red;
 	}
@@ -79,7 +79,7 @@ void AWeapon::SetPickupKeyBlink(bool bPickupVisible)
 
 void AWeapon::SetWeaponInitialProperties()
 {
-	PickupWidgetPointer = Cast<UPickupUserWidget>(PickupWidget2->GetUserWidgetObject());
+	PickupWidgetPointer = Cast<UPickupUserWidget>(PickupWidget->GetUserWidgetObject());
 	if (PickupWidgetPointer)
 	{
 		PickupWidgetPointer->SetVisibility(ESlateVisibility::Hidden);		// it should be hidden at the start of the game. only visible when hovered over.
@@ -199,7 +199,7 @@ void AWeapon::SetAllStarsVisibility(bool bVisible)
 {
 	if (!PickupWidgetPointer)
 	{
-		PickupWidgetPointer = Cast<UPickupUserWidget>(PickupWidget2->GetUserWidgetObject());
+		PickupWidgetPointer = Cast<UPickupUserWidget>(PickupWidget->GetUserWidgetObject());
 	}
 	else
 	{
