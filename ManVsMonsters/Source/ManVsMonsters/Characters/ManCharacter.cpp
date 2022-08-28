@@ -44,15 +44,14 @@ void AManCharacter::BeginPlay()
 		if (GetWorld())
 		{
 			/** First Spawn the weapon */
-			BaseWeapon = GetWorld()->SpawnActor<AWeapon>(BaseWeaponClass);
+			PrimaryWeapon = GetWorld()->SpawnActor<AWeapon>(BaseWeaponClass);
 			
-			// So that our Base Weapon's widget is not visible when overlapping
-			BaseWeapon->GetCollisionSphere()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 		}
-		if (BaseWeapon)
+		if (PrimaryWeapon)
 		{
-			PrimaryWeapon = BaseWeapon;
-			ActiveWeapon = PrimaryWeapon;		// as this is the weapon we have equipped right now.
+			PrimaryWeapon->SetWeaponState(EWeaponState::EWS_Equipped);
+			PrimaryWeapon->SetOwner(this);
+	
 			/** Attaching the weapon to right hand. */
 			AttachActorToRightHand(PrimaryWeapon);			// attaching the primary weapon to hand
 			if (SecondaryWeapon)
@@ -157,14 +156,11 @@ void AManCharacter::FinishFireTimerHandle()
 
 void AManCharacter::HandleSwapWeapon()
 {
-	AWeapon* TempWeapon = ActiveWeapon;
-	if (ActiveWeapon) ActiveWeapon = SecondaryWeapon;
-	if (ActiveWeapon) SecondaryWeapon = TempWeapon;
-	AttachActorToRightHand(ActiveWeapon);			// as now the active weapon is the secondary weapon, attaching that to the right hand of the actor
+	AWeapon* TempWeapon = PrimaryWeapon;
+	PrimaryWeapon = SecondaryWeapon;
+	SecondaryWeapon = TempWeapon;
+	AttachActorToRightHand(PrimaryWeapon);			// as now the active weapon is the secondary weapon, attaching that to the right hand of the actor
 	AttachActorToSpine(SecondaryWeapon);			// as now previous active weapon is secondary weapon, attaching that to the spine of the character.
-
-	// setting primary weapon to active weapon and secondary weapon will remain as it is.
-	if (ActiveWeapon) PrimaryWeapon = ActiveWeapon;
 
 	// playing animation montage for the swapping of the weapon;
 	UAnimInstance* AnimMontage = GetMesh()->GetAnimInstance();
@@ -182,46 +178,44 @@ void AManCharacter::HandleSwapWeapon()
 
 void AManCharacter::EquipButtonPressed()
 {
-	if (SecondaryWeapon == nullptr)
+	if (PrimaryWeapon && SecondaryWeapon == nullptr)
 	{
 		HandleEquippingSecondaryWeapon();
 	}
-	else if (SecondaryWeapon && PrimaryWeapon)
+	else if (PrimaryWeapon && SecondaryWeapon)
 	{
-		// detaching the primary weapon we have right now.
-		if (PrimaryWeapon)
-		{
-			FDetachmentTransformRules DetachRules(EDetachmentRule::KeepWorld, true);
-			PrimaryWeapon->GetMesh()->DetachFromComponent(DetachRules);
-		}
-
-		// attaching a new weapon to the mesh
 		if (OverlappingWeapon)
 		{
-			OverlappingWeapon->GetCollisionSphere()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
-			OverlappingWeapon->GetPickupWidgetPointer()->SetVisibility(ESlateVisibility::Hidden);
-			OverlappingWeapon->GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-			OverlappingWeapon->GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-			OverlappingWeapon->GetMesh()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
-			AttachActorToRightHand(OverlappingWeapon);			// new weapon to the hand
+			//PrimaryWeapon->Dropped();
+			PrimaryWeapon->GetMesh()->DetachFromParent(true, true);
+			PrimaryWeapon->GetMesh()->SetSimulatePhysics(true);
+			PrimaryWeapon->GetMesh()->SetEnableGravity(true);
+			PrimaryWeapon->GetMesh()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Block);
+			PrimaryWeapon->Destroy();
+
 			PrimaryWeapon = OverlappingWeapon;
-			ActiveWeapon = PrimaryWeapon;
+			AttachActorToRightHand(PrimaryWeapon);
+			PrimaryWeapon->GetPickupWidgetPointer()->SetVisibility(ESlateVisibility::Hidden);
+			
+			PrimaryWeapon->SetWeaponState(EWeaponState::EWS_Equipped);
+			PrimaryWeapon->SetOwner(this);
 		}
+		
 	}
+	
 }
 
 void AManCharacter::HandleEquippingSecondaryWeapon()
 {
 	if (OverlappingWeapon)
 	{	
-		OverlappingWeapon->GetCollisionSphere()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
-		OverlappingWeapon->GetPickupWidgetPointer()->SetVisibility(ESlateVisibility::Hidden);
-		OverlappingWeapon->GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		OverlappingWeapon->GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		OverlappingWeapon->GetMesh()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
-		AttachActorToSpine(OverlappingWeapon);			// secondary weapon to the back
 		SecondaryWeapon = OverlappingWeapon;
+		SecondaryWeapon->SetWeaponState(EWeaponState::EWS_EquippedSecondary);
+		AttachActorToSpine(SecondaryWeapon);
+
+		SecondaryWeapon->SetOwner(this);
 	}
+	//OverlappingWeapon = nullptr;
 }
 
 void AManCharacter::AttachActorToSpine(AWeapon* WeaponToAttach)
@@ -466,5 +460,21 @@ bool AManCharacter::GetIsCrouched()
 	return GetCharacterMovement()->IsCrouching();
 }
 
-
-
+void AManCharacter::SetOverlappingWeapon(AWeapon* Weapon)
+{
+	if (Weapon)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Hreeeeeeeeee"));
+		OverlappingWeapon = Weapon;
+	}
+	if (!Weapon)
+	{
+		OverlappingWeapon = nullptr;
+		UE_LOG(LogTemp, Warning, TEXT("NOOOOOOOOO"));
+	}
+	if (OverlappingWeapon)
+	{
+		OverlappingWeapon->GetPickupWidgetPointer()->SetVisibility(ESlateVisibility::Visible);
+	}
+	
+}

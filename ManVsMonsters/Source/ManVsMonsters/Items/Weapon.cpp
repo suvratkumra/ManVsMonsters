@@ -19,11 +19,6 @@ AWeapon::AWeapon() : E_KeyColor(1.f, 0.f, 0.f)		// setting the color to Red
 	//PickupWidget2->SetupAttachment(RootComponent);
 	//PickupWidget2->SetVisibility(false);
 
-	/** Very important to set these as we want our pawn to oveerlap with the sphere in order to trigger the events. */
-	GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-	GetCollisionSphere()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
-	GetCollisionSphere()->OnComponentBeginOverlap.AddDynamic(this, &AWeapon::OnSphereBeginOverlap);
-	GetCollisionSphere()->OnComponentEndOverlap.AddDynamic(this, &AWeapon::OnSphereEndOverlap);
 }
 
 void AWeapon::Tick(float DeltaTime)
@@ -215,6 +210,11 @@ void AWeapon::BeginPlay()
 {
 	Super::BeginPlay();
 
+	/** Very important to set these as we want our pawn to oveerlap with the sphere in order to trigger the events. */
+	GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	GetCollisionSphere()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
+	GetCollisionSphere()->OnComponentBeginOverlap.AddDynamic(this, &AWeapon::OnSphereBeginOverlap);
+	GetCollisionSphere()->OnComponentEndOverlap.AddDynamic(this, &AWeapon::OnSphereEndOverlap);
 	// calling to set the initial properties of the weapon
 	SetWeaponInitialProperties();
 }
@@ -224,11 +224,12 @@ void AWeapon::OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 {
 	//UE_LOG(LogTemp, Warning, TEXT("HELLOO"));
 	AManCharacter* Character = Cast<AManCharacter>(OtherActor);
-	if (OtherActor)
+	if (Character)
 	{
 		// now we want to make the E key change colors rapidly, so we will do that only when the widget is visible, so that its efficient
 		bPickupWidgetVisibility = true;
-		PickupWidgetPointer->SetVisibility(ESlateVisibility::Visible);	
+		PickupWidgetPointer->SetVisibility(ESlateVisibility::Visible);
+		PickupWidget->SetVisibility(true);
 		Character->SetOverlappingWeapon(this);			// telling the Character that this is the weapon which got overlapped, sending it to the character to handle equipping
 	}
 	
@@ -237,11 +238,74 @@ void AWeapon::OnSphereBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 void AWeapon::OnSphereEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	AManCharacter* Character = Cast<AManCharacter>(OtherActor);
-	if (OtherActor)
+	if (Character)
 	{
 		bPickupWidgetVisibility = false;
 		PickupWidgetPointer->SetVisibility(ESlateVisibility::Hidden);
+		PickupWidget->SetVisibility(false);
+		Character->SetOverlappingWeapon(nullptr); // as there is no weapon overlapping right now
 	}
 }
 
+void AWeapon::SetWeaponState(EWeaponState State)
+{
+	WeaponState = State;
 
+	OnWeaponStateSet();
+}
+
+void AWeapon::OnWeaponStateSet()
+{
+	switch (WeaponState)
+	{
+	case EWeaponState::EWS_Equipped:
+		OnEquipped();
+		break;
+	case EWeaponState::EWS_EquippedSecondary:
+		OnEquippedSecondary();
+		break;
+	case EWeaponState::EWS_Dropped:
+		OnDropped();
+		break;
+	}
+}
+
+void AWeapon::OnEquipped()
+{
+	PickupWidgetPointer->SetVisibility(ESlateVisibility::Hidden);
+	GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetMesh()->SetSimulatePhysics(false);
+	GetMesh()->SetEnableGravity(false);
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+}
+
+void AWeapon::OnEquippedSecondary()
+{
+	PickupWidgetPointer->SetVisibility(ESlateVisibility::Hidden);
+	GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetMesh()->SetSimulatePhysics(false);
+	GetMesh()->SetEnableGravity(false);
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+}
+
+void AWeapon::OnDropped()
+{
+	GetCollisionSphere()->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	GetMesh()->SetSimulatePhysics(true);
+	GetMesh()->SetEnableGravity(true);			// enabled by default but still, need to set simulate physics before this line. never forget
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	GetMesh()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Block);
+	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
+	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
+
+}
+
+void AWeapon::Dropped()
+{
+	SetWeaponState(EWeaponState::EWS_Dropped);
+	FDetachmentTransformRules DetachRules(EDetachmentRule::KeepWorld, true);
+	GetMesh()->DetachFromComponent(DetachRules);
+	SetOwner(nullptr);
+}

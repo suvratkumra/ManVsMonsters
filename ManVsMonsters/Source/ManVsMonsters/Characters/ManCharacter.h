@@ -185,6 +185,6 @@ public:
 	bool GetIsCrouched();
 	FORCEINLINE bool GetCanFire() const { return CanFire; }
 	FORCEINLINE bool GetIsFiring() const { return bFireButtonHeld; }
-	void SetOverlappingWeapon(AWeapon* Weapon) { OverlappingWeapon = Weapon; }
+	void SetOverlappingWeapon(AWeapon* Weapon);
 
 };

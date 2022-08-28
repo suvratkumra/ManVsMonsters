@@ -26,6 +26,8 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Weapon Properties")
 		FText WeaponName;
 
+	EWeaponState WeaponState;
+	
 	bool bPickupWidgetVisibility = false;
 
 	FVector E_KeyColor;
@@ -41,6 +43,12 @@ public:
 	void SetWeaponType();
 	void SetAllStarsVisibility(bool bVisible);
 	void SetPickupKeyBlink(bool bVisible);
+	void SetWeaponState(EWeaponState State);
+	void OnWeaponStateSet();
+	void OnEquipped();
+	void OnEquippedSecondary();
+	void OnDropped();
+	void Dropped();
 
 protected:
 	virtual void BeginPlay() override;
@@ -52,9 +60,6 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 	class UPickupUserWidget* PickupWidgetPointer;
-
-	//UPROPERTY(EditAnywhere, Category = "Item Properties")
-	//	class UWidgetComponent* PickupWidget2;
 
 public:
 	FORCEINLINE UPickupUserWidget* GetPickupWidgetPointer() const{ return PickupWidgetPointer; }

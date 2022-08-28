@@ -1,26 +1,17 @@
 ﻿  Using bundled DotNet SDK
   Log file: C:\Users\suvra\AppData\Local\UnrealBuildTool\Log.txt
   Using 'git status' to determine working set for adaptive non-unity build (D:\Unreal Engine Projects\ManVsMonsters).
-  Parsing headers for ManVsMonstersEditor
-    Running UnrealHeaderTool "D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\ManVsMonsters.uproject" "D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\ManVsMonstersEditor\Development\ManVsMonstersEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\suvra\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
-  Reflection code generated for ManVsMonstersEditor in 1.0953591 seconds
   Building ManVsMonstersEditor...
   Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
     Executing up to 16 processes, one per physical core
-  Building 11 actions with 11 processes...
-  [1/11] Compile WeaponState.gen.cpp
-  [2/11] Compile Item.gen.cpp
-  [3/11] Compile ManVsMonsters.init.gen.cpp
-  [4/11] Compile Weapon.gen.cpp
-  [5/11] Compile PickupUserWidget.cpp
-  [6/11] Compile Item.cpp
-  [7/11] Compile Weapon.cpp
-  [8/11] Compile ManCharacter.cpp
-  [9/11] Link UnrealEditor-ManVsMonsters-0015.lib
-     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0015.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0015.exp
-  [10/11] Link UnrealEditor-ManVsMonsters-0015.dll
-     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0015.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0015.suppressed.exp
-  [11/11] WriteMetadata ManVsMonstersEditor.target
-  Total time in Parallel executor: 7.95 seconds
-  Total execution time: 9.72 seconds
+  Building 4 actions with 4 processes...
+  [1/4] Compile ManCharacter.cpp
+D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Characters\ManCharacter.cpp(190): warning C4996: 'USceneComponent::DetachFromParent': This function is deprecated, please use DetachFromComponent() instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  [2/4] Link UnrealEditor-ManVsMonsters-0027.lib
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0027.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0027.exp
+  [3/4] Link UnrealEditor-ManVsMonsters-0027.dll
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0027.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0027.suppressed.exp
+  [4/4] WriteMetadata ManVsMonstersEditor.target
+  Total time in Parallel executor: 6.22 seconds
+  Total execution time: 6.85 seconds

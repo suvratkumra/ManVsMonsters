@@ -15,8 +15,6 @@ class MANVSMONSTERS_API AItem : public AActor
 public:	
 	AItem();
 
-	EWeaponState WeaponState;
-	void SetWeaponState(EWeaponState State);
 
 	UPROPERTY(EditAnywhere, Category = "Item Properties")
 		class UWidgetComponent* PickupWidget;
