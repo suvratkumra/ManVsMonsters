@@ -186,7 +186,6 @@ void AManCharacter::EquipButtonPressed()
 	{
 		if (OverlappingWeapon)
 		{
-			//PrimaryWeapon->Dropped();
 			PrimaryWeapon->GetMesh()->DetachFromParent(true, true);
 			PrimaryWeapon->GetMesh()->SetSimulatePhysics(true);
 			PrimaryWeapon->GetMesh()->SetEnableGravity(true);
@@ -287,7 +286,7 @@ void AManCharacter::RunningButtonPressed()
 
 void AManCharacter::Fire()
 {
-	UE_LOG(LogTemp, Warning, TEXT("%d"), CanFire ? 1 : 0);
+	//UE_LOG(LogTemp, Warning, TEXT("%d"), CanFire ? 1 : 0);
 	if (CanFire)
 	{
 		if (FireSoundCue)
@@ -464,13 +463,13 @@ void AManCharacter::SetOverlappingWeapon(AWeapon* Weapon)
 {
 	if (Weapon)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Hreeeeeeeeee"));
+		//UE_LOG(LogTemp, Warning, TEXT("Hreeeeeeeeee"));
 		OverlappingWeapon = Weapon;
 	}
 	if (!Weapon)
 	{
 		OverlappingWeapon = nullptr;
-		UE_LOG(LogTemp, Warning, TEXT("NOOOOOOOOO"));
+		//UE_LOG(LogTemp, Warning, TEXT("NOOOOOOOOO"));
 	}
 	if (OverlappingWeapon)
 	{
