@@ -30,6 +30,7 @@ template<> MANVSMONSTERS_API UEnum* StaticEnum<EWeaponType>();
 #define FOREACH_ENUM_EWEAPONSTATE(op) \
 	op(EWeaponState::EWS_Equipped) \
 	op(EWeaponState::EWS_Dropped) \
+	op(EWeaponState::EWS_Falling) \
 	op(EWeaponState::EWS_EquippedSecondary) 
 
 enum class EWeaponState : uint8;

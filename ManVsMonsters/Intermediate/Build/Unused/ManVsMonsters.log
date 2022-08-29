@@ -6,12 +6,11 @@
   Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
     Executing up to 16 processes, one per physical core
   Building 4 actions with 4 processes...
-  [1/4] Compile ManCharacter.cpp
-D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Characters\ManCharacter.cpp(189): warning C4996: 'USceneComponent::DetachFromParent': This function is deprecated, please use DetachFromComponent() instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
-  [2/4] Link UnrealEditor-ManVsMonsters-0029.lib
-     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0029.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0029.exp
-  [3/4] Link UnrealEditor-ManVsMonsters-0029.dll
-     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0029.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0029.suppressed.exp
+  [1/4] Compile Stuff.cpp
+  [2/4] Link UnrealEditor-ManVsMonsters-0030.lib
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0030.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0030.exp
+  [3/4] Link UnrealEditor-ManVsMonsters-0030.dll
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0030.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0030.suppressed.exp
   [4/4] WriteMetadata ManVsMonstersEditor.target
-  Total time in Parallel executor: 328.20 seconds
-  Total execution time: 329.57 seconds
+  Total time in Parallel executor: 5.92 seconds
+  Total execution time: 6.59 seconds

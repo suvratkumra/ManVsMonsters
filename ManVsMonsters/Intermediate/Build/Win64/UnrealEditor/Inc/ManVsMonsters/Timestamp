@@ -1,8 +1,10 @@
 D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Animation\ManAnimInstance.h
 D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\HUD\ManHUD.h
-D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\HUD\PickupUserWidget.h
-D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\ManVsMonstersGameModeBase.h
-D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Items\Weapon.h
 D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Items\Item.h
-D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Items\WeaponState.h
+D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\HUD\PickupUserWidget.h
 D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Characters\ManCharacter.h
+D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Items\Weapon.h
+D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\ManVsMonstersGameModeBase.h
+D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Stuff\Stuff.h
+D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Items\WeaponState.h
+D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Source\ManVsMonsters\Stuff\WeaponBase.h

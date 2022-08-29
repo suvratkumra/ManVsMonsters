@@ -102,32 +102,11 @@ private:
 	void StartFireTimer();
 	void EndFireTimer();
 
+	void AttachActorToRightHand(class AStuff* WeaponToAttach);
 
-	/** For Spawning a base weapon*/
-	class AWeapon* BaseWeapon;
-
-	UPROPERTY(EditDefaultsOnly, Category = Weapon)
-		TSubclassOf<AWeapon> BaseWeaponClass;
-
-	void AttachActorToRightHand(AWeapon* WeaponToAttach);
-
-	void AttachActorToSpine(AWeapon* WeaponToAttach);
-
-	/** For Equipping a secondary weapon */
-	UPROPERTY()
-		AWeapon* OverlappingWeapon;
-
-	UPROPERTY()
-		AWeapon* SecondaryWeapon;
+	void AttachActorToSpine(class AWeapon* WeaponToAttach);
 
 	void HandleEquippingSecondaryWeapon();
-
-	/** FOR SWITCHING b/w a secondary and primary weapon */
-	UPROPERTY()
-	AWeapon* ActiveWeapon;
-
-	UPROPERTY()
-		AWeapon* PrimaryWeapon;
 
 	UPROPERTY(EditAnywhere, Category = Weapon, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 		class UAnimMontage* SwapWeaponMontage;
@@ -137,6 +116,15 @@ private:
 	FTimerHandle DisableFireTimerHandle;
 	void FinishFireTimerHandle();
 
+	/** Implementing weapon using stuff classs */
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class AWeaponBase> PrimaryWeaponClass;
+
+	UPROPERTY()
+		AWeaponBase* PrimaryWeapon;
+
+	UPROPERTY()
+		AStuff* OverlappingItem;
 
 public:
 	AManCharacter();
@@ -147,6 +135,11 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	void TraceForBullet();
 	void SetHUDCrosshairs();
+	void DropWeapon();
+
+	bool bOverlap = false;
+
+	void HandleWeaponSwap();
 
 
 protected:
@@ -185,6 +178,6 @@ public:
 	bool GetIsCrouched();
 	FORCEINLINE bool GetCanFire() const { return CanFire; }
 	FORCEINLINE bool GetIsFiring() const { return bFireButtonHeld; }
-	void SetOverlappingWeapon(AWeapon* Weapon);
+	void SetOverlappingWeapon(AStuff* Item);
 
 };

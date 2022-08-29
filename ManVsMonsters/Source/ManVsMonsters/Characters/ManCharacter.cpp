@@ -8,6 +8,8 @@
 #include "DrawDebugHelpers.h"
 #include "Kismet/GameplayStatics.h"
 #include "../Items/Weapon.h"
+#include "../Stuff/Stuff.h"
+#include "../Stuff/WeaponBase.h"
 #include "Components/SphereComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "../HUD/PickupUserWidget.h"
@@ -39,31 +41,23 @@ void AManCharacter::BeginPlay()
 		CurrentPOV = DefaultPOV;
 	}
 
-	if (BaseWeaponClass)
+	if (PrimaryWeaponClass)
 	{
-		if (GetWorld())
-		{
-			/** First Spawn the weapon */
-			PrimaryWeapon = GetWorld()->SpawnActor<AWeapon>(BaseWeaponClass);
-			
-		}
+		PrimaryWeapon = GetWorld()->SpawnActor<AWeaponBase>(PrimaryWeaponClass);
 		if (PrimaryWeapon)
 		{
 			PrimaryWeapon->SetWeaponState(EWeaponState::EWS_Equipped);
 			PrimaryWeapon->SetOwner(this);
-	
+
 			/** Attaching the weapon to right hand. */
 			AttachActorToRightHand(PrimaryWeapon);			// attaching the primary weapon to hand
-			if (SecondaryWeapon)
-			{
-				AttachActorToSpine(SecondaryWeapon);		// if bychance secondary weapon exists, attaching that to the spine
-			}
+
 		}
 	}
 
 }
 
-void AManCharacter::AttachActorToRightHand(AWeapon* WeaponToAttach)
+void AManCharacter::AttachActorToRightHand(AStuff* WeaponToAttach)
 {
 	// get the socket on the hand where the gun needs to go
 	const USkeletalMeshSocket* GunSocket = GetMesh()->GetSocketByName(FName("GunSocket"));
@@ -78,6 +72,8 @@ void AManCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	SetHUDCrosshairs();
+
+	//if(OverlappingItem) UE_LOG(LogTemp, Warning, TEXT("%s"), *OverlappingItem->GetActorNameOrLabel());
 
 	AdjustingAimingPOV(DeltaTime);
 
@@ -116,35 +112,9 @@ void AManCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Pressed, this, &AManCharacter::AimButtonPressed);
 	PlayerInputComponent->BindAction(FName("Aim"), EInputEvent::IE_Released, this, &AManCharacter::AimButtonReleased);
 	PlayerInputComponent->BindAction(FName("Equip"), EInputEvent::IE_Pressed, this, &AManCharacter::EquipButtonPressed);
-	PlayerInputComponent->BindAction(FName("PrimaryWeapon"), EInputEvent::IE_Pressed, this, &AManCharacter::PrimaryWeaponButtonPressed);
-	PlayerInputComponent->BindAction(FName("SecondaryWeapon"), EInputEvent::IE_Pressed, this, &AManCharacter::SecondaryWeaponButtonPressed);
+	//PlayerInputComponent->BindAction(FName("PrimaryWeapon"), EInputEvent::IE_Pressed, this, &AManCharacter::PrimaryWeaponButtonPressed);
+	//PlayerInputComponent->BindAction(FName("SecondaryWeapon"), EInputEvent::IE_Pressed, this, &AManCharacter::SecondaryWeaponButtonPressed);
 
-}
-
-// for switching to secondary weapon
-void AManCharacter::SecondaryWeaponButtonPressed()
-{
-	if (SecondaryWeapon && bUsingPrimary)
-	{
-		HandleSwapWeapon();
-		CanFire = false;
-		bFireButtonHeld = false;
-		GetWorldTimerManager().SetTimer(DisableFireTimerHandle, this, &AManCharacter::EndFireTimer, 1.f);
-	}
-
-		
-}
-
-// for switching to primary weapon
-void AManCharacter::PrimaryWeaponButtonPressed()
-{
-	if (PrimaryWeapon && !bUsingPrimary)
-	{
-		HandleSwapWeapon();
-		CanFire = false;
-		bFireButtonHeld = false;
-		GetWorldTimerManager().SetTimer(DisableFireTimerHandle, this, &AManCharacter::EndFireTimer, 1.f);
-	}
 }
 
 void AManCharacter::FinishFireTimerHandle()
@@ -154,73 +124,55 @@ void AManCharacter::FinishFireTimerHandle()
 	bFireButtonHeld = true;
 }
 
-void AManCharacter::HandleSwapWeapon()
-{
-	AWeapon* TempWeapon = PrimaryWeapon;
-	PrimaryWeapon = SecondaryWeapon;
-	SecondaryWeapon = TempWeapon;
-	AttachActorToRightHand(PrimaryWeapon);			// as now the active weapon is the secondary weapon, attaching that to the right hand of the actor
-	AttachActorToSpine(SecondaryWeapon);			// as now previous active weapon is secondary weapon, attaching that to the spine of the character.
 
-	// playing animation montage for the swapping of the weapon;
-	UAnimInstance* AnimMontage = GetMesh()->GetAnimInstance();
-	if (AnimMontage && SwapWeaponMontage)
-	{
-		AnimMontage->Montage_Play(SwapWeaponMontage);
-		AnimMontage->Montage_JumpToSection(FName("PlayMontage"));
-	}
-
-	// now setting primary to false so that we can switch to primary when 1 is clicked
-	bUsingPrimary = !bUsingPrimary;			// opposite of what the value is right now.
-}
-
-
-
+// implementing this using BaseWeapon class derived from stuff
 void AManCharacter::EquipButtonPressed()
 {
-	if (PrimaryWeapon && SecondaryWeapon == nullptr)
+	if (PrimaryWeapon && OverlappingItem)
 	{
-		HandleEquippingSecondaryWeapon();
+		// we want to switch with the new weapon
+		HandleWeaponSwap();
 	}
-	else if (PrimaryWeapon && SecondaryWeapon)
-	{
-		if (OverlappingWeapon)
-		{
-			PrimaryWeapon->GetMesh()->DetachFromParent(true, true);
-			PrimaryWeapon->GetMesh()->SetSimulatePhysics(true);
-			PrimaryWeapon->GetMesh()->SetEnableGravity(true);
-			PrimaryWeapon->GetMesh()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Block);
-			PrimaryWeapon->Destroy();
+}
 
-			PrimaryWeapon = OverlappingWeapon;
-			AttachActorToRightHand(PrimaryWeapon);
-			PrimaryWeapon->GetPickupWidgetPointer()->SetVisibility(ESlateVisibility::Hidden);
-			
+void AManCharacter::HandleWeaponSwap()
+{
+
+	if (PrimaryWeapon)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("here %s %s"), *PrimaryWeapon->GetActorNameOrLabel());
+		DropWeapon();		// this will handle dropping the weapon and enabling the properties it has 
+	}
+}
+
+void AManCharacter::DropWeapon()
+{
+	if (PrimaryWeapon)
+	{
+		FDetachmentTransformRules DetachmentTransformRules(EDetachmentRule::KeepWorld, true);
+		PrimaryWeapon->GetMesh()->DetachFromComponent(DetachmentTransformRules);
+		PrimaryWeapon->SetWeaponState(EWeaponState::EWS_Falling);
+		PrimaryWeapon->ThrowWeapon();
+		PrimaryWeapon = Cast<AWeaponBase>(OverlappingItem);
+		if (PrimaryWeapon)
+		{
 			PrimaryWeapon->SetWeaponState(EWeaponState::EWS_Equipped);
 			PrimaryWeapon->SetOwner(this);
+			AttachActorToRightHand(PrimaryWeapon);
 		}
-		
 	}
-	
 }
 
-void AManCharacter::HandleEquippingSecondaryWeapon()
-{
-	if (OverlappingWeapon)
-	{	
-		SecondaryWeapon = OverlappingWeapon;
-		SecondaryWeapon->SetWeaponState(EWeaponState::EWS_EquippedSecondary);
-		AttachActorToSpine(SecondaryWeapon);
 
-		SecondaryWeapon->SetOwner(this);
+void AManCharacter::SetOverlappingWeapon(AStuff* Item)
+{
+	if (Item == nullptr) OverlappingItem = nullptr;
+	AWeaponBase* WeaponToEquip = Cast<AWeaponBase>(Item);
+	if (WeaponToEquip)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *WeaponToEquip->GetActorNameOrLabel());
+		OverlappingItem = WeaponToEquip;
 	}
-	//OverlappingWeapon = nullptr;
-}
-
-void AManCharacter::AttachActorToSpine(AWeapon* WeaponToAttach)
-{
-	const USkeletalMeshSocket* Socket = GetMesh()->GetSocketByName(FName("SecondaryWeaponSocket"));
-	if (Socket) Socket->AttachActor(WeaponToAttach, GetMesh());
 }
 
 void AManCharacter::MoveForward(float AxisValue)
@@ -457,23 +409,4 @@ bool AManCharacter::GetIsFalling()
 bool AManCharacter::GetIsCrouched()
 {
 	return GetCharacterMovement()->IsCrouching();
-}
-
-void AManCharacter::SetOverlappingWeapon(AWeapon* Weapon)
-{
-	if (Weapon)
-	{
-		//UE_LOG(LogTemp, Warning, TEXT("Hreeeeeeeeee"));
-		OverlappingWeapon = Weapon;
-	}
-	if (!Weapon)
-	{
-		OverlappingWeapon = nullptr;
-		//UE_LOG(LogTemp, Warning, TEXT("NOOOOOOOOO"));
-	}
-	if (OverlappingWeapon)
-	{
-		OverlappingWeapon->GetPickupWidgetPointer()->SetVisibility(ESlateVisibility::Visible);
-	}
-	
 }

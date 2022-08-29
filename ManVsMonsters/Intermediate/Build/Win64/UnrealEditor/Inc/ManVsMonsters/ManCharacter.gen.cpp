@@ -21,7 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 	MANVSMONSTERS_API UClass* Z_Construct_UClass_AManHUD_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	MANVSMONSTERS_API UClass* Z_Construct_UClass_AWeapon_NoRegister();
+	MANVSMONSTERS_API UClass* Z_Construct_UClass_AWeaponBase_NoRegister();
+	MANVSMONSTERS_API UClass* Z_Construct_UClass_AStuff_NoRegister();
 // End Cross Module References
 	void AManCharacter::StaticRegisterNativesAManCharacter()
 	{
@@ -114,29 +115,21 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_FireDelay;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_BaseWeaponClass_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SwapWeaponMontage_MetaData[];
 #endif
-		static const UECodeGen_Private::FClassPropertyParams NewProp_BaseWeaponClass;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_SwapWeaponMontage;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_OverlappingWeapon_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PrimaryWeaponClass_MetaData[];
 #endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlappingWeapon;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_SecondaryWeapon_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_SecondaryWeapon;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_ActiveWeapon_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_ActiveWeapon;
+		static const UECodeGen_Private::FClassPropertyParams NewProp_PrimaryWeaponClass;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_PrimaryWeapon_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_PrimaryWeapon;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_SwapWeaponMontage_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OverlappingItem_MetaData[];
 #endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_SwapWeaponMontage;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlappingItem;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -316,41 +309,6 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_FireDelay = { "FireDelay", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, FireDelay), METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_FireDelay_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_FireDelay_MetaData)) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_BaseWeaponClass_MetaData[] = {
-		{ "Category", "Weapon" },
-		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
-	};
-#endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_BaseWeaponClass = { "BaseWeaponClass", nullptr, (EPropertyFlags)0x0044000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, BaseWeaponClass), Z_Construct_UClass_AWeapon_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_BaseWeaponClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_BaseWeaponClass_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingWeapon_MetaData[] = {
-		{ "Comment", "/** For Equipping a secondary weapon */" },
-		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
-		{ "ToolTip", "For Equipping a secondary weapon" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingWeapon = { "OverlappingWeapon", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, OverlappingWeapon), Z_Construct_UClass_AWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingWeapon_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_SecondaryWeapon_MetaData[] = {
-		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_SecondaryWeapon = { "SecondaryWeapon", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, SecondaryWeapon), Z_Construct_UClass_AWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_SecondaryWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_SecondaryWeapon_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_ActiveWeapon_MetaData[] = {
-		{ "Comment", "/** FOR SWITCHING b/w a secondary and primary weapon */" },
-		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
-		{ "ToolTip", "FOR SWITCHING b/w a secondary and primary weapon" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_ActiveWeapon = { "ActiveWeapon", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, ActiveWeapon), Z_Construct_UClass_AWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_ActiveWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_ActiveWeapon_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon_MetaData[] = {
-		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon = { "PrimaryWeapon", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, PrimaryWeapon), Z_Construct_UClass_AWeapon_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon_MetaData)) };
-#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_SwapWeaponMontage_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Weapon" },
@@ -358,6 +316,27 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_SwapWeaponMontage = { "SwapWeaponMontage", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, SwapWeaponMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_SwapWeaponMontage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_SwapWeaponMontage_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeaponClass_MetaData[] = {
+		{ "Category", "ManCharacter" },
+		{ "Comment", "/** Implementing weapon using stuff classs */" },
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+		{ "ToolTip", "Implementing weapon using stuff classs" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeaponClass = { "PrimaryWeaponClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, PrimaryWeaponClass), Z_Construct_UClass_AWeaponBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeaponClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeaponClass_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon_MetaData[] = {
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon = { "PrimaryWeapon", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, PrimaryWeapon), Z_Construct_UClass_AWeaponBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon_MetaData)) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingItem_MetaData[] = {
+		{ "ModuleRelativePath", "Characters/ManCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingItem = { "OverlappingItem", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AManCharacter, OverlappingItem), Z_Construct_UClass_AStuff_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingItem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingItem_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AManCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_Camera,
@@ -378,12 +357,10 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_VerticalAimSenstivity,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_ZoomedPOV,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_FireDelay,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_BaseWeaponClass,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingWeapon,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_SecondaryWeapon,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_ActiveWeapon,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_SwapWeaponMontage,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeaponClass,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_PrimaryWeapon,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManCharacter_Statics::NewProp_OverlappingItem,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AManCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AManCharacter>::IsAbstract,
@@ -421,9 +398,9 @@ void EmptyLinkFunctionForGeneratedCodeManCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AManCharacter, AManCharacter::StaticClass, TEXT("AManCharacter"), &Z_Registration_Info_UClass_AManCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManCharacter), 1590496798U) },
+		{ Z_Construct_UClass_AManCharacter, AManCharacter::StaticClass, TEXT("AManCharacter"), &Z_Registration_Info_UClass_AManCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManCharacter), 202684673U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_1270458931(TEXT("/Script/ManVsMonsters"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_2725792105(TEXT("/Script/ManVsMonsters"),
 		Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ManVsMonsters_Source_ManVsMonsters_Characters_ManCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

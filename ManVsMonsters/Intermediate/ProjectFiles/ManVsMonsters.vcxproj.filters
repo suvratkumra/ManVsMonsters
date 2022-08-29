@@ -98,10 +98,23 @@
     <ClInclude Include="..\..\Source\ManVsMonsters\Items\Weapon.h">
       <Filter>Source\ManVsMonsters\Items</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\Source\ManVsMonsters\Items\WeaponState.h">
       <Filter>Source\ManVsMonsters\Items</Filter>
+    </ClInclude>
+    <Filter Include="Source\ManVsMonsters\Stuff">
+      <UniqueIdentifier>{541BA22C-EBED-3271-B898-48901BC3A7D9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ManVsMonsters\Stuff\Stuff.cpp">
+      <Filter>Source\ManVsMonsters\Stuff</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManVsMonsters\Stuff\Stuff.h">
+      <Filter>Source\ManVsMonsters\Stuff</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManVsMonsters\Stuff\WeaponBase.cpp">
+      <Filter>Source\ManVsMonsters\Stuff</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManVsMonsters\Stuff\WeaponBase.h">
+      <Filter>Source\ManVsMonsters\Stuff</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
