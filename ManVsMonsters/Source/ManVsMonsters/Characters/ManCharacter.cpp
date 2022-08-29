@@ -140,7 +140,7 @@ void AManCharacter::HandleWeaponSwap()
 
 	if (PrimaryWeapon)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("here %s %s"), *PrimaryWeapon->GetActorNameOrLabel());
+		//UE_LOG(LogTemp, Warning, TEXT("here %s %s"), *PrimaryWeapon->GetActorNameOrLabel());
 		DropWeapon();		// this will handle dropping the weapon and enabling the properties it has 
 	}
 }
@@ -170,7 +170,7 @@ void AManCharacter::SetOverlappingWeapon(AStuff* Item)
 	AWeaponBase* WeaponToEquip = Cast<AWeaponBase>(Item);
 	if (WeaponToEquip)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("%s"), *WeaponToEquip->GetActorNameOrLabel());
+		//UE_LOG(LogTemp, Warning, TEXT("%s"), *WeaponToEquip->GetActorNameOrLabel());
 		OverlappingItem = WeaponToEquip;
 	}
 }

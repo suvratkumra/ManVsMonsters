@@ -316,7 +316,7 @@ void AStuff::OnDropped()
 	Mesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Block);
 	Mesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 	Mesh->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
-	UE_LOG(LogTemp, Warning, TEXT("LolziePolzie"));
+	//UE_LOG(LogTemp, Warning, TEXT("LolziePolzie"));
 	CollisionSphere->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	CollisionSphere->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 	CollisionSphere->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);

@@ -5,12 +5,13 @@
   Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
     Executing up to 16 processes, one per physical core
-  Building 4 actions with 4 processes...
-  [1/4] Compile Stuff.cpp
-  [2/4] Link UnrealEditor-ManVsMonsters-0030.lib
-     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0030.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0030.exp
-  [3/4] Link UnrealEditor-ManVsMonsters-0030.dll
-     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0030.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0030.suppressed.exp
-  [4/4] WriteMetadata ManVsMonstersEditor.target
-  Total time in Parallel executor: 5.92 seconds
-  Total execution time: 6.59 seconds
+  Building 5 actions with 5 processes...
+  [1/5] Compile Stuff.cpp
+  [2/5] Compile ManCharacter.cpp
+  [3/5] Link UnrealEditor-ManVsMonsters-0002.lib
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0002.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0002.exp
+  [4/5] Link UnrealEditor-ManVsMonsters-0002.dll
+     Creating library D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0002.suppressed.lib and object D:\Unreal Engine Projects\ManVsMonsters\ManVsMonsters\Intermediate\Build\Win64\UnrealEditor\Development\ManVsMonsters\UnrealEditor-ManVsMonsters-0002.suppressed.exp
+  [5/5] WriteMetadata ManVsMonstersEditor.target
+  Total time in Parallel executor: 7.29 seconds
+  Total execution time: 7.94 seconds
